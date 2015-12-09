@@ -96,19 +96,26 @@
                     <!-- /input-group -->
                 </div>
                 <div class="col-md-5">
-                  <div class="pull-right">
+                  <div class="pull-right" ng-controller="userBoxCtrl">
               
-            <a href="" class="pull-right">Urun : 0</a>
-           <a href="" class="pull-right">Urunlerim</a>
+              <div class="cart-items">
+                
+    <a href="" class="pull-right">Urun : {{user.cartItems}}</a>
+           <a href="" class="pull-right">Urunlerim: {{user.activeSales}}</a>
 
-              <a href="" class="pull-right">Kasam</a>
+              <a href="" class="pull-right">Kasam: {{user.kolifyMoney}}</a>
+
+              </div>
+        
    
 
 
               <div class="dropdown pull-right">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Merhaba <br> Ceylan Sarikaya
+                  Merhaba <br> {{user.firstName}}  {{user.lastName}} 
                   <span class="caret"></span>
+
+
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="#">Action</a></li>
@@ -191,14 +198,14 @@
               </div>
               <div class="col-md-2">Takip Et
 
-              <ul>
-                <li><img src="images/facebook-icon.png" alt="facebook icon">Facebook</li>
-                <li><img src="images/twitter-icon.png" alt="twitter icon">Twitter</li>
-                <li><img src="images/pinterest-icon.png" alt="pinterest icon">Pinterest</li>
-                <li><img src="images/instagram-icon.png" alt="instagram icon">Instagram</li>
-                <li><img src="images/google-plus-icon.png" alt="google-plus icon">Google Plus</li>
-                <li><img src="images/linkedin-icon.png" alt="linkedin icon">LinkedIn</li>
-                <li><img src="images/youtube-icon.png" alt="youtube icon">YouTube</li>
+              <ul class="social-links">
+                <li><img src="images/global/icon-facebook.png" alt="facebook icon">Facebook</li>
+                <li><img src="images/global/icon-twitter.png" alt="twitter icon">Twitter</li>
+                <li><img src="images/global/icon-pinterest.png" alt="pinterest icon">Pinterest</li>
+                <li><img src="images/global/icon-instagram.png" alt="instagram icon">Instagram</li>
+                <li><img src="images/global/icon-google-plus.png" alt="google-plus icon">Google Plus</li>
+                <li><img src="images/global/icon-linkedin.png" alt="linkedin icon">LinkedIn</li>
+                <li><img src="images/global/icon-youtube.png" alt="youtube icon">YouTube</li>
               </ul>
               </div>
               <div class="col-md-2">E-Bülten

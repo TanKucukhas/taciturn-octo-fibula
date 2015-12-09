@@ -401,6 +401,21 @@ module.exports = function (grunt) {
       }
     },
 
+
+    'ftp-deploy': {
+      build: {
+        auth: {
+          host: '173.254.80.45',
+          port: 21,
+          authKey: 'key1'
+        },
+        src: '<%= yeoman.dist %>',
+        dest: '/public_html',
+        exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', '<%= yeoman.dist %>/tmp']
+      }
+    },
+
+
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
@@ -412,6 +427,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '*.html',
+            'data/**/*',
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
           ]
@@ -470,7 +486,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'postcss:server',
-      'connect:livereload',
+      'connect:livere ',
       'watch'
     ]);
   });
@@ -504,7 +520,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'ftp-deploy'
   ]);
 
   grunt.registerTask('default', [

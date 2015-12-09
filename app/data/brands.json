@@ -1,0 +1,68 @@
+[
+ {
+  "id": "brand-fisher-price",
+  "name": "Fisher Price",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-fisher-price.jpg"
+ },
+ {
+  "id": "brand-mavi",
+  "name": "Mavi",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-mavi.jpg"
+ },
+ {
+  "id": "brand-english-home",
+  "name": "English Home",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-english-home.jpg"
+ },
+ {
+  "id": "brand-louis-vuitton",
+  "name": "Louis Vuitton",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-louis-vuitton.jpg"
+ },
+ {
+  "id": "brand-lacoste",
+  "name": "Lacoste",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-lacoste.jpg"
+ },
+ {
+  "id": "brand-adidas",
+  "name": "Adidas",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-adidas.jpg"
+ },
+ {
+  "id": "brand-chanel",
+  "name": "Chanel",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-chanel.jpg"
+ },
+ {
+  "id": "brand-madame-coco",
+  "name": "Madame Coco",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-madame-coco.jpg"
+ },
+ {
+  "id": "brand-voit",
+  "name": "Voit",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-voit.jpg"
+ },
+ {
+  "id": "brand-philips-avent",
+  "name": "Philips Avent",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-philips-avent.jpg"
+ },
+ {
+  "id": "brand-chicco",
+  "name": "Chicco",
+  "rating": 10,
+  "imageUrl": "data/brands/brand-chicco.jpg"
+ }
+]

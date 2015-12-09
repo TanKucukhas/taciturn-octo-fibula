@@ -1,176 +1,152 @@
 <div class="row">
   <div class="col-md-8">
-
- <!--  <img class="img-responsive" src="images/slider-place-holder" alt="">
- -->
-<div ng-controller="CarouselDemoCtrl">
-  <div style="height: 305px">
-    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
-      <uib-slide ng-repeat="slide in slides" active="slide.active">
+    <!--  <img class="img-responsive" src="images/slider-place-holder" alt="">
+    -->
+    <div ng-controller="CarouselDemoCtrl">
+      <div style="height: 305px">
+        <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+        <uib-slide ng-repeat="slide in slides" active="slide.active">
         <img ng-src="{{slide.image}}" style="margin:auto;">
         <div class="carousel-caption">
           <h4>Slide {{$index}}</h4>
           <p>{{slide.text}}</p>
         </div>
-      </uib-slide>
-    </uib-carousel>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" ng-model="noWrapSlides">
-          Disable Slide Looping
-        </label>
+        </uib-slide>
+        </uib-carousel>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" ng-model="noWrapSlides">
+              Disable Slide Looping
+            </label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
+          <br />Enter a negative number or 0 to stop the interval.
+        </div>
       </div>
     </div>
-    <div class="col-md-6">
-      Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
-      <br />Enter a negative number or 0 to stop the interval.
-    </div>
-  </div>
-</div>
-
-
-
   </div>
   
-
   <div class="col-md-4 donate pull-right">
- 
-      <div class="row">
-            <div class="col-md-6">Esyalarinizi kapinizdan alalim</div>
-
-
-            <div class="col-md-6 pull-right">Ister bagislayin</div>
-
-
-            <div class="col-md-6 pull-right">Ister kazanin</div>
-      </div>
-
-
-
-  </div>
-
-    <div class="col-md-4 kabul pull-right">
- 
-      <div class="row">
-            <div class="col-md-12">Ikinci el esyalarinizin kabul kriterleri</div>
-
-      </div>
-
-
-
-
-  </div>
     
-
-
+    <div class="row">
+      <div class="col-md-6">Esyalarinizi kapinizdan alalim</div>
+      <div class="col-md-6 pull-right">Ister bagislayin</div>
+      <div class="col-md-6 pull-right">Ister kazanin</div>
+    </div>
+  </div>
+  <div class="col-md-4 kabul pull-right">
     
+    <div class="row">
+      <div class="col-md-12">Ikinci el esyalarinizin kabul kriterleri</div>
+    </div>
+  </div>
+  
+  
 </div>
-
 <div class="row">
   
-<div class="col-md-12">
-  
-<div ng-controller="TabsDemoCtrl">
-<!--   <p>Select a tab by setting active binding to true:</p>
-  <p>
-    <button type="button" class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Select second tab</button>
-    <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Select third tab</button>
-  </p>
-  <p>
-    <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Enable / Disable third tab</button>
-  </p>
-  <hr />
-
-  <uib-tabset>
-    <uib-tab heading="Static title">Static content</uib-tab>
-    <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+  <div class="col-md-12">
+    
+    <div ng-controller="TabsDemoCtrl">
+      <!--   <p>Select a tab by setting active binding to true:</p>
+      <p>
+        <button type="button" class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Select second tab</button>
+        <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Select third tab</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Enable / Disable third tab</button>
+      </p>
+      <hr />
+      <uib-tabset>
+      <uib-tab heading="Static title">Static content</uib-tab>
+      <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
       {{tab.content}}
-    </uib-tab>
-    <uib-tab select="alertMe()">
+      </uib-tab>
+      <uib-tab select="alertMe()">
       <uib-tab-heading>
-        <i class="glyphicon glyphicon-bell"></i> Alert!
+      <i class="glyphicon glyphicon-bell"></i> Alert!
       </uib-tab-heading>
       I've got an HTML heading, and a select callback. Pretty cool!
-    </uib-tab>
-  </uib-tabset>
+      </uib-tab>
+      </uib-tabset>
+      <hr />
+      <uib-tabset vertical="true" type="pills">
+      <uib-tab heading="Vertical 1">Vertical content 1</uib-tab>
+      <uib-tab heading="Vertical 2">Vertical content 2</uib-tab>
+      </uib-tabset>
+      <hr />
+      -->
+      <uib-tabset justified="true" class="product-showcase">
+      <uib-tab heading="Son Gezinlenler"> <div class="container" ng-controller="LastVisitedCtrl">
+        <div class="row">
+          <h1>{{lastVisiteds.length}} ITEM</h1>
+          <div ng-repeat="lastVisited in filteredlastVisiteds" class="col-md-2">
+            <a href="#/dukkan/{{lastVisited.id}}" class="thumb"><img class="product-image" ng-src="{{lastVisited.imageUrl}}"></a>
+            <span class="price">{{lastVisited.price}}</span>
+            <span class="brand">{{lastVisited.brand}}</span>
+            <h2 class="product-title">{{lastVisited.name}}</h2>
+            <img src="images/global/ui-kolify-add.png" alt="koliye ekle"><span>Koliye Ekle</span>
+          </div>
+          <uib-pagination total-items="lastVisiteds.length" ng-model='currentPage' items-per-page='pageSize' boundary-links="false">
+          </uib-pagination>
 
-  <hr />
 
-  <uib-tabset vertical="true" type="pills">
-    <uib-tab heading="Vertical 1">Vertical content 1</uib-tab>
-    <uib-tab heading="Vertical 2">Vertical content 2</uib-tab>
-  </uib-tabset>
-
-  <hr />
- -->
-  <uib-tabset justified="true">
-    <uib-tab heading="Son Gezinlenler"> <div class="container">
-      <div class="row">
-        <div class="col-md-2">1</div>
-        <div class="col-md-2">2</div>
-        <div class="col-md-2">3</div>
-        <div class="col-md-2">4</div>
-        <div class="col-md-2">5</div>
-        <div class="col-md-2">6</div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center"> </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-center"> </div>
-      </div>
+      </uib-tab>
+      <uib-tab heading="Kargo Bedavalar">Short Labeled Justified content</uib-tab>
+      <uib-tab heading="Yeni Eklenenler">Long Labeled Justified content</uib-tab>
+      </uib-tabset>
     </div>
-
-    </uib-tab>
-    <uib-tab heading="Kargo Bedavalar">Short Labeled Justified content</uib-tab>
-    <uib-tab heading="Yeni Eklenenler">Long Labeled Justified content</uib-tab>
-  </uib-tabset>
+  </div>
 </div>
-
-</div>
-
-</div>
-
-
 <div class="row">
   
-<div class="col-md-12 well process-information">
-  
-   <div class="col-md-2">Koli Isteyin</div>
-   <div class="col-md-2">Gelelim</div>
-   <div class="col-md-2">Alalim</div>
-   <div class="col-md-2">Fiyatlandir</div>
-   <div class="col-md-2">Kazan</div>
+  <div class="col-md-12 well process-information">
+    
+    <div class="col-md-2">Koli Isteyin</div>
+    <div class="col-md-2">Gelelim</div>
+    <div class="col-md-2">Alalim</div>
+    <div class="col-md-2">Fiyatlandir</div>
+    <div class="col-md-2">Kazan</div>
+  </div>
 </div>
-
-</div>
-
 <div class="row">
   
   <div class="col-md-4">Yilbasi Ozel</div>
   <div class="col-md-4">Oyuncaklar</div>
   <div class="col-md-4">Mutfak</div>
 </div>
-
-
 <div class="row">
   
   <div class="col-md-3">Aydınlatma</div>
   <div class="col-md-3">Kitaplar</div>
   <div class="col-md-3">Kamp Malzemeleri</div>
-    <div class="col-md-3">Elbiseler</div>
+  <div class="col-md-3">Elbiseler</div>
 </div>
-
-
 <div class="row">
   
   <div class="col-md-6">Eşarplar</div>
   <div class="col-md-6">Çantalar</div>
+</div>
+
+
+<div class="row" class="brand-showcase" ng-controller="brandCarouselCtrl">
+    <div class="col-md-1">Markalar</div>
+     <div ng-repeat="brand in filteredBrands" class="col-md-1">
+         <a href="#/markalar/{{brand.id}}"><img class="brand-image" ng-src="{{brand.imageUrl}}"></a>
+    </div>
+             <uib-pager class="brand-carousel-pager" total-items="brands.length" ng-model="currentPage"></uib-pager>
 
 </div>
 
-<div class="row">
-  <div class="col-md-12">Markalar</div>
-</div>
 

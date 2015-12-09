@@ -25,6 +25,15 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/category', {
+        templateUrl: 'views/category.html',
+        controller: 'categoryCtrl',
+        controllerAs: 'category'
+      })
+        .when('/dukkan/:productId', {
+        templateUrl: 'views/product.html',
+        controller: 'ProductDetailCtrl'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',

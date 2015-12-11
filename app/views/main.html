@@ -14,7 +14,7 @@
         </uib-slide>
         </uib-carousel>
       </div>
-      <div class="row">
+<!--       <div class="row">
         <div class="col-md-6">
           <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
           <div class="checkbox">
@@ -28,7 +28,7 @@
           Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
           <br />Enter a negative number or 0 to stop the interval.
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   
@@ -85,17 +85,19 @@
       <uib-tabset justified="true" class="product-showcase">
       <uib-tab heading="Son Gezinlenler"> <div class="container" ng-controller="LastVisitedCtrl">
         <div class="row">
-          <h1>{{lastVisiteds.length}} ITEM</h1>
-          <div ng-repeat="lastVisited in filteredlastVisiteds" class="col-md-2">
-            <a href="#/dukkan/{{lastVisited.id}}" class="thumb"><img class="product-image" ng-src="{{lastVisited.imageUrl}}"></a>
-            <span class="price">{{lastVisited.price}}</span>
-            <span class="brand">{{lastVisited.brand}}</span>
-            <h2 class="product-title">{{lastVisited.name}}</h2>
-            <img src="images/global/ui-kolify-add.png" alt="koliye ekle"><span>Koliye Ekle</span>
-          </div>
-          <uib-pagination total-items="lastVisiteds.length" ng-model='currentPage' items-per-page='pageSize' boundary-links="false">
-          </uib-pagination>
+         <p>{{userData}}</p>
+          <h1>{{products.length}} ITEM</h1>
+          <div ng-repeat="product in filteredProducts" class="col-md-2">
+            <a on-click="" href="#/dukkan/{{product.id}}" class="thumb"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
+            <span class="price">{{product.price}}</span>
+            <span class="brand">{{product.brand}}</span>
+            <h2 class="product-title">{{product.name}}</h2>
 
+            
+            <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name"><img src="images/global/ui-kolify-add.png" alt="koliye ekle"><span> Koliye Ekle</span></a>
+          </div>
+          <uib-pagination direction-links="false" total-items="products.length" ng-model='currentPage' items-per-page='pageSize' boundary-links="false">
+          </uib-pagination>
 
         </div>
         <div class="row">

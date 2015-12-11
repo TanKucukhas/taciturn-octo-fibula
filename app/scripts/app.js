@@ -16,7 +16,11 @@ angular
     'ngRoute',
     'ngSanitize',
     'ui.bootstrap',
-    'ngTouch'
+    'productControllers',
+    'ngTouch',
+    'productFilters',
+    'productDetailAnimations',
+    'productServices'
   ])
   .config(function ($routeProvider) {
     $routeProvider

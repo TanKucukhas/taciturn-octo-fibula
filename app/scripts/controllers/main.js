@@ -55,24 +55,71 @@ angular.module('ui.bootstrap').controller('CarouselDemoCtrl', function($scope) {
 });
 
 
-angular.module('kolifyApp').controller('LastVisitedCtrl', function($scope, $http) {
-    $http.get('data/lastVisited.json').success(function(data) {
-        $scope.lastVisiteds = data;
-        $scope.filteredlastVisiteds = [], $scope.currentPage = 1, $scope.pageSize = 6, $scope.maxSize = 4;
 
-        $scope.$watch('currentPage + pageSize', function() {
-            var begin = (($scope.currentPage - 1) * $scope.pageSize),
-                end = begin + $scope.pageSize;
 
-            $scope.filteredlastVisiteds = $scope.lastVisiteds.slice(begin, end);
-        });
 
+
+var productControllers = angular.module('productControllers', []);
+
+
+productControllers.controller('LastVisitedCtrl', ['$scope', 'Product', 'userFactory', function($scope, Product, userFactory) {
+  $scope.products = Product.query();
+  
+   $scope.filteredProducts = [], $scope.currentPage = 1, $scope.pageSize = 6, $scope.maxSize = 4;
+
+        $scope.products.$promise.then(function () {
+    $scope.totalItems = $scope.products.length;
+    $scope.$watch('currentPage + pageSize', function() {
+      var begin = (($scope.currentPage - 1) * $scope.pageSize),
+        end = begin + $scope.pageSize;
+
+      $scope.filteredProducts = $scope.products.slice(begin, end);
     });
+  });
 
-});
+
+      $scope.userData = userFactory.getUserData();
 
 
-angular.module('kolifyApp').controller('brandCarouselCtrl', function($scope, $http) {
+}]);
+
+
+
+
+productControllers.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Product', function($scope, $routeParams, Product) {
+  $scope.product = Product.get({productId: $routeParams.productId}, function(product) {
+  
+    $scope.mainImageUrl = product.images[0];
+  });
+
+  $scope.setImage = function(imageUrl) {
+
+    $scope.mainImageUrl = imageUrl;
+    console.log($scope.mainImageUrl);
+
+  };
+}]);
+
+
+// productControllers.controller('ProductDetailCtrl', ['$scope', '$routeParams', '$http',
+//   function($scope, $routeParams, $http) {
+//     $http.get('data/products/' + $routeParams.productId + '.json').success(function(data) {
+//       $scope.product = data;
+//       $scope.mainImageUrl = data.images[0];
+//     });
+
+//       $scope.setImage = function(imageUrl) {
+//       $scope.mainImageUrl = imageUrl;
+//     };
+//   }]);
+
+
+
+
+
+
+
+productControllers.controller('brandCarouselCtrl', function($scope, $http) {
     $http.get('data/brands.json').success(function(data) {
         $scope.brands = data;
         $scope.filteredBrands = [], $scope.currentPage = 1, $scope.pageSize = 9 , $scope.maxSize = 4;
@@ -90,25 +137,46 @@ angular.module('kolifyApp').controller('brandCarouselCtrl', function($scope, $ht
 
 
 
-angular.module('kolifyApp').controller('userBoxCtrl', function($scope, $http) {
-    $scope.cartItems = 5;
 
-     $http.get('data/userData.json').success(function(data) {
 
-    $scope.user = data;
+// productControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
+//   function($scope, $routeParams) {
+//     $scope.phoneId = $routeParams.phoneId;
+//   }]);
 
-    });
+
+
+
+angular.module('kolifyApp').controller('userBoxCtrl', function($scope, $http, userFactory) {
+
+
+    $scope.user = userFactory.getUserData();
+
+
+
+   
 
 
 });
 
 
-angular.module('kolifyApp').controller('ProductDetailCtrl', ['$scope', '$routeParams', '$http',
-  function($scope, $routeParams, $http) {
-    $http.get('data/products/' + $routeParams.productId + '.json').success(function(data) {
-      $scope.product = data;
-    });
-  }]);
+
+
+
+
+// function addToCart() {
+//     var appElement = document.querySelector('[ng-app=kolifyApp]');
+//     var $scope = angular.element(appElement).scope();
+//     $scope.$apply(function() {
+//         $scope.user.cartItems  = 1;
+//     });
+// }
+
+
+
+
+
+
 
 
 

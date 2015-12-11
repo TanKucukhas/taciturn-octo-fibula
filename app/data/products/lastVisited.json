@@ -1,0 +1,66 @@
+[
+ {
+  "visitDate": 1,
+  "id": "siyah-paten",
+  "name": "Siyah Paten",
+  "brand": "Joker",
+  "price": 55,
+  "imageUrl": "data/products/siyah-paten-00.jpg"
+ },
+{
+  "visitDate": 2,
+  "id": "pembe-bisikilet",
+  "name": "Pembe Bisiklet",
+  "brand": "Candy",
+  "price": 60,
+  "imageUrl": "data/products/pembe-bisiklet.jpg"
+ },
+{
+  "visitDate": 5,
+  "id": "pikap",
+  "name": "Pikap",
+  "brand": "Ion",
+  "price": 95,
+  "imageUrl": "data/products/pikap.jpg"
+ },
+ {
+  "visitDate": 2,
+  "id": "kedi-desenli-yastik",
+  "name": "Kedi Desenli Yastik",
+  "brand": "Madam Coco",
+  "price": 15,
+  "imageUrl": "data/products/kedi-desenli-yastik.jpg"
+ },
+ {
+  "visitDate": 2,
+  "id": "yemek-seti",
+  "name": "Yemek Seti",
+  "brand": "Mudo",
+  "price": 19,
+  "imageUrl": "data/products/yemek-seti.jpg"
+ },
+ {
+  "visitDate": 2,
+  "id": "kahve-kupasi",
+  "name": "Kahve Kupasi",
+  "brand": "esse" ,
+  "price": 15,
+  "imageUrl": "data/products/kahve-kupasi.jpg"
+ },
+ {
+  "visitDate": 5,
+  "id": "pembe-panter",
+  "name": "Pembe Panter",
+  "brand": "PP" ,
+  "price": 21,
+  "imageUrl": "data/products/pembe-panter.jpg"
+ },
+ {
+  "visitDate": 2,
+  "id": "helikopter",
+  "name": "Helikopter",
+  "brand": "Hasbro" ,
+  "price": 30,
+  "imageUrl": "data/products/helikopter.jpg"
+ }
+]

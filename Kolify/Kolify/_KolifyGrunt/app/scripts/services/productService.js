@@ -11,7 +11,7 @@ productServices.factory('Product', ['$resource',
 
 productServices.factory('userFactory', function($resource){
 
-      console.log("factory is called");
+      console.log('factory is called');
     
     var userData = $resource('data/userData.json', {}, {
       getUserData: {method:'GET'}

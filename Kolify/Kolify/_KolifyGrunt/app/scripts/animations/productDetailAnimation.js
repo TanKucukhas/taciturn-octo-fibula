@@ -1,3 +1,4 @@
+
 'use strict';
 var productDetailAnimations = angular.module('productDetailAnimations', ['ngAnimate']);
 

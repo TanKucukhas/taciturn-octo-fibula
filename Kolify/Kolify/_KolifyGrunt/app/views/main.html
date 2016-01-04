@@ -1,9 +1,9 @@
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-9">
     <!--  <img class="img-responsive" src="images/slider-place-holder" alt="">
     -->
     <div ng-controller="CarouselDemoCtrl">
-      <div style="height: 305px">
+      <div style="height: 360px">
         <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
         <uib-slide ng-repeat="slide in slides" active="slide.active">
         <img ng-src="{{slide.image}}" style="margin:auto;">
@@ -32,14 +32,27 @@
     </div>
   </div>
   
-  <div class="col-md-4 donate pull-right">
+  <div class="col-md-3 pull-right">
     
-    <div class="row">
-      <div class="col-md-6">Esyalarinizi kapinizdan alalim</div>
-      <div class="col-md-6 pull-right">Ister bagislayin</div>
-      <div class="col-md-6 pull-right">Ister kazanin</div>
+    <div class="row donate secondary-bg ">
+      <div class="col-md-5 pickup"> 
+      <img src="../images/global/ui-pickup.png" alt="">
+      <p>2.el Eşyalarınızı
+</p> <p><strong>Kapıdan Alalım</strong></p></div>
+           <div class="col-md-7 donate-inner pull-right"> <img class="arrow" src="../images/global/ui-arrow-top-right.png" alt="top right arrow"> <img class="donate-img" src="../images/global/ui-donate.png" alt="Bağışlayın">
+          <div class="exp"> <p>İster</p>
+        <p><strong>Bağışlayın</strong></p></div>
+          
+      </div>
+      <div class="col-md-7 earn-inner pull-right">
+    <img class="arrow" src="../images/global/ui-arrow-bottom-right.png" alt="top right arrow"> <img class="earn-img" src="../images/global/ui-earn.png" alt="Kazanın"><div class="exp"><p>İster</p>
+      <p><strong>Kazanın</strong></p></div>
+      
+      </div>
     </div>
   </div>
+
+
   <div class="col-md-4 kabul pull-right">
     
     <div class="row">

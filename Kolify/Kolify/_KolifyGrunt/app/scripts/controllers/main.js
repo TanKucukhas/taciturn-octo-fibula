@@ -39,19 +39,15 @@ angular.module('ui.bootstrap').controller('TabsDemoCtrl', function($scope, $wind
 
 
 angular.module('ui.bootstrap').controller('CarouselDemoCtrl', function($scope) {
-    $scope.myInterval = 5000;
-    $scope.noWrapSlides = false;
-    var slides = $scope.slides = [];
-    $scope.addSlide = function() {
-        var newWidth = 600 + slides.length + 1;
-        slides.push({
-            image: '//placekitten.com/' + newWidth + '/300',
-            text: ['More', 'Extra', 'Lots of', 'Surplus'][slides.length % 4] + ' ' + ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
-        });
-    };
-    for (var i = 0; i < 4; i++) {
-        $scope.addSlide();
+     $scope.myInterval = 3000;
+  $scope.slides = [
+    {
+      image: '../images/carousel-home/001-slide-still.png'
+    },
+    {
+      image: '../images/carousel-home/002-slide-still.png'
     }
+  ];
 });
 
 

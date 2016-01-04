@@ -486,7 +486,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'postcss:server',
-      'connect:livere ',
+      'connect:livereload',
       'watch'
     ]);
   });

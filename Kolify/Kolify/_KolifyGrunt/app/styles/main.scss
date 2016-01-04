@@ -2,6 +2,23 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+$color-main-bg: #f5f5f5;
+$color-brand: #ff5a00;
+$color-gray-bg: #bfbfbf;
+$color-dark-gray-bg: #555555;
+$color-main-font: #050505;
+$secondary-bg: #ffffff;
+
+
+.color-brand-bg{
+background-color: $color-brand;
+color: #fff;
+}
+.color-brand{
+color: $color-brand;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -11,9 +28,26 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
     padding: 0;
+    background-color: $color-main-bg;
+
 }
 
+    a,h1,h2,h3,span,button{
 
+      font-family: 'Ubuntu', sans-serif;
+      color: $color-main-font;
+    }
+
+a:hover,a:focus{
+color: #000000;
+}
+
+.navbar-default {
+    background-color: $color-main-bg;
+}
+.navbar-brand{
+  padding:0;
+}
 /* Global Styles */
 
 /* full-size container */
@@ -23,22 +57,186 @@ body {
     max-width: inherit;
 }
 
+.secondary-bg{
+  background-color : $secondary-bg;
+}
 
 /* Header */
 .header .container-full .nav {
-    width: 100%;
+ 
 
     li {
-        width: 10%;
+
         text-align: center;
     }
+
 }
 
 .header .navbar{
-    padding-right: 15px;
-  padding-left: 15px;
+  //   padding-right: 15px;
+  // padding-left: 15px;
+
 }
 
+.top-search{
+// margin-top:10px;
+.dropdown-toggle{
+  background-color: #dcdcdc;
+}
+}
+
+.top-nav{
+  font-size:12px;
+  background-color: $color-main-bg ;
+  li a{
+        padding: 6px 29px;
+          &:hover,&:focus {
+    
+          background-color: #AFAFAF; }
+
+  }
+}
+
+.graybg{
+  background-color:$color-gray-bg;
+  a{
+      color: #ffffff;
+  }
+}
+.darkgraybg{
+
+  background-color: $color-dark-gray-bg;
+  a{
+    color: #ffffff;
+  }
+}
+
+.nav.graybg{
+      // width: 94px;
+}
+.nav.darkgraybg{
+
+    height:29px;
+    text-align: center;
+    display: block;
+        width: 231px;
+
+  li a{
+  padding:0;
+  height:10px;
+    height: 29px;
+        width: 231px;
+    display:table-cell;
+    vertical-align:middle; 
+  }
+  img{
+      height: 15px;
+     margin: -5px 3px 0px 0;
+  }
+}
+
+
+.header{
+  .container-full{
+    padding-right: 15px;
+    padding-left: 15px;
+
+  }
+
+  .main-nav{
+
+    background-color: $color-brand;
+
+    .navbar-nav {
+      display: flex;
+      justify-content: space-between;
+       float:none;
+       li{
+        width:11%;
+        border-right: 1px solid #cc4800;
+          &:last-child {
+        border-right: none;
+      }
+       }
+      
+
+      a{
+ text-transform: uppercase;
+                color: #ffffff;
+                font-size:16px;
+    }
+  }
+   
+  }
+
+  .logo{
+    width: 206px;
+    height: 54px;
+    float:left;
+  }
+
+  .logo-theme{
+    width: 38px;
+    height:54px;
+        float:left;
+  }
+
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.member-box{
+  button{
+    font-weight:bold;
+    border-radius: 5px;
+  
+    float:right;
+    margin-right:20px;
+   margin-top: 19px;
+  }
+  a{
+    background: url("../images/global/ui-kolify-cart-items.png") no-repeat bottom;
+    height: 59px;
+    width: 63px;
+        text-align: center;
+        font-size:21px;
+        color: $color-brand;
+        font-weight: bold;
+  }
+}
+.top-middle{
+    background-color: $secondary-bg;
+      padding: 14px 0 14px 0;
+    // margin-left: 0;
+    // margin-right:0;
+}
+button.register{
+ color: $color-brand;
+}
+
+button.facebook-connect{
+  background-color: #637ab0;
+  color: #ffffff;
+  display: table;
+      padding: 6px 3px 6px 3px;
+  i{
+       font-size: 19px;
+           display: table-cell;
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+  span{
+    height:10px;
+        display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+
+}
 
 /* Footer */
 .footer {
@@ -60,7 +258,7 @@ body {
 /* Main */
 
 .main-content{
-  padding-right:15px;
+  padding-right:30px;
   padding-left:15px;
 }
 
@@ -244,4 +442,71 @@ h1 {
 
 /* don't forget about the vendor-prefixes! */
 
+
+//homepage
+.donate{
+      padding-bottom: 14px;
+      font-size: 15px;
+          line-height: 19px;
+          p{
+            margin:0;
+          }
+}
+.pickup{
+
+  padding-left: 0;
+    padding-right: 0;
+
+
+   img{
+    padding: 22px 0px 5px 35px;
+   }
+  p{
+        padding: 0px 0px 0px 18px;
+  }
+
+}
+
+.donate-inner{
+ img.arrow {
+    position: absolute;
+    bottom: -13%;
+    left: -8%;
+}
+img.donate-img{
+    padding: 12px 0px 0px 11px;
+}
+.exp{
+float: right;
+    padding: 13% 13% 0 0;
+}
+
+&:after{
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: -7px;
+    right: 11px;
+    height: 0;
+    border-top: 1px solid $color-gray-bg;
+    z-index: 5;
+}
+}
+
+.earn-inner{
+ img.arrow {
+    position: absolute;
+top: 36%;
+    left: -8%;
+}
+img.earn-img{
+
+    padding: 15% 0 1% 5%;
+}
+}
+.exp{
+    float: right;
+    padding: 23% 19% 0 0;
+
+}
 

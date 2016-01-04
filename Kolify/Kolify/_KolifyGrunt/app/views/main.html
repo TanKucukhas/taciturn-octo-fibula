@@ -3,7 +3,7 @@
     <!--  <img class="img-responsive" src="images/slider-place-holder" alt="">
     -->
     <div ng-controller="CarouselDemoCtrl">
-      <div style="height: 360px">
+      <div>
         <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
         <uib-slide ng-repeat="slide in slides" active="slide.active">
         <img ng-src="{{slide.image}}" style="margin:auto;">
@@ -53,10 +53,12 @@
   </div>
 
 
-  <div class="col-md-4 kabul pull-right">
+  <div class="col-md-3 criteria pull-right">
     
     <div class="row">
-      <div class="col-md-12">Ikinci el esyalarinizin kabul kriterleri</div>
+      <div class="col-md-12"><p>İKİNCİ EL EŞYALARINIZIN</p><p><strong>KABUL KRİTERLERİ</strong></p></div>
+
+      <a class="btn btn-default" href="#/">İncele</a>
     </div>
   </div>
   

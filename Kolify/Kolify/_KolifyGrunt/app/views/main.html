@@ -1,20 +1,20 @@
 <div class="row">
-  <div class="col-md-9">
-    <!--  <img class="img-responsive" src="images/slider-place-holder" alt="">
+    <div class="col-md-9">
+        <!--  <img class="img-responsive" src="images/slider-place-holder" alt="">
     -->
-    <div ng-controller="CarouselDemoCtrl">
-      <div>
-        <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
-        <uib-slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
-        <div class="carousel-caption">
-          <h4>Slide {{$index}}</h4>
-          <p>{{slide.text}}</p>
-        </div>
-        </uib-slide>
-        </uib-carousel>
-      </div>
-<!--       <div class="row">
+        <div ng-controller="CarouselDemoCtrl">
+            <div>
+                <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+                    <uib-slide ng-repeat="slide in slides" active="slide.active">
+                        <img ng-src="{{slide.image}}" style="margin:auto;">
+                        <div class="carousel-caption">
+                            <h4>Slide {{$index}}</h4>
+                            <p>{{slide.text}}</p>
+                        </div>
+                    </uib-slide>
+                </uib-carousel>
+            </div>
+            <!--       <div class="row">
         <div class="col-md-6">
           <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
           <div class="checkbox">
@@ -29,141 +29,137 @@
           <br />Enter a negative number or 0 to stop the interval.
         </div>
       </div> -->
+        </div>
     </div>
-  </div>
-  
-  <div class="col-md-3 pull-right">
-    
-    <div class="row donate secondary-bg ">
-      <div class="col-md-5 pickup"> 
-      <img src="../images/global/ui-pickup.png" alt="">
-      <p>2.el Eşyalarınızı
-</p> <p><strong>Kapıdan Alalım</strong></p></div>
-           <div class="col-md-7 donate-inner pull-right"> <img class="arrow" src="../images/global/ui-arrow-top-right.png" alt="top right arrow"> <img class="donate-img" src="../images/global/ui-donate.png" alt="Bağışlayın">
-          <div class="exp"> <p>İster</p>
-        <p><strong>Bağışlayın</strong></p></div>
-          
-      </div>
-      <div class="col-md-7 earn-inner pull-right">
-    <img class="arrow" src="../images/global/ui-arrow-bottom-right.png" alt="top right arrow"> <img class="earn-img" src="../images/global/ui-earn.png" alt="Kazanın"><div class="exp"><p>İster</p>
-      <p><strong>Kazanın</strong></p></div>
-      
-      </div>
+    <div class="col-md-3 pull-right">
+        <div class="row donate secondary-bg ">
+            <div class="col-md-5 pickup">
+                <div class="icon-image icon-ui-pickup"></div>
+                <p>2.el Eşyalarınızı
+                </p>
+                <p><strong>Kapıdan Alalım</strong></p>
+            </div>
+            <div class="col-md-7 donate-inner pull-right"> 
+
+            <div class="arrow icon-image icon-ui-arrow-top-right"></div>
+             <div class="icon-image icon-ui-donate"></div>
+                <div class="exp">
+                    <p>İster</p>
+                    <p><strong>Bağışlayın</strong></p>
+                </div>
+            </div>
+            <div class="col-md-7 earn-inner pull-right">
+                 <div class="arrow icon-image icon-ui-arrow-bottom-right"></div>
+
+                 <div class="icon-image earn-img icon-ui-earn"></div>
+                <div class="exp">
+                    <p>İster</p>
+                    <p><strong>Kazanın</strong></p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-
-  <div class="col-md-3 criteria pull-right">
-    
-    <div class="row">
-      <div class="col-md-12"><p>İKİNCİ EL EŞYALARINIZIN</p><p><strong>KABUL KRİTERLERİ</strong></p></div>
-
-      <a class="btn btn-default" href="#/">İncele</a>
-    </div>
-  </div>
-  
-  
-</div>
-<div class="row">
-  
-  <div class="col-md-12">
-    
-    <div ng-controller="TabsDemoCtrl">
-      <!--   <p>Select a tab by setting active binding to true:</p>
-      <p>
-        <button type="button" class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Select second tab</button>
-        <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Select third tab</button>
-      </p>
-      <p>
-        <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Enable / Disable third tab</button>
-      </p>
-      <hr />
-      <uib-tabset>
-      <uib-tab heading="Static title">Static content</uib-tab>
-      <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
-      {{tab.content}}
-      </uib-tab>
-      <uib-tab select="alertMe()">
-      <uib-tab-heading>
-      <i class="glyphicon glyphicon-bell"></i> Alert!
-      </uib-tab-heading>
-      I've got an HTML heading, and a select callback. Pretty cool!
-      </uib-tab>
-      </uib-tabset>
-      <hr />
-      <uib-tabset vertical="true" type="pills">
-      <uib-tab heading="Vertical 1">Vertical content 1</uib-tab>
-      <uib-tab heading="Vertical 2">Vertical content 2</uib-tab>
-      </uib-tabset>
-      <hr />
-      -->
-      <uib-tabset justified="true" class="product-showcase">
-      <uib-tab heading="Son Gezinlenler"> <div class="container" ng-controller="LastVisitedCtrl">
+    <div class="col-md-3 criteria pull-right">
         <div class="row">
-         <p>{{userData}}</p>
-          <h1>{{products.length}} ITEM</h1>
-          <div ng-repeat="product in filteredProducts" class="col-md-2">
-            <a on-click="" href="#/dukkan/{{product.id}}" class="thumb"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
-            <span class="price">{{product.price}}</span>
-            <span class="brand">{{product.brand}}</span>
-            <h2 class="product-title">{{product.name}}</h2>
-
+            <div class="col-md-12">
+                <div class="inner">
+                    <p>2. EL EŞYALARINIZIN</p>
+                    <p><strong>KABUL KRİTERLERİ</strong></p>
+                        <a class="btn btn-default" href="#/">İncele <i class="icon-image icon-ui-right-arrow"></i></a>
+                </div>
             
-            <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name"><img src="images/global/ui-kolify-add.png" alt="koliye ekle"><span> Koliye Ekle</span></a>
-          </div>
-          <uib-pagination direction-links="false" total-items="products.length" ng-model='currentPage' items-per-page='pageSize' boundary-links="false">
-          </uib-pagination>
-
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center"> </div>
-        </div>
-      </div>
-      </uib-tab>
-      <uib-tab heading="Kargo Bedavalar">Short Labeled Justified content</uib-tab>
-      <uib-tab heading="Yeni Eklenenler">Long Labeled Justified content</uib-tab>
-      </uib-tabset>
     </div>
-  </div>
 </div>
 <div class="row">
-  
-  <div class="col-md-12 well process-information">
-    
-    <div class="col-md-2">Koli Isteyin</div>
-    <div class="col-md-2">Gelelim</div>
-    <div class="col-md-2">Alalim</div>
-    <div class="col-md-2">Fiyatlandir</div>
-    <div class="col-md-2">Kazan</div>
-  </div>
-</div>
-<div class="row">
-  
-  <div class="col-md-4">Yilbasi Ozel</div>
-  <div class="col-md-4">Oyuncaklar</div>
-  <div class="col-md-4">Mutfak</div>
-</div>
-<div class="row">
-  
-  <div class="col-md-3">Aydınlatma</div>
-  <div class="col-md-3">Kitaplar</div>
-  <div class="col-md-3">Kamp Malzemeleri</div>
-  <div class="col-md-3">Elbiseler</div>
-</div>
-<div class="row">
-  
-  <div class="col-md-6">Eşarplar</div>
-  <div class="col-md-6">Çantalar</div>
-</div>
+    <div class="col-md-12">
+        <div ng-controller="TabsDemoCtrl">
+            <!--   <p>Select a tab by setting active binding to true:</p>
+          <p>
+            <button type="button" class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Select second tab</button>
+            <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Select third tab</button>
+          </p>
+          <p>
+            <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Enable / Disable third tab</button>
+          </p>
+          <hr />
+          <uib-tabset>
+          <uib-tab heading="Static title">Static content</uib-tab>
+          <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+          {{tab.content}}
+          </uib-tab>
+          <uib-tab select="alertMe()">
+          <uib-tab-heading>
+          <i class="glyphicon glyphicon-bell"></i> Alert!
+          </uib-tab-heading>
+          I've got an HTML heading, and a select callback. Pretty cool!
+          </uib-tab>
+          </uib-tabset>
+          <hr />
+          <uib-tabset vertical="true" type="pills">
+          <uib-tab heading="Vertical 1">Vertical content 1</uib-tab>
+          <uib-tab heading="Vertical 2">Vertical content 2</uib-tab>
+          </uib-tabset>
+          <hr />
+          -->
+            <uib-tabset justified="true" class="product-showcase">
+                <uib-tab heading="Son Gezinlenler">
+                    <div class="container" ng-controller="LastVisitedCtrl">
+                        <div class="row">
+                            <p>{{userData}}</p>
+                            <h1>{{products.length}} ITEM</h1>
+                            <div ng-repeat="product in filteredProducts" class="col-md-2">
+                                <a on-click="" href="#/dukkan/{{product.id}}" class="thumb"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
+                                <span class="price">{{product.price}}</span>
+                                <span class="brand">{{product.brand}}</span>
+                                <h2 class="product-title">{{product.name}}</h2>
+                                <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
 
-
+                                <span class="icon-image icon-ui-kolify-add"></span><span> Koliye Ekle</span></a>
+                            </div>
+                            <uib-pagination direction-links="false" total-items="products.length" ng-model='currentPage' items-per-page='pageSize' boundary-links="false">
+                            </uib-pagination>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center"> </div>
+                        </div>
+                    </div>
+                </uib-tab>
+                <uib-tab heading="Kargo Bedavalar">Short Labeled Justified content</uib-tab>
+                <uib-tab heading="Yeni Eklenenler">Long Labeled Justified content</uib-tab>
+            </uib-tabset>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 well process-information">
+        <div class="col-md-2">Koli Isteyin</div>
+        <div class="col-md-2">Gelelim</div>
+        <div class="col-md-2">Alalim</div>
+        <div class="col-md-2">Fiyatlandir</div>
+        <div class="col-md-2">Kazan</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">Yilbasi Ozel</div>
+    <div class="col-md-4">Oyuncaklar</div>
+    <div class="col-md-4">Mutfak</div>
+</div>
+<div class="row">
+    <div class="col-md-3">Aydınlatma</div>
+    <div class="col-md-3">Kitaplar</div>
+    <div class="col-md-3">Kamp Malzemeleri</div>
+    <div class="col-md-3">Elbiseler</div>
+</div>
+<div class="row">
+    <div class="col-md-6">Eşarplar</div>
+    <div class="col-md-6">Çantalar</div>
+</div>
 <div class="row" class="brand-showcase" ng-controller="brandCarouselCtrl">
     <div class="col-md-1">Markalar</div>
-     <div ng-repeat="brand in filteredBrands" class="col-md-1">
-         <a href="#/markalar/{{brand.id}}"><img class="brand-image" ng-src="{{brand.imageUrl}}"></a>
+    <div ng-repeat="brand in filteredBrands" class="col-md-1">
+        <a href="#/markalar/{{brand.id}}"><img class="brand-image" ng-src="{{brand.imageUrl}}"></a>
     </div>
-             <uib-pager class="brand-carousel-pager" total-items="brands.length" ng-model="currentPage"></uib-pager>
-
+    <uib-pager class="brand-carousel-pager" total-items="brands.length" ng-model="currentPage"></uib-pager>
 </div>
-
-

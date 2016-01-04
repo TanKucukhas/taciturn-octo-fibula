@@ -129,8 +129,9 @@ color: #000000;
     display:table-cell;
     vertical-align:middle; 
   }
-  img{
-      height: 15px;
+  .icon-ui-kolify-add-negative{
+ display: inline-block;
+  vertical-align: middle;
      margin: -5px 3px 0px 0;
   }
 }
@@ -170,8 +171,7 @@ color: #000000;
   }
 
   .logo{
-    width: 206px;
-    height: 54px;
+ 
     float:left;
   }
 
@@ -198,14 +198,23 @@ color: #000000;
     margin-right:20px;
    margin-top: 19px;
   }
+  span.cart-item-count{
+      color: $color-brand;
+      position: absolute;
+right: 42px;
+  top: -6px;
+
+  }
+
   a{
-    background: url("../images/global/ui-kolify-cart-items.png") no-repeat bottom;
-    height: 59px;
-    width: 63px;
+    // background: url("../images/global/ui-kolify-cart-items.png") no-repeat bottom;
+    // height: 59px;
+    // width: 65px;
         text-align: center;
         font-size:21px;
         color: $color-brand;
         font-weight: bold;
+        margin: 8px 0 0 0;
   }
 }
 .top-middle{
@@ -244,9 +253,11 @@ button.facebook-connect{
     color: #777;
     border-top: 1px solid #e5e5e5;
     
-    .social-links img{
+    .social-links div{
         width: 23px;
         height: 23px;
+      display: inline-block;
+  vertical-align: middle;
     }
 
 }
@@ -458,8 +469,8 @@ h1 {
     padding-right: 0;
 
 
-   img{
-    padding: 22px 0px 5px 35px;
+   .icon-ui-pickup{
+    margin: 22px 0px 5px 35px;
    }
   p{
         padding: 0px 0px 0px 18px;
@@ -468,13 +479,13 @@ h1 {
 }
 
 .donate-inner{
- img.arrow {
+ div.arrow {
     position: absolute;
     bottom: -13%;
     left: -8%;
 }
-img.donate-img{
-    padding: 12px 0px 0px 11px;
+.icon-ui-donate{
+    margin: 12px 0px 0px 11px;
 }
 .exp{
 float: right;
@@ -494,14 +505,13 @@ float: right;
 }
 
 .earn-inner{
- img.arrow {
+ div.arrow {
     position: absolute;
 top: 36%;
     left: -8%;
 }
-img.earn-img{
-
-    padding: 15% 0 1% 5%;
+.earn-img{
+    margin: 15% 0 1% 5%;
 }
 }
 .exp{
@@ -513,5 +523,32 @@ img.earn-img{
 .criteria{
   margin-top:15px;
   height: 170px;
-  background: url("../images/global/ui-add-items-to-kolify.png") no-repeat bottom left #fdccb1;
+    background-image: url("../images/global/items-to-kolify.png");
+    background-repeat: no-repeat;
+  background-position: 5% 38%;
+  background-color: #fdccb1;
+
+  .inner{
+      margin: 65px 0% 0 44%;
+  }
+  p{
+    padding:0 0 0 0;
+    // margin:0 0 0 0;
+      font-size: 17px;
+  line-height: 10px;
+
+  }
+  a{
+    background-color: $color-dark-gray-bg;
+    color: #FFFFFF;
+      padding: 5px 12px;
+  }
+  .icon-ui-right-arrow{
+      margin-left: 17px;
+  }
+}
+
+.icon-image{
+  display: inline-block;
+  vertical-align:  middle;
 }

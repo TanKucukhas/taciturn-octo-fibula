@@ -16,7 +16,8 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    cdnify: 'grunt-google-cdn',
+    sprite: 'grunt-spritesmith'
   });
 
   // Configurable paths for the application
@@ -66,6 +67,15 @@ module.exports = function (grunt) {
         ]
       }
     },
+
+    sprite:{
+      all: {
+        src: '<%= yeoman.app %>/images/global/ui/*.png',
+        dest: '.tmp/images/global/spritesheet.png',
+        destCss: '.tmp/styles/sprites.css'
+      }
+    },
+
 
     // The actual grunt server settings
     connect: {
@@ -507,6 +517,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'sprite',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',

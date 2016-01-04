@@ -72,7 +72,14 @@ module.exports = function (grunt) {
       all: {
         src: '<%= yeoman.app %>/images/global/ui/*.png',
         dest: '.tmp/images/global/spritesheet.png',
-        destCss: '.tmp/styles/sprites.css'
+        destCss: '.tmp/styles/sprites.css',
+        retinaSrcFilter: ['<%= yeoman.app %>/images/global/ui/*@2x.png'],
+        dest: '.tmp/images/global/spritesheet.retina.png',
+        retinaDest: 'spritesheet.retina@2x.png',
+        destCss: '.tmp/styles/spritesheet.retina.styl'
+
+
+
       }
     },
 

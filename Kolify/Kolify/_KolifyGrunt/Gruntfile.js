@@ -71,18 +71,13 @@ module.exports = function (grunt) {
     sprite:{
       all: {
         src: '<%= yeoman.app %>/images/global/ui/*.png',
-        dest: '.tmp/images/global/spritesheet.png',
-        destCss: '.tmp/styles/sprites.css',
+        dest: '<%= yeoman.app %>/images/global/spritesheet.png',
         retinaSrcFilter: ['<%= yeoman.app %>/images/global/ui/*@2x.png'],
-        dest: '.tmp/images/global/spritesheet.retina.png',
-        retinaDest: 'spritesheet.retina@2x.png',
-        destCss: '.tmp/styles/spritesheet.retina.styl'
-
-
-
+        // dest: '.tmp/images/global/spritesheet.retina.png',
+        retinaDest: '<%= yeoman.app %>/images/global/spritesheet.retina@2x.png',
+        destCss: '<%= yeoman.app %>/styles/sprites.scss'
       }
     },
-
 
     // The actual grunt server settings
     connect: {
@@ -457,6 +452,11 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          cwd: '.',
+          src: 'bower_components/font-awesome/fonts/*',
           dest: '<%= yeoman.dist %>'
         }]
       },

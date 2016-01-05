@@ -1,0 +1,535 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-facebook-name: 'icon-facebook';
+$icon-facebook-x: 111px;
+$icon-facebook-y: 145px;
+$icon-facebook-offset-x: -111px;
+$icon-facebook-offset-y: -145px;
+$icon-facebook-width: 23px;
+$icon-facebook-height: 23px;
+$icon-facebook-total-width: 206px;
+$icon-facebook-total-height: 190px;
+$icon-facebook-image: '../images/global/spritesheet.png';
+$icon-facebook: (111px, 145px, -111px, -145px, 23px, 23px, 206px, 190px, '../images/global/spritesheet.png', 'icon-facebook', );
+$icon-google-plus-name: 'icon-google-plus';
+$icon-google-plus-x: 134px;
+$icon-google-plus-y: 145px;
+$icon-google-plus-offset-x: -134px;
+$icon-google-plus-offset-y: -145px;
+$icon-google-plus-width: 23px;
+$icon-google-plus-height: 23px;
+$icon-google-plus-total-width: 206px;
+$icon-google-plus-total-height: 190px;
+$icon-google-plus-image: '../images/global/spritesheet.png';
+$icon-google-plus: (134px, 145px, -134px, -145px, 23px, 23px, 206px, 190px, '../images/global/spritesheet.png', 'icon-google-plus', );
+$icon-instagram-name: 'icon-instagram';
+$icon-instagram-x: 124px;
+$icon-instagram-y: 111px;
+$icon-instagram-offset-x: -124px;
+$icon-instagram-offset-y: -111px;
+$icon-instagram-width: 23px;
+$icon-instagram-height: 23px;
+$icon-instagram-total-width: 206px;
+$icon-instagram-total-height: 190px;
+$icon-instagram-image: '../images/global/spritesheet.png';
+$icon-instagram: (124px, 111px, -124px, -111px, 23px, 23px, 206px, 190px, '../images/global/spritesheet.png', 'icon-instagram', );
+$icon-linkedin-name: 'icon-linkedin';
+$icon-linkedin-x: 147px;
+$icon-linkedin-y: 111px;
+$icon-linkedin-offset-x: -147px;
+$icon-linkedin-offset-y: -111px;
+$icon-linkedin-width: 23px;
+$icon-linkedin-height: 23px;
+$icon-linkedin-total-width: 206px;
+$icon-linkedin-total-height: 190px;
+$icon-linkedin-image: '../images/global/spritesheet.png';
+$icon-linkedin: (147px, 111px, -147px, -111px, 23px, 23px, 206px, 190px, '../images/global/spritesheet.png', 'icon-linkedin', );
+$icon-pinterest-name: 'icon-pinterest';
+$icon-pinterest-x: 170px;
+$icon-pinterest-y: 111px;
+$icon-pinterest-offset-x: -170px;
+$icon-pinterest-offset-y: -111px;
+$icon-pinterest-width: 23px;
+$icon-pinterest-height: 23px;
+$icon-pinterest-total-width: 206px;
+$icon-pinterest-total-height: 190px;
+$icon-pinterest-image: '../images/global/spritesheet.png';
+$icon-pinterest: (170px, 111px, -170px, -111px, 23px, 23px, 206px, 190px, '../images/global/spritesheet.png', 'icon-pinterest', );
+$icon-twitter-name: 'icon-twitter';
+$icon-twitter-x: 65px;
+$icon-twitter-y: 145px;
+$icon-twitter-offset-x: -65px;
+$icon-twitter-offset-y: -145px;
+$icon-twitter-width: 23px;
+$icon-twitter-height: 23px;
+$icon-twitter-total-width: 206px;
+$icon-twitter-total-height: 190px;
+$icon-twitter-image: '../images/global/spritesheet.png';
+$icon-twitter: (65px, 145px, -65px, -145px, 23px, 23px, 206px, 190px, '../images/global/spritesheet.png', 'icon-twitter', );
+$icon-youtube-name: 'icon-youtube';
+$icon-youtube-x: 88px;
+$icon-youtube-y: 145px;
+$icon-youtube-offset-x: -88px;
+$icon-youtube-offset-y: -145px;
+$icon-youtube-width: 23px;
+$icon-youtube-height: 23px;
+$icon-youtube-total-width: 206px;
+$icon-youtube-total-height: 190px;
+$icon-youtube-image: '../images/global/spritesheet.png';
+$icon-youtube: (88px, 145px, -88px, -145px, 23px, 23px, 206px, 190px, '../images/global/spritesheet.png', 'icon-youtube', );
+$logo-kolify-name: 'logo-kolify';
+$logo-kolify-x: 0px;
+$logo-kolify-y: 0px;
+$logo-kolify-offset-x: 0px;
+$logo-kolify-offset-y: 0px;
+$logo-kolify-width: 206px;
+$logo-kolify-height: 53px;
+$logo-kolify-total-width: 206px;
+$logo-kolify-total-height: 190px;
+$logo-kolify-image: '../images/global/spritesheet.png';
+$logo-kolify: (0px, 0px, 0px, 0px, 206px, 53px, 206px, 190px, '../images/global/spritesheet.png', 'logo-kolify', );
+$ui-arrow-bottom-right-name: 'ui-arrow-bottom-right';
+$ui-arrow-bottom-right-x: 173px;
+$ui-arrow-bottom-right-y: 145px;
+$ui-arrow-bottom-right-offset-x: -173px;
+$ui-arrow-bottom-right-offset-y: -145px;
+$ui-arrow-bottom-right-width: 16px;
+$ui-arrow-bottom-right-height: 12px;
+$ui-arrow-bottom-right-total-width: 206px;
+$ui-arrow-bottom-right-total-height: 190px;
+$ui-arrow-bottom-right-image: '../images/global/spritesheet.png';
+$ui-arrow-bottom-right: (173px, 145px, -173px, -145px, 16px, 12px, 206px, 190px, '../images/global/spritesheet.png', 'ui-arrow-bottom-right', );
+$ui-arrow-top-right-name: 'ui-arrow-top-right';
+$ui-arrow-top-right-x: 157px;
+$ui-arrow-top-right-y: 145px;
+$ui-arrow-top-right-offset-x: -157px;
+$ui-arrow-top-right-offset-y: -145px;
+$ui-arrow-top-right-width: 16px;
+$ui-arrow-top-right-height: 14px;
+$ui-arrow-top-right-total-width: 206px;
+$ui-arrow-top-right-total-height: 190px;
+$ui-arrow-top-right-image: '../images/global/spritesheet.png';
+$ui-arrow-top-right: (157px, 145px, -157px, -145px, 16px, 14px, 206px, 190px, '../images/global/spritesheet.png', 'ui-arrow-top-right', );
+$ui-donate-name: 'ui-donate';
+$ui-donate-x: 58px;
+$ui-donate-y: 53px;
+$ui-donate-offset-x: -58px;
+$ui-donate-offset-y: -53px;
+$ui-donate-width: 70px;
+$ui-donate-height: 58px;
+$ui-donate-total-width: 206px;
+$ui-donate-total-height: 190px;
+$ui-donate-image: '../images/global/spritesheet.png';
+$ui-donate: (58px, 53px, -58px, -53px, 70px, 58px, 206px, 190px, '../images/global/spritesheet.png', 'ui-donate', );
+$ui-earn-name: 'ui-earn';
+$ui-earn-x: 128px;
+$ui-earn-y: 53px;
+$ui-earn-offset-x: -128px;
+$ui-earn-offset-y: -53px;
+$ui-earn-width: 70px;
+$ui-earn-height: 58px;
+$ui-earn-total-width: 206px;
+$ui-earn-total-height: 190px;
+$ui-earn-image: '../images/global/spritesheet.png';
+$ui-earn: (128px, 53px, -128px, -53px, 70px, 58px, 206px, 190px, '../images/global/spritesheet.png', 'ui-earn', );
+$ui-kolify-add-negative-name: 'ui-kolify-add-negative';
+$ui-kolify-add-negative-x: 93px;
+$ui-kolify-add-negative-y: 111px;
+$ui-kolify-add-negative-offset-x: -93px;
+$ui-kolify-add-negative-offset-y: -111px;
+$ui-kolify-add-negative-width: 31px;
+$ui-kolify-add-negative-height: 24px;
+$ui-kolify-add-negative-total-width: 206px;
+$ui-kolify-add-negative-total-height: 190px;
+$ui-kolify-add-negative-image: '../images/global/spritesheet.png';
+$ui-kolify-add-negative: (93px, 111px, -93px, -111px, 31px, 24px, 206px, 190px, '../images/global/spritesheet.png', 'ui-kolify-add-negative', );
+$ui-kolify-add-name: 'ui-kolify-add';
+$ui-kolify-add-x: 58px;
+$ui-kolify-add-y: 111px;
+$ui-kolify-add-offset-x: -58px;
+$ui-kolify-add-offset-y: -111px;
+$ui-kolify-add-width: 35px;
+$ui-kolify-add-height: 27px;
+$ui-kolify-add-total-width: 206px;
+$ui-kolify-add-total-height: 190px;
+$ui-kolify-add-image: '../images/global/spritesheet.png';
+$ui-kolify-add: (58px, 111px, -58px, -111px, 35px, 27px, 206px, 190px, '../images/global/spritesheet.png', 'ui-kolify-add', );
+$ui-kolify-cart-items-name: 'ui-kolify-cart-items';
+$ui-kolify-cart-items-x: 0px;
+$ui-kolify-cart-items-y: 145px;
+$ui-kolify-cart-items-offset-x: 0px;
+$ui-kolify-cart-items-offset-y: -145px;
+$ui-kolify-cart-items-width: 65px;
+$ui-kolify-cart-items-height: 45px;
+$ui-kolify-cart-items-total-width: 206px;
+$ui-kolify-cart-items-total-height: 190px;
+$ui-kolify-cart-items-image: '../images/global/spritesheet.png';
+$ui-kolify-cart-items: (0px, 145px, 0px, -145px, 65px, 45px, 206px, 190px, '../images/global/spritesheet.png', 'ui-kolify-cart-items', );
+$ui-pickup-name: 'ui-pickup';
+$ui-pickup-x: 0px;
+$ui-pickup-y: 53px;
+$ui-pickup-offset-x: 0px;
+$ui-pickup-offset-y: -53px;
+$ui-pickup-width: 58px;
+$ui-pickup-height: 92px;
+$ui-pickup-total-width: 206px;
+$ui-pickup-total-height: 190px;
+$ui-pickup-image: '../images/global/spritesheet.png';
+$ui-pickup: (0px, 53px, 0px, -53px, 58px, 92px, 206px, 190px, '../images/global/spritesheet.png', 'ui-pickup', );
+$ui-right-arrow-name: 'ui-right-arrow';
+$ui-right-arrow-x: 193px;
+$ui-right-arrow-y: 111px;
+$ui-right-arrow-offset-x: -193px;
+$ui-right-arrow-offset-y: -111px;
+$ui-right-arrow-width: 13px;
+$ui-right-arrow-height: 10px;
+$ui-right-arrow-total-width: 206px;
+$ui-right-arrow-total-height: 190px;
+$ui-right-arrow-image: '../images/global/spritesheet.png';
+$ui-right-arrow: (193px, 111px, -193px, -111px, 13px, 10px, 206px, 190px, '../images/global/spritesheet.png', 'ui-right-arrow', );
+$icon-facebook-2x-name: 'icon-facebook@2x';
+$icon-facebook-2x-x: 222px;
+$icon-facebook-2x-y: 290px;
+$icon-facebook-2x-offset-x: -222px;
+$icon-facebook-2x-offset-y: -290px;
+$icon-facebook-2x-width: 46px;
+$icon-facebook-2x-height: 46px;
+$icon-facebook-2x-total-width: 412px;
+$icon-facebook-2x-total-height: 380px;
+$icon-facebook-2x-image: '../images/global/spritesheet.retina@2x.png';
+$icon-facebook-2x: (222px, 290px, -222px, -290px, 46px, 46px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'icon-facebook@2x', );
+$icon-google-plus-2x-name: 'icon-google-plus@2x';
+$icon-google-plus-2x-x: 268px;
+$icon-google-plus-2x-y: 290px;
+$icon-google-plus-2x-offset-x: -268px;
+$icon-google-plus-2x-offset-y: -290px;
+$icon-google-plus-2x-width: 46px;
+$icon-google-plus-2x-height: 46px;
+$icon-google-plus-2x-total-width: 412px;
+$icon-google-plus-2x-total-height: 380px;
+$icon-google-plus-2x-image: '../images/global/spritesheet.retina@2x.png';
+$icon-google-plus-2x: (268px, 290px, -268px, -290px, 46px, 46px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'icon-google-plus@2x', );
+$icon-instagram-2x-name: 'icon-instagram@2x';
+$icon-instagram-2x-x: 248px;
+$icon-instagram-2x-y: 222px;
+$icon-instagram-2x-offset-x: -248px;
+$icon-instagram-2x-offset-y: -222px;
+$icon-instagram-2x-width: 46px;
+$icon-instagram-2x-height: 46px;
+$icon-instagram-2x-total-width: 412px;
+$icon-instagram-2x-total-height: 380px;
+$icon-instagram-2x-image: '../images/global/spritesheet.retina@2x.png';
+$icon-instagram-2x: (248px, 222px, -248px, -222px, 46px, 46px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'icon-instagram@2x', );
+$icon-linkedin-2x-name: 'icon-linkedin@2x';
+$icon-linkedin-2x-x: 294px;
+$icon-linkedin-2x-y: 222px;
+$icon-linkedin-2x-offset-x: -294px;
+$icon-linkedin-2x-offset-y: -222px;
+$icon-linkedin-2x-width: 46px;
+$icon-linkedin-2x-height: 46px;
+$icon-linkedin-2x-total-width: 412px;
+$icon-linkedin-2x-total-height: 380px;
+$icon-linkedin-2x-image: '../images/global/spritesheet.retina@2x.png';
+$icon-linkedin-2x: (294px, 222px, -294px, -222px, 46px, 46px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'icon-linkedin@2x', );
+$icon-pinterest-2x-name: 'icon-pinterest@2x';
+$icon-pinterest-2x-x: 340px;
+$icon-pinterest-2x-y: 222px;
+$icon-pinterest-2x-offset-x: -340px;
+$icon-pinterest-2x-offset-y: -222px;
+$icon-pinterest-2x-width: 46px;
+$icon-pinterest-2x-height: 46px;
+$icon-pinterest-2x-total-width: 412px;
+$icon-pinterest-2x-total-height: 380px;
+$icon-pinterest-2x-image: '../images/global/spritesheet.retina@2x.png';
+$icon-pinterest-2x: (340px, 222px, -340px, -222px, 46px, 46px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'icon-pinterest@2x', );
+$icon-twitter-2x-name: 'icon-twitter@2x';
+$icon-twitter-2x-x: 130px;
+$icon-twitter-2x-y: 290px;
+$icon-twitter-2x-offset-x: -130px;
+$icon-twitter-2x-offset-y: -290px;
+$icon-twitter-2x-width: 46px;
+$icon-twitter-2x-height: 46px;
+$icon-twitter-2x-total-width: 412px;
+$icon-twitter-2x-total-height: 380px;
+$icon-twitter-2x-image: '../images/global/spritesheet.retina@2x.png';
+$icon-twitter-2x: (130px, 290px, -130px, -290px, 46px, 46px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'icon-twitter@2x', );
+$icon-youtube-2x-name: 'icon-youtube@2x';
+$icon-youtube-2x-x: 176px;
+$icon-youtube-2x-y: 290px;
+$icon-youtube-2x-offset-x: -176px;
+$icon-youtube-2x-offset-y: -290px;
+$icon-youtube-2x-width: 46px;
+$icon-youtube-2x-height: 46px;
+$icon-youtube-2x-total-width: 412px;
+$icon-youtube-2x-total-height: 380px;
+$icon-youtube-2x-image: '../images/global/spritesheet.retina@2x.png';
+$icon-youtube-2x: (176px, 290px, -176px, -290px, 46px, 46px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'icon-youtube@2x', );
+$logo-kolify-2x-name: 'logo-kolify@2x';
+$logo-kolify-2x-x: 0px;
+$logo-kolify-2x-y: 0px;
+$logo-kolify-2x-offset-x: 0px;
+$logo-kolify-2x-offset-y: 0px;
+$logo-kolify-2x-width: 412px;
+$logo-kolify-2x-height: 106px;
+$logo-kolify-2x-total-width: 412px;
+$logo-kolify-2x-total-height: 380px;
+$logo-kolify-2x-image: '../images/global/spritesheet.retina@2x.png';
+$logo-kolify-2x: (0px, 0px, 0px, 0px, 412px, 106px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'logo-kolify@2x', );
+$ui-arrow-bottom-right-2x-name: 'ui-arrow-bottom-right@2x';
+$ui-arrow-bottom-right-2x-x: 346px;
+$ui-arrow-bottom-right-2x-y: 290px;
+$ui-arrow-bottom-right-2x-offset-x: -346px;
+$ui-arrow-bottom-right-2x-offset-y: -290px;
+$ui-arrow-bottom-right-2x-width: 32px;
+$ui-arrow-bottom-right-2x-height: 24px;
+$ui-arrow-bottom-right-2x-total-width: 412px;
+$ui-arrow-bottom-right-2x-total-height: 380px;
+$ui-arrow-bottom-right-2x-image: '../images/global/spritesheet.retina@2x.png';
+$ui-arrow-bottom-right-2x: (346px, 290px, -346px, -290px, 32px, 24px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'ui-arrow-bottom-right@2x', );
+$ui-arrow-top-right-2x-name: 'ui-arrow-top-right@2x';
+$ui-arrow-top-right-2x-x: 314px;
+$ui-arrow-top-right-2x-y: 290px;
+$ui-arrow-top-right-2x-offset-x: -314px;
+$ui-arrow-top-right-2x-offset-y: -290px;
+$ui-arrow-top-right-2x-width: 32px;
+$ui-arrow-top-right-2x-height: 28px;
+$ui-arrow-top-right-2x-total-width: 412px;
+$ui-arrow-top-right-2x-total-height: 380px;
+$ui-arrow-top-right-2x-image: '../images/global/spritesheet.retina@2x.png';
+$ui-arrow-top-right-2x: (314px, 290px, -314px, -290px, 32px, 28px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'ui-arrow-top-right@2x', );
+$ui-donate-2x-name: 'ui-donate@2x';
+$ui-donate-2x-x: 116px;
+$ui-donate-2x-y: 106px;
+$ui-donate-2x-offset-x: -116px;
+$ui-donate-2x-offset-y: -106px;
+$ui-donate-2x-width: 140px;
+$ui-donate-2x-height: 116px;
+$ui-donate-2x-total-width: 412px;
+$ui-donate-2x-total-height: 380px;
+$ui-donate-2x-image: '../images/global/spritesheet.retina@2x.png';
+$ui-donate-2x: (116px, 106px, -116px, -106px, 140px, 116px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'ui-donate@2x', );
+$ui-earn-2x-name: 'ui-earn@2x';
+$ui-earn-2x-x: 256px;
+$ui-earn-2x-y: 106px;
+$ui-earn-2x-offset-x: -256px;
+$ui-earn-2x-offset-y: -106px;
+$ui-earn-2x-width: 140px;
+$ui-earn-2x-height: 116px;
+$ui-earn-2x-total-width: 412px;
+$ui-earn-2x-total-height: 380px;
+$ui-earn-2x-image: '../images/global/spritesheet.retina@2x.png';
+$ui-earn-2x: (256px, 106px, -256px, -106px, 140px, 116px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'ui-earn@2x', );
+$ui-kolify-add-negative-2x-name: 'ui-kolify-add-negative@2x';
+$ui-kolify-add-negative-2x-x: 186px;
+$ui-kolify-add-negative-2x-y: 222px;
+$ui-kolify-add-negative-2x-offset-x: -186px;
+$ui-kolify-add-negative-2x-offset-y: -222px;
+$ui-kolify-add-negative-2x-width: 62px;
+$ui-kolify-add-negative-2x-height: 48px;
+$ui-kolify-add-negative-2x-total-width: 412px;
+$ui-kolify-add-negative-2x-total-height: 380px;
+$ui-kolify-add-negative-2x-image: '../images/global/spritesheet.retina@2x.png';
+$ui-kolify-add-negative-2x: (186px, 222px, -186px, -222px, 62px, 48px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'ui-kolify-add-negative@2x', );
+$ui-kolify-add-2x-name: 'ui-kolify-add@2x';
+$ui-kolify-add-2x-x: 116px;
+$ui-kolify-add-2x-y: 222px;
+$ui-kolify-add-2x-offset-x: -116px;
+$ui-kolify-add-2x-offset-y: -222px;
+$ui-kolify-add-2x-width: 70px;
+$ui-kolify-add-2x-height: 54px;
+$ui-kolify-add-2x-total-width: 412px;
+$ui-kolify-add-2x-total-height: 380px;
+$ui-kolify-add-2x-image: '../images/global/spritesheet.retina@2x.png';
+$ui-kolify-add-2x: (116px, 222px, -116px, -222px, 70px, 54px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'ui-kolify-add@2x', );
+$ui-kolify-cart-items-2x-name: 'ui-kolify-cart-items@2x';
+$ui-kolify-cart-items-2x-x: 0px;
+$ui-kolify-cart-items-2x-y: 290px;
+$ui-kolify-cart-items-2x-offset-x: 0px;
+$ui-kolify-cart-items-2x-offset-y: -290px;
+$ui-kolify-cart-items-2x-width: 130px;
+$ui-kolify-cart-items-2x-height: 90px;
+$ui-kolify-cart-items-2x-total-width: 412px;
+$ui-kolify-cart-items-2x-total-height: 380px;
+$ui-kolify-cart-items-2x-image: '../images/global/spritesheet.retina@2x.png';
+$ui-kolify-cart-items-2x: (0px, 290px, 0px, -290px, 130px, 90px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'ui-kolify-cart-items@2x', );
+$ui-pickup-2x-name: 'ui-pickup@2x';
+$ui-pickup-2x-x: 0px;
+$ui-pickup-2x-y: 106px;
+$ui-pickup-2x-offset-x: 0px;
+$ui-pickup-2x-offset-y: -106px;
+$ui-pickup-2x-width: 116px;
+$ui-pickup-2x-height: 184px;
+$ui-pickup-2x-total-width: 412px;
+$ui-pickup-2x-total-height: 380px;
+$ui-pickup-2x-image: '../images/global/spritesheet.retina@2x.png';
+$ui-pickup-2x: (0px, 106px, 0px, -106px, 116px, 184px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'ui-pickup@2x', );
+$ui-right-arrow-2x-name: 'ui-right-arrow@2x';
+$ui-right-arrow-2x-x: 386px;
+$ui-right-arrow-2x-y: 222px;
+$ui-right-arrow-2x-offset-x: -386px;
+$ui-right-arrow-2x-offset-y: -222px;
+$ui-right-arrow-2x-width: 26px;
+$ui-right-arrow-2x-height: 20px;
+$ui-right-arrow-2x-total-width: 412px;
+$ui-right-arrow-2x-total-height: 380px;
+$ui-right-arrow-2x-image: '../images/global/spritesheet.retina@2x.png';
+$ui-right-arrow-2x: (386px, 222px, -386px, -222px, 26px, 20px, 412px, 380px, '../images/global/spritesheet.retina@2x.png', 'ui-right-arrow@2x', );
+$spritesheet-width: 206px;
+$spritesheet-height: 190px;
+$spritesheet-image: '../images/global/spritesheet.png';
+$spritesheet-sprites: ($icon-facebook, $icon-google-plus, $icon-instagram, $icon-linkedin, $icon-pinterest, $icon-twitter, $icon-youtube, $logo-kolify, $ui-arrow-bottom-right, $ui-arrow-top-right, $ui-donate, $ui-earn, $ui-kolify-add-negative, $ui-kolify-add, $ui-kolify-cart-items, $ui-pickup, $ui-right-arrow, );
+$spritesheet: (206px, 190px, '../images/global/spritesheet.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 412px;
+$retina-spritesheet-height: 380px;
+$retina-spritesheet-image: '../images/global/spritesheet.retina@2x.png';
+$retina-spritesheet-sprites: ($icon-facebook-2x, $icon-google-plus-2x, $icon-instagram-2x, $icon-linkedin-2x, $icon-pinterest-2x, $icon-twitter-2x, $icon-youtube-2x, $logo-kolify-2x, $ui-arrow-bottom-right-2x, $ui-arrow-top-right-2x, $ui-donate-2x, $ui-earn-2x, $ui-kolify-add-negative-2x, $ui-kolify-add-2x, $ui-kolify-cart-items-2x, $ui-pickup-2x, $ui-right-arrow-2x, );
+$retina-spritesheet: (412px, 380px, '../images/global/spritesheet.retina@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$icon-facebook-group-name: 'icon-facebook';
+$icon-facebook-group: ('icon-facebook', $icon-facebook, $icon-facebook-2x, );
+$icon-google-plus-group-name: 'icon-google-plus';
+$icon-google-plus-group: ('icon-google-plus', $icon-google-plus, $icon-google-plus-2x, );
+$icon-instagram-group-name: 'icon-instagram';
+$icon-instagram-group: ('icon-instagram', $icon-instagram, $icon-instagram-2x, );
+$icon-linkedin-group-name: 'icon-linkedin';
+$icon-linkedin-group: ('icon-linkedin', $icon-linkedin, $icon-linkedin-2x, );
+$icon-pinterest-group-name: 'icon-pinterest';
+$icon-pinterest-group: ('icon-pinterest', $icon-pinterest, $icon-pinterest-2x, );
+$icon-twitter-group-name: 'icon-twitter';
+$icon-twitter-group: ('icon-twitter', $icon-twitter, $icon-twitter-2x, );
+$icon-youtube-group-name: 'icon-youtube';
+$icon-youtube-group: ('icon-youtube', $icon-youtube, $icon-youtube-2x, );
+$logo-kolify-group-name: 'logo-kolify';
+$logo-kolify-group: ('logo-kolify', $logo-kolify, $logo-kolify-2x, );
+$ui-arrow-bottom-right-group-name: 'ui-arrow-bottom-right';
+$ui-arrow-bottom-right-group: ('ui-arrow-bottom-right', $ui-arrow-bottom-right, $ui-arrow-bottom-right-2x, );
+$ui-arrow-top-right-group-name: 'ui-arrow-top-right';
+$ui-arrow-top-right-group: ('ui-arrow-top-right', $ui-arrow-top-right, $ui-arrow-top-right-2x, );
+$ui-donate-group-name: 'ui-donate';
+$ui-donate-group: ('ui-donate', $ui-donate, $ui-donate-2x, );
+$ui-earn-group-name: 'ui-earn';
+$ui-earn-group: ('ui-earn', $ui-earn, $ui-earn-2x, );
+$ui-kolify-add-negative-group-name: 'ui-kolify-add-negative';
+$ui-kolify-add-negative-group: ('ui-kolify-add-negative', $ui-kolify-add-negative, $ui-kolify-add-negative-2x, );
+$ui-kolify-add-group-name: 'ui-kolify-add';
+$ui-kolify-add-group: ('ui-kolify-add', $ui-kolify-add, $ui-kolify-add-2x, );
+$ui-kolify-cart-items-group-name: 'ui-kolify-cart-items';
+$ui-kolify-cart-items-group: ('ui-kolify-cart-items', $ui-kolify-cart-items, $ui-kolify-cart-items-2x, );
+$ui-pickup-group-name: 'ui-pickup';
+$ui-pickup-group: ('ui-pickup', $ui-pickup, $ui-pickup-2x, );
+$ui-right-arrow-group-name: 'ui-right-arrow';
+$ui-right-arrow-group: ('ui-right-arrow', $ui-right-arrow, $ui-right-arrow-2x, );
+$retina-groups: ($icon-facebook-group, $icon-google-plus-group, $icon-instagram-group, $icon-linkedin-group, $icon-pinterest-group, $icon-twitter-group, $icon-youtube-group, $logo-kolify-group, $ui-arrow-bottom-right-group, $ui-arrow-top-right-group, $ui-donate-group, $ui-earn-group, $ui-kolify-add-negative-group, $ui-kolify-add-group, $ui-kolify-cart-items-group, $ui-pickup-group, $ui-right-arrow-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

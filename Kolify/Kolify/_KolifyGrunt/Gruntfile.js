@@ -17,6 +17,7 @@ module.exports = function (grunt) {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
     cdnify: 'grunt-google-cdn',
+    karma: 'grunt-karma',
     sprite: 'grunt-spritesmith'
   });
 
@@ -346,7 +347,8 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/images',
-          src: '{,*/}*.{png,jpg,jpeg,gif}',
+          // src: '{,*/}*.{png,jpg,jpeg,gif}',
+          src:  '{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           dest: '<%= yeoman.dist %>/images'
         }]
       }

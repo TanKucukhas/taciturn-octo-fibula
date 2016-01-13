@@ -137,11 +137,17 @@ a:focus {
         display: table-cell;
         vertical-align: middle;
     }
-    .icon-ui-kolify-add-negative {
+
+    $icon-ui-kolify-add-negative-group: ('icon-ui-kolify-add-negative', $ui-kolify-add-negative, $ui-kolify-add-negative-2x, );
+
+    .icon-ui-kolify-add-negative{
         display: inline-block;
         vertical-align: middle;
         margin: -5px 3px 0px 0;
+      @include retina-sprite($icon-ui-kolify-add-negative-group);
     }
+
+
 }
 
 .header {
@@ -177,6 +183,13 @@ a:focus {
         height: 54px;
         float: left;
     }
+
+    $icon-logo-kolify-group: ('icon-logo-kolify', $logo-kolify, $logo-kolify-2x, );
+
+    .icon-logo-kolify {
+      @include retina-sprite($icon-logo-kolify-group);
+    }
+
 }
 
 .vcenter {
@@ -553,13 +566,12 @@ h1 {
         color: #FFFFFF;
         padding: 5px 12px;
     }
-    .icon-ui-right-arrow {
-        margin-left: 17px;
-    }
+ 
 
     $icon-ui-right-arrow-group: ('icon-ui-right-arrow', $ui-right-arrow, $ui-right-arrow-2x, );
 
     .icon-ui-right-arrow {
+      margin-left: 17px;   
       @include retina-sprite($icon-ui-right-arrow-group);
     }
 
@@ -570,3 +582,67 @@ h1 {
     display: inline-block;
     vertical-align: middle;
 }
+
+
+$icon-icon-facebook-group: ('icon-facebook', $icon-facebook, $icon-facebook-2x, );
+
+    .icon-icon-facebook {
+      @include retina-sprite($icon-icon-facebook-group);
+}
+
+
+$icon-icon-twitter-group: ('icon-twitter', $icon-twitter, $icon-twitter-2x, );
+
+    .icon-icon-twitter {
+      @include retina-sprite($icon-icon-twitter-group);
+}
+
+
+$icon-icon-pinterest-group: ('icon-pinterest', $icon-pinterest, $icon-pinterest-2x, );
+
+    .icon-icon-pinterest {
+      @include retina-sprite($icon-icon-pinterest-group);
+}
+
+$icon-icon-instagram-group: ('icon-instagram', $icon-instagram, $icon-instagram-2x, );
+
+    .icon-icon-instagram {
+      @include retina-sprite($icon-icon-instagram-group);
+}
+
+
+$icon-icon-google-plus-group: ('icon-google-plus', $icon-google-plus, $icon-google-plus-2x, );
+
+    .icon-icon-google-plus {
+      @include retina-sprite($icon-icon-google-plus-group);
+}
+
+
+$icon-icon-youtube-group: ('icon-youtube', $icon-youtube, $icon-youtube-2x, );
+
+    .icon-icon-youtube {
+      @include retina-sprite($icon-icon-youtube-group);
+}
+
+
+$icon-icon-linkedin-group: ('icon-linkedin', $icon-linkedin, $icon-linkedin-2x, );
+
+    .icon-icon-linkedin {
+      @include retina-sprite($icon-icon-linkedin-group);
+}
+
+ 
+    $icon-ui-kolify-cart-items-group: ('icon-ui-kolify-cart-items', $ui-kolify-cart-items, $ui-kolify-cart-items-2x, );
+
+    .icon-ui-kolify-cart-items {
+      @include retina-sprite($icon-ui-kolify-cart-items-group);
+    }
+
+//icon-ui-pickup
+//icon-ui-arrow-top-right
+//icon-ui-arrow-bottom-right
+//icon-ui-earn
+
+
+
+

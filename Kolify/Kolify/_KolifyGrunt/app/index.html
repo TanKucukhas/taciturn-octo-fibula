@@ -1,133 +1,119 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,300' rel='stylesheet' type='text/css'>
-
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
-
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/sprites.css">
-
- <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
-
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <!-- endbuild -->
-  </head>
-  <body ng-app="kolifyApp">
+</head>
+
+<body ng-app="kolifyApp">
     <!--[if lte IE 8]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-      <div class="container-full">
-        
-
-          <div class="row top-nav">
-       
-            
-            <ul class="nav pull-right darkgraybg">
-              <li>
-                <a href="#/"> <span class="icon-image icon-ui-kolify-add-negative"></span>
-                ÜRÜN GÖNDERMEK İSTİYORUM</a>
-              </li>
-            </ul>
-            <ul class="nav pull-right graybg">
-              <li>
-                <a href="#/">BLOG</a>
-              </li>
-            </ul>
-            <ul class="nav pull-right graybg">
-              <li>
-                <a href="#/">MARKALAR</a>
-              </li>
-            </ul>
-            <ul class="nav pull-right">
-              <li class="dropdown">
-                <a href="properties.php?type=showall" class="dropdown-toggle" data-toggle="dropdown">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-full">
+                <div class="row top-nav">
+                    <ul class="nav pull-right darkgraybg">
+                        <li>
+                            <a href="#/"> <span class="icon-image icon-ui-kolify-add-negative"></span> ÜRÜN GÖNDERMEK İSTİYORUM</a>
+                        </li>
+                    </ul>
+                    <ul class="nav pull-right graybg">
+                        <li>
+                            <a href="#/">BLOG</a>
+                        </li>
+                    </ul>
+                    <ul class="nav pull-right graybg">
+                        <li>
+                            <a href="#/">MARKALAR</a>
+                        </li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li class="dropdown">
+                            <a href="properties.php?type=showall" class="dropdown-toggle" data-toggle="dropdown">
                   Hakkımızda
                   <b class="caret"></b>
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a href="propertiesSearch.php">Logout</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav pull-right">
-              <li class="dropdown">
-                <a href="properties.php?type=showall" class="dropdown-toggle" data-toggle="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="propertiesSearch.php">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li class="dropdown">
+                            <a href="properties.php?type=showall" class="dropdown-toggle" data-toggle="dropdown">
                   Müşteri Hizmetleri
                   <b class="caret"></b>
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a href="propertiesSearch.php">Logout</a></li>
-                </ul>
-              </li>
-            </ul>
-    
-        </div>
-
-            <div class="row top-middle">
-          <div class="col-md-2 vcenter">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#/"><span class="icon-image icon-logo-kolify logo"></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="propertiesSearch.php">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row top-middle">
+                    <div class="col-md-2 vcenter">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#/"><span class="icon-image icon-logo-kolify logo"></span>
 <!--               <img class="logo-theme" src="images/global/logo-theme.png" alt="Yilbasi Agaci"> -->
               </a>
-            </div>
-          </div>
-          <div class="col-md-4 vcenter">
-            <div class="input-group top-search">
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hepsi <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a ng-href="#/about">Çocuk</a></li>
-                  <li><a ng-href="#/about">Kadın</a></li>
-                  <li><a ng-href="#/about">Aksesuar</a></li>
-                  <li><a ng-href="#/about">Erkek</a></li>
-                  <li><a ng-href="#/about">Ev Yaşam</a></li>
-                  <li><a ng-href="#/about">Spor</a></li>
-                  <li><a ng-href="#/about">Hobi</a></li>
-                  <li><a ng-href="#/about">Ofis</a></li>
-                  <li><a ng-href="#/about">Yılbaşı</a></li>
-                </ul>
-              </div>
-              <!-- /btn-group -->
-              <input type="text" class="form-control" aria-label="...">
-              <span class="input-group-btn">
+                        </div>
+                    </div>
+                    <div class="col-md-4 vcenter">
+                        <div class="input-group top-search">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hepsi <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a ng-href="#/about">Çocuk</a></li>
+                                    <li><a ng-href="#/about">Kadın</a></li>
+                                    <li><a ng-href="#/about">Aksesuar</a></li>
+                                    <li><a ng-href="#/about">Erkek</a></li>
+                                    <li><a ng-href="#/about">Ev Yaşam</a></li>
+                                    <li><a ng-href="#/about">Spor</a></li>
+                                    <li><a ng-href="#/about">Hobi</a></li>
+                                    <li><a ng-href="#/about">Ofis</a></li>
+                                    <li><a ng-href="#/about">Yılbaşı</a></li>
+                                </ul>
+                            </div>
+                            <!-- /btn-group -->
+                            <input type="text" class="form-control" aria-label="...">
+                            <span class="input-group-btn">
                 <button class="btn btn-default color-brand-bg" type="button"><i class="glyphicon glyphicon-search"></i></button>
               </span>
-            </div>
-            <!-- /input-group -->
-          </div>
-          <div class="col-md-5 vcenter">
-            <div class="member-box">
-               
-                   
-                <a href="#/cart" class="pull-right cart-items icon-ui-kolify-cart-items icon-image">
-                   <span class="cart-item-count">0</span>
-                </a>
-
-
-                <button class="btn btn-default facebook-connect" type="button"><i class="fa fa-facebook"></i> <span>Bağlan</span></button>
-                          <button type="button" class="btn btn-default">Giriş</button>
-                <button type="button" class="btn btn-default register">Üye Ol</button>
-              
-            </div>
-            <!--             <div class="pull-right" ng-controller="userBoxCtrl">
+                        </div>
+                        <!-- /input-group -->
+                    </div>
+                    <div class="col-md-5 vcenter">
+                        <div class="member-box">
+                            <a href="#/cart" class="pull-right cart-items icon-ui-kolify-cart-items icon-image">
+                                <span class="cart-item-count">0</span>
+                            </a>
+                            <button class="btn btn-default facebook-connect" type="button"><i class="fa fa-facebook"></i> <span>Bağlan</span></button>
+                            <button type="button" class="btn btn-default">Giriş</button>
+                            <button type="button" class="btn btn-default register">Üye Ol</button>
+                        </div>
+                        <!--             <div class="pull-right" ng-controller="userBoxCtrl">
               
               <div class="cart-items">
                 
@@ -152,133 +138,141 @@
               </div>
             </div>
             -->
-          </div>
-        </div>
-
-
-          <div class="row main-nav">
-            <div class="col-md-12">
-              <div class="collapse navbar-collapse" id="js-navbar-collapse">
-                <ul class="nav navbar-nav">
-              <!--     <li class="active"><a href="#/">Anasayfa</a></li> -->
-                  <li><a ng-href="#/about">Çocuk</a></li>
-                  <li><a ng-href="#/about">Kadın</a></li>
-                  <li><a ng-href="#/about">Aksesuar</a></li>
-                  <li><a ng-href="#/about">Erkek</a></li>
-                  <li><a ng-href="#/about">Ev Yaşam</a></li>
-                  <li><a ng-href="#/about">Spor</a></li>
-                  <li><a ng-href="#/about">Hobi</a></li>
-                  <li><a ng-href="#/about">Ofis</a></li>
-                  <li><a ng-href="#/about">Yılbaşı</a></li>
-                </ul>
-              </div>
+                    </div>
+                </div>
+                <div class="row main-nav">
+                    <div class="col-md-12">
+                        <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <!--     <li class="active"><a href="#/">Anasayfa</a></li> -->
+                                <li><a ng-href="#/about">Çocuk</a></li>
+                                <li><a ng-href="#/about">Kadın</a></li>
+                                <li><a ng-href="#/about">Aksesuar</a></li>
+                                <li><a ng-href="#/about">Erkek</a></li>
+                                <li><a ng-href="#/about">Ev Yaşam</a></li>
+                                <li><a ng-href="#/about">Spor</a></li>
+                                <li><a ng-href="#/about">Hobi</a></li>
+                                <li><a ng-href="#/about">Ofis</a></li>
+                                <li><a ng-href="#/about">Yılbaşı</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-           </div>
+        </div>
     </div>
-   
-  </div>
-    
-        
-  
-   
-   
-    </div>
+
+
     <div class="main-content container-full view-container">
-      <div class="view-frame" ng-view=""></div>
+      <div class="row">
+          <div class="container-full view-frame" ng-view=""></div>
+
+
+      
+      </div>
+        
     </div>
+
+
     <div class="footer">
-      <div class="container container-full">
-        <div class="row">
-          <div class="col-md-2">Hakkımızda
-            <ul>
-              <li><a ng-href="#/about">Hakkımızda</a></li>
-              <li><a ng-href="#/about">Kullanım Koşulları</a></li>
-              <li><a ng-href="#/about">Gizlilik Bildirimi</a></li>
-              <li><a ng-href="#/about">Fiyatlar</a></li>
-              <li><a ng-href="#/about">Blog</a></li>
-              <li><a ng-href="#/about">İletişim</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">Müşteri Hizmetleri
-            <ul>
-              <li><a ng-href="#/about">Sıkça Sorulan Sorular</a></li>
-              <li><a ng-href="#/about">Kabul Kriterleri</a></li>
-              <li><a ng-href="#/about">Yardım Merkezi</a></li>
-              <li><a ng-href="#/about">Destek Formu</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">Kategoriler
-            <ul>
-              <li><a ng-href="#/about">Çocuk</a></li>
-              <li><a ng-href="#/about">Kadın</a></li>
-              <li><a ng-href="#/about">Ofis</a></li>
-              <li><a ng-href="#/about">Aksesuar</a></li>
-              <li><a ng-href="#/about">Erkek</a></li>
-              <li><a ng-href="#/about">Ev Yaşam</a></li>
-              <li><a ng-href="#/about">Spor</a></li>
-              <li><a ng-href="#/about">Hobi</a></li>
-              <li><a ng-href="#/about">Yılbaşı</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">Takip Et
-            <ul class="social-links">
-              <li><div class="icon-image icon-icon-facebook"></div>Facebook</li>
-              <li><div class="icon-image icon-icon-twitter"></div>Twitter</li>
-              <li><div class="icon-image icon-icon-pinterest"></div>Pinterest</li>
-              <li><div class="icon-image icon-icon-instagram"></div>Instagram</li>
-              <li><div class="icon-image icon-icon-google-plus"></div>Google Plus</li>
-              <li><div class="icon-image icon-icon-linkedin"></div>LinkedIn</li>
-              <li><div class="icon-image icon-icon-youtube"></div>YouTube</li>
-            </ul>
-          </div>
-          <div class="col-md-2">E-Bülten
-            
-            <p>Kolify yeniliklerini takip edin.</p>
-            
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="e-posta adresinizi giriniz.">
-              <span class="input-group-btn">
+        <div class="container container-full">
+            <div class="row">
+                <div class="col-md-2">Hakkımızda
+                    <ul>
+                        <li><a ng-href="#/about">Hakkımızda</a></li>
+                        <li><a ng-href="#/about">Kullanım Koşulları</a></li>
+                        <li><a ng-href="#/about">Gizlilik Bildirimi</a></li>
+                        <li><a ng-href="#/about">Fiyatlar</a></li>
+                        <li><a ng-href="#/about">Blog</a></li>
+                        <li><a ng-href="#/about">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">Müşteri Hizmetleri
+                    <ul>
+                        <li><a ng-href="#/about">Sıkça Sorulan Sorular</a></li>
+                        <li><a ng-href="#/about">Kabul Kriterleri</a></li>
+                        <li><a ng-href="#/about">Yardım Merkezi</a></li>
+                        <li><a ng-href="#/about">Destek Formu</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">Kategoriler
+                    <ul>
+                        <li><a ng-href="#/about">Çocuk</a></li>
+                        <li><a ng-href="#/about">Kadın</a></li>
+                        <li><a ng-href="#/about">Ofis</a></li>
+                        <li><a ng-href="#/about">Aksesuar</a></li>
+                        <li><a ng-href="#/about">Erkek</a></li>
+                        <li><a ng-href="#/about">Ev Yaşam</a></li>
+                        <li><a ng-href="#/about">Spor</a></li>
+                        <li><a ng-href="#/about">Hobi</a></li>
+                        <li><a ng-href="#/about">Yılbaşı</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">Takip Et
+                    <ul class="social-links">
+                        <li>
+                            <div class="icon-image icon-icon-facebook"></div>Facebook</li>
+                        <li>
+                            <div class="icon-image icon-icon-twitter"></div>Twitter</li>
+                        <li>
+                            <div class="icon-image icon-icon-pinterest"></div>Pinterest</li>
+                        <li>
+                            <div class="icon-image icon-icon-instagram"></div>Instagram</li>
+                        <li>
+                            <div class="icon-image icon-icon-google-plus"></div>Google Plus</li>
+                        <li>
+                            <div class="icon-image icon-icon-linkedin"></div>LinkedIn</li>
+                        <li>
+                            <div class="icon-image icon-icon-youtube"></div>YouTube</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">E-Bülten
+                    <p>Kolify yeniliklerini takip edin.</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="e-posta adresinizi giriniz.">
+                        <span class="input-group-btn">
                 <button class="btn btn-default" type="button">OK</button>
               </span>
-              </div><!-- /input-group -->
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <div class="col-md-2">Uygulamalar</div>
             </div>
-            <div class="col-md-2">Uygulamalar</div>
-          </div>
         </div>
-      </div>
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-      <script>
-      ! function(A, n, g, u, l, a, r) {
-      A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
-      (A[l].q = A[l].q || []).push(arguments)
-      }, A[l].l = +new Date, a = n.createElement(g),
-      r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
-      }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-XXXXX-X');
-      ga('send', 'pageview');
-      </script>
-      <!-- build:js(.) scripts/vendor.js -->
-      <!-- bower:js -->
-      <script src="bower_components/jquery/dist/jquery.js"></script>
-      <script src="bower_components/angular/angular.js"></script>
-      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-      <script src="bower_components/angular-animate/angular-animate.js"></script>
-      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-      <script src="bower_components/angular-resource/angular-resource.js"></script>
-      <script src="bower_components/angular-route/angular-route.js"></script>
-      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-      <script src="bower_components/angular-touch/angular-touch.js"></script>
-      <!-- endbower -->
-      <!-- endbuild -->
-      <!-- build:js({.tmp,app}) scripts/scripts.js -->
-      <script src="scripts/app.js"></script>
-      <script src="scripts/controllers/main.js"></script>
-      <script src="scripts/controllers/about.js"></script>
-      <script src="scripts/filters/productfilter.js"></script>
-      <script src="scripts/services/productService.js"></script>
-      <script src="scripts/animations/productDetailAnimation.js"></script>
-      
-      <!-- endbuild -->
-    </body>
-  </html>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/filters/productfilter.js"></script>
+    <script src="scripts/services/productService.js"></script>
+    <script src="scripts/animations/productDetailAnimation.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

@@ -31,7 +31,10 @@
       </div> -->
         </div>
     </div>
-    <div class="col-md-3 pull-right">
+
+    <div class="col-md-3">
+      
+          <div class="col-md-12">
         <div class="row donate secondary-bg ">
             <div class="col-md-5 pickup">
                 <div class="icon-image icon-ui-pickup"></div>
@@ -39,19 +42,17 @@
                 </p>
                 <p><strong>Kapıdan Alalım</strong></p>
             </div>
-            <div class="col-md-7 donate-inner pull-right"> 
-
-            <div class="arrow icon-image icon-ui-arrow-top-right"></div>
-             <div class="icon-image icon-ui-donate"></div>
+            <div class="col-md-7 donate-inner pull-right">
+                <div class="arrow icon-image icon-ui-arrow-top-right"></div>
+                <div class="icon-image icon-ui-donate"></div>
                 <div class="exp">
                     <p>İster</p>
                     <p><strong>Bağışlayın</strong></p>
                 </div>
             </div>
             <div class="col-md-7 earn-inner pull-right">
-                 <div class="arrow icon-image icon-ui-arrow-bottom-right"></div>
-
-                 <div class="icon-image earn-img icon-ui-earn"></div>
+                <div class="arrow icon-image icon-ui-arrow-bottom-right"></div>
+                <div class="icon-image earn-img icon-ui-earn"></div>
                 <div class="exp">
                     <p>İster</p>
                     <p><strong>Kazanın</strong></p>
@@ -59,70 +60,79 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3 criteria pull-right">
+
+
+    <div class="col-md-12 criteria">
         <div class="row">
             <div class="col-md-12">
                 <div class="inner">
                     <p>2. EL EŞYALARINIZIN</p>
                     <p><strong>KABUL KRİTERLERİ</strong></p>
-                        <a class="btn btn-default" href="#/">İncele <i class="icon-image icon-ui-right-arrow"></i></a>
+                    <a class="btn btn-default" href="#/">İncele <i class="icon-image icon-ui-right-arrow"></i></a>
                 </div>
-            
             </div>
         </div>
     </div>
+
+
+
+    </div>
+
+
 </div>
 <div class="row">
     <div class="col-md-12">
-        <div ng-controller="TabsDemoCtrl">
+        <div ng-controller="TabsDemoCtrl" class="home-featured">
             <!--   <p>Select a tab by setting active binding to true:</p>
-          <p>
-            <button type="button" class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Select second tab</button>
-            <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Select third tab</button>
-          </p>
-          <p>
-            <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Enable / Disable third tab</button>
-          </p>
-          <hr />
-          <uib-tabset>
-          <uib-tab heading="Static title">Static content</uib-tab>
-          <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
-          {{tab.content}}
-          </uib-tab>
-          <uib-tab select="alertMe()">
-          <uib-tab-heading>
-          <i class="glyphicon glyphicon-bell"></i> Alert!
-          </uib-tab-heading>
-          I've got an HTML heading, and a select callback. Pretty cool!
-          </uib-tab>
-          </uib-tabset>
-          <hr />
-          <uib-tabset vertical="true" type="pills">
-          <uib-tab heading="Vertical 1">Vertical content 1</uib-tab>
-          <uib-tab heading="Vertical 2">Vertical content 2</uib-tab>
-          </uib-tabset>
-          <hr />
-          -->
-            <uib-tabset justified="true" class="product-showcase">
+      <p>
+        <button type="button" class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Select second tab</button>
+        <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Select third tab</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Enable / Disable third tab</button>
+      </p>
+      <hr />
+      <uib-tabset>
+      <uib-tab heading="Static title">Static content</uib-tab>
+      <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+      {{tab.content}}
+      </uib-tab>
+      <uib-tab select="alertMe()">
+      <uib-tab-heading>
+      <i class="glyphicon glyphicon-bell"></i> Alert!
+      </uib-tab-heading>
+      I've got an HTML heading, and a select callback. Pretty cool!
+      </uib-tab>
+      </uib-tabset>
+      <hr />
+      <uib-tabset vertical="true" type="pills">
+      <uib-tab heading="Vertical 1">Vertical content 1</uib-tab>
+      <uib-tab heading="Vertical 2">Vertical content 2</uib-tab>
+      </uib-tabset>
+      <hr />
+      -->
+            <uib-tabset justified="false" class="product-showcase">
                 <uib-tab heading="Son Gezinlenler">
-                    <div class="container" ng-controller="LastVisitedCtrl">
-                        <div class="row">
-                            <p>{{userData}}</p>
-                            <h1>{{products.length}} ITEM</h1>
+                    <uib-tab-heading><i class="fa fa-caret-down"></i> Son Gezinlenler</uib-tab-heading>
+                    <div class="container-full" ng-controller="LastVisitedCtrl">
+                        <div class="row row-container">
+                            <!--        <p>{{userData}}</p> -->
+                            <!--       <h1>{{products.length}} ITEM</h1> -->
                             <div ng-repeat="product in filteredProducts" class="col-md-2">
-                                <a on-click="" href="#/dukkan/{{product.id}}" class="thumb"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
-                                <span class="price">{{product.price}}</span>
-                                <span class="brand">{{product.brand}}</span>
-                                <h2 class="product-title">{{product.name}}</h2>
-                                <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
-
-                                <span class="icon-image icon-ui-kolify-add"></span><span> Koliye Ekle</span></a>
+                                <div class="product-container">
+                                    <a on-click="" href="#/dukkan/{{product.id}}" class="thumb"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
+                                    <p class="price">{{product.price}}</p>
+                                    <p class="brand">{{product.brand}}</p>
+                                    <h2 class="product-title">{{product.name}}</h2>
+                                    <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
+                                        <span class="icon-image icon-ui-kolify-add"></span><span> Koliye Ekle</span></a>
+                                </div>
                             </div>
                             <uib-pagination direction-links="false" total-items="products.length" ng-model='currentPage' items-per-page='pageSize' boundary-links="false">
                             </uib-pagination>
                         </div>
                         <div class="row">
-                            <div class="col-md-12 text-center"> </div>
+                            <div class="col-md-12 text-center">1 </div>
                         </div>
                     </div>
                 </uib-tab>

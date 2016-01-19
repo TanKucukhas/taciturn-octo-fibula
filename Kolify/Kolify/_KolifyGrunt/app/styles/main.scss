@@ -5,12 +5,76 @@ $fa-font-path: "../bower_components/font-awesome/fonts/";
 @import "font-awesome/scss/font-awesome.scss";
 // endbower
 @import "sprites.scss";
+
+
 $color-main-bg: #f5f5f5;
 $color-brand: #ff5a00;
 $color-gray-bg: #bfbfbf;
 $color-dark-gray-bg: #555555;
 $color-main-font: #050505;
 $secondary-bg: #ffffff;
+$alternative-gray: #ababab;
+
+// font colors
+$color-font-light: #b6b6b6;
+
+
+@mixin font-size($sizeValue: 1.6, $line: $sizeValue * 1.5){
+  font-size: ($sizeValue * 1) + px;
+  line-height: ($line * 1) + px;
+  font-size: ($sizeValue / 10) + rem;
+  line-height: ($line / 10) + rem;
+}
+
+
+/* Document level adjustments */
+html {
+font-size: 62.5%; /* Sets up the Base 10px */
+font-size:10px;
+}
+@media (max-width: 900px) {
+  html {  font-size: 70.5%;   }
+}
+@media (max-width: 400px) {
+  html { font-size: 80.5%;  }
+}
+
+
+
+body{
+  font-size:inherit;
+}
+
+h1 {
+  @include font-size(19);
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+
+p{
+  @include font-size(16);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover,a:focus{
+     text-decoration: none;
+}
+
+
+.brand{
+    color: $color-brand;
+}
+
+
 .color-brand-bg {
     background-color: $color-brand;
     color: #fff;
@@ -21,10 +85,10 @@ $secondary-bg: #ffffff;
 }
 
 .browsehappy {
-    margin: 0.2em 0;
+    margin: 0.2rem 0;
     background: #ccc;
     color: #000;
-    padding: 0.2em 0;
+    padding: 0.2rem 0;
 }
 
 body {
@@ -57,6 +121,7 @@ a:focus {
 
 
 /* Global Styles */
+
 
 
 /* full-size container */
@@ -94,7 +159,7 @@ a:focus {
 }
 
 .top-nav {
-    font-size: 12px;
+    @include font-size(13);
     background-color: $color-main-bg;
     li a {
         padding: 6px 29px;
@@ -124,7 +189,7 @@ a:focus {
 }
 
 .nav.darkgraybg {
-    height: 29px;
+    height: 30px;
     text-align: center;
     display: block;
     width: 231px;
@@ -166,7 +231,7 @@ a:focus {
             a {
                 text-transform: uppercase;
                 color: #ffffff;
-                font-size: 16px;
+                @include font-size(16);
             }
         }
     }
@@ -205,11 +270,11 @@ a:focus {
         top: -6px;
     }
     a {
-        // background: url("../images/global/ui-kolify-cart-items.png") no-repeat bottom;
+        // background: url("../images/global/ui-kolify-cart-itrems.png") no-repeat bottom;
         // height: 59px;
         // width: 65px;
         text-align: center;
-        font-size: 21px;
+        @include font-size(18);
         color: $color-brand;
         font-weight: bold;
         margin: 8px 0 0 0;
@@ -218,7 +283,7 @@ a:focus {
 
 .top-middle {
     background-color: $secondary-bg;
-    padding: 14px 0 14px 0;
+       padding: 10px 0 10px 0;
     // margin-left: 0;
     // margin-right:0;
 }
@@ -233,7 +298,7 @@ button.facebook-connect {
     display: table;
     padding: 6px 3px 6px 3px;
     i {
-        font-size: 19px;
+        @include font-size(14);
         display: table-cell;
         vertical-align: middle;
         padding-right: 5px;
@@ -252,14 +317,144 @@ button.facebook-connect {
 .footer {
     padding-top: 19px;
     color: #777;
+    background-color: $secondary-bg;
+    margin-top:3rem;
     border-top: 1px solid #e5e5e5;
+    overflow:hidden;
     .social-links div {
         width: 23px;
         height: 23px;
         display: inline-block;
         vertical-align: middle;
     }
+
+    .title{
+        font-weight:bold;
+        color: $color-dark-gray-bg;
+    }
+
+    .footer-container{
+        padding: 1.4rem 0rem 0px 2.4rem;
+        ul{
+            padding: 12px 0px 0 0;
+    font-size: 1.4rem;
+    color: $color-dark-gray-bg;
+        }
+        li{
+           padding: 0.2rem 0 0 0;
+        }
+    }
+    .brand{
+        font-size:1.2rem;
+    }
+
+    .footer-container.social{
+            ul{
+                list-style: none;
+            }
+            span{
+                padding-left:1rem;
+            }
+    }
+
+    
+    
+        .footer-container.applications{
+                p{
+                    font-size:1.4rem;
+                    color: $color-dark-gray-bg;
+                }
+
+                a
+                {
+                    min-width: 255px;
+                    font-size:1.4rem;
+                    margin-bottom:1rem;
+                }
+
+                .fa,span{
+                    display: inline-block;
+                   vertical-align: middle;
+                }
+                span{
+                    padding-left:1rem;
+                }
+    }
+
+
+
+    .footer-container.secure{
+        span{
+            font-size: 1.6rem;
+        }
+        img{
+            display: inline;
+        }
+
+    }
+
+
+
 }
+
+.right-line{
+    // border-right:1px solid #e5e5e5;
+   
+}
+.footer-double  {
+border-bottom: 1px solid #e5e5e5; 
+
+}
+.app-col:before{
+
+    border-left: 1px solid #e5e5e5;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110%;
+    /* padding-top: 28px; */
+    margin-top: -19px;
+
+}
+
+.right-line:after{
+    border-right: 1px solid #e5e5e5;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200%;
+    margin-top: -20px;
+}
+
+    .end-matter{
+        p{
+            font-size:1.4rem;
+            display: inline;
+            vertical-align: bottom;
+            margin:0;
+           line-height: 34px;
+           // padding-left:2rem;
+        }
+        
+        img{
+          
+            padding-right:1rem;
+            display: inline;
+            vertical-align: bottom;
+                // padding-left: 2rem;
+        }
+
+        .col{
+            padding: 2rem 0 2rem 2rem;
+
+        }
+        .cardlist{
+            text-align: right;
+        }
+    }
+
 
 .container-narrow > hr {
     margin: 30px 0;
@@ -281,17 +476,6 @@ button.facebook-connect {
     }
 }
 
-.brand-image {
-    width: 115px;
-    height: 78px;
-    position: relative;
-    z-index: 1;
-}
-
-.brand-carousel-pager {
-    position: absolute;
-    width: 100%;
-}
 
 
 /* app css stylesheet */
@@ -311,8 +495,8 @@ button.facebook-connect {
 
 .thumb {
     float: left;
-    // margin: -0.5em 1em 1.5em 0;
-    padding-bottom: 1em;
+    // margin: -0.5rem 1rem 1.5rem 0;
+       // margin-bottom: 4px;
     // height: 100px;
     // width: 100px;
 }
@@ -328,10 +512,10 @@ button.facebook-connect {
 
 img.product {
     float: left;
-    margin-right: 3em;
-    margin-bottom: 2em;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
     background-color: white;
-    padding: 2em;
+    padding: 2rem;
     height: 400px;
     width: 400px;
     display: none;
@@ -349,14 +533,14 @@ ul.product-thumbs {
 ul.product-thumbs li {
     border: 1px solid black;
     display: inline-block;
-    margin: 1em;
+    margin: 1.6rem;
     background-color: white;
 }
 
 ul.product-thumbs img {
     height: 100px;
     width: 100px;
-    padding: 1em;
+    padding: 1.6rem;
 }
 
 ul.product-thumbs img:hover {
@@ -378,7 +562,7 @@ ul.specs > li {
 
 ul.specs > li > span {
     font-weight: bold;
-    font-size: 1.2em;
+   @include font-size(12);
 }
 
 ul.specs dt {
@@ -479,8 +663,8 @@ h1 {
 //homepage
 .donate {
     padding-bottom: 14px;
-    font-size: 15px;
-    line-height: 19px;
+   @include font-size(16);
+    line-height: 1rem;
     p {
         margin: 0;
     }
@@ -505,7 +689,7 @@ h1 {
         left: -8%;
     }
     .icon-ui-donate {
-        margin: 12px 0px 0px 11px;
+        margin: 12px 0px 0px 0px;
     }
     .exp {
         float: right;
@@ -553,7 +737,7 @@ h1 {
     p {
         padding: 0 0 0 0;
         // margin:0 0 0 0;
-        font-size: 17px;
+        @include font-size(16);
         line-height: 10px;
     }
     a {
@@ -681,6 +865,32 @@ $ui-arrow-bottom-right-2x,
 }
 
 
+$icon-ui-kolify-add: ('icon-ui-kolify-add',
+$ui-kolify-add,
+$ui-kolify-add-2x,
+);
+.icon-ui-kolify-add {
+    @include retina-sprite($ui-kolify-add-group);
+}
+
+
+
+$icon-ui-kolify-cart-items-small: ('icon-ui-kolify-cart-items-small',
+$ui-kolify-cart-items-small,
+$ui-kolify-cart-items-small-2x,
+);
+.icon-ui-kolify-cart-items-small {
+    @include retina-sprite($ui-kolify-cart-items-small-group);
+}
+
+
+
+
+
+
+
+
+
 
 // HOMEPAGE
 
@@ -688,10 +898,44 @@ $ui-arrow-bottom-right-2x,
 .product-showcase{
     ul>li>a{
       font-weight:bold;
-      font-size: 2em;
+     @include font-size(30);
       text-align: left;
       // padding-right:10%;
     }
+  .price{
+    color: $color-brand;
+   @include font-size(26);
+    font-weight: bold;
+    padding: 5px 0px 0px 25px;
+    display: inline-block;
+    margin-bottom:0;
+        line-height: 1.6rem;
+    span{
+       color: $color-brand;
+          @include font-size(16);
+    }
+  }
+
+
+  .brand{
+
+    color: $color-font-light;
+        @include font-size(12);
+    font-weight: bold;
+  padding: 2px 0px 0px 25px;
+    display: block;
+        margin-bottom: 0;
+
+  }
+  .product-title{
+    color: $color-dark-gray-bg;
+        height: 30px;
+   @include font-size(16);
+    margin-bottom: 0;
+        padding: 2px 20px 0px 25px;
+    display: block;
+    line-height: 1.6rem;
+  }
 
 }
 
@@ -701,11 +945,290 @@ $ui-arrow-bottom-right-2x,
 }
 
 .product-container{
-max-width: 230px;
+// max-width: 230px;
   border: 1px solid $color-main-bg;
 }
 
 .home-featured{
 
   background-color: $secondary-bg;
+}
+
+.row-slide{
+    margin-bottom: 5px;
+}
+
+.row-featured{
+ margin-bottom:10px;
+}
+
+.btn-add-to-kolify
+{
+      padding: 10px 0 10px 21px;
+span{
+  color: $color-brand;
+  @include font-size(16);
+}
+span.icon-ui-kolify-add{
+    margin: -8px 7px 0 0;
+}
+}
+
+.pagination-centered
+{
+    margin-top: 14px;
+text-align:center;
+
+  a{
+    color:#818181;
+  }
+  //override bootstrap pagination styles
+  .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{
+  color:#818181;
+  background-color: #818181;
+      border: none;
+  }
+
+  .pagination > li > a, .pagination > li > span {
+    font-size:1rem;
+    position: relative;
+    float: left;
+    padding: 1px 3px;
+    line-height: 1rem;
+    text-decoration: none;
+    color: #e7e7e7;
+    background-color: #e7e7e7;
+    border: none;
+  margin-left: 10px;
+  }
+
+  .pagination > li:first-child > a, .pagination > li:first-child > span, {
+      margin-left: 0;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+  }
+
+    .pagination > li:last-child > a, .pagination > li:last-child > span {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        margin-right: 0;
+    }
+
+}
+
+.how-it-works{
+  text-align: center;
+  p{
+  
+    color: $color-dark-gray-bg;
+    @include font-size(24);
+  }
+  p.sub{
+    @include font-size(18); 
+  } 
+  .hiw-container{
+
+    display:block;
+    float:left;
+     width: 80%;
+     img{
+      display:inline-block;
+     }
+  }
+  .hiw-container.second{
+      width: 20%;
+       padding-top: 10%;
+          
+  }
+    
+    .col-md-2{
+          width: 20%;
+    padding: 0;
+    margin: 0;
+    }
+}
+
+.categories{
+  .col-md-4,.col-md-3,.col-md-6{
+    margin-bottom:10px;
+  }
+ 
+
+ .col-md-3{
+    .img-box{
+            // min-height: 302px;
+    }
+ }
+
+
+ .col-md-6{
+    .img-box .inner {
+        padding-bottom: 30%;
+    }
+ }
+
+  .img-box{
+
+//     background: url('../images/home/u-homebox-yilbasi.png');
+//     // min-height: 512px;
+//     width: 100%;
+//   background-size: cover;
+//   -moz-background-size: cover;  /* Firefox 3.6 */
+//   background-position: center;  /* Internet Explorer 7/8 */
+// height: 390px;
+
+
+
+   display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+  .inner{
+
+    padding-bottom: 62%;
+ /* height/width of image */
+    display: block;
+    height: 0;
+  }
+
+      p{
+        @include font-size(22);
+        padding: 5rem 0 0 2rem;
+      }
+  }
+
+
+    .christmast{
+background-image: url('../images/home/ui-homebox-yilbasi.png'); 
+
+    }
+    .toys{
+background-image: url('../images/home/ui-homebox-bebek.png'); 
+    }
+    .lightning{
+background-image: url('../images/home/ui-homebox-lightning.png'); 
+    }
+    .books{
+background-image: url('../images/home/ui-homebox-books.png'); 
+    }
+    .outdoor{
+background-image: url('../images/home/ui-homebox-outdoor.png'); 
+    }
+    .dresses{
+background-image: url('../images/home/ui-homebox-dresses.png'); 
+    }
+    .kitchen{
+background-image: url('../images/home/ui-homebox-kitchen.png'); 
+    }
+
+    .scarfs{
+background-image: url('../images/home/ui-homebox-scarfs.png'); 
+    }
+    .bags{
+background-image: url('../images/home/ui-homebox-bags.png'); 
+    }
+
+
+}
+
+
+.btn-start-shopping
+{
+      padding: 10px 0 10px 21px;
+          line-height: 1rem;
+span{
+  color: #b0adb1;
+  @include font-size(12);
+  &:hover {
+    color: $color-brand;
+  }
+}   
+
+// span:hover,span:focus{
+//     color:red;
+// }
+
+span.icon-ui-kolify-cart-items-small{
+        margin: -9px 7px 0 0;
+}
+
+}
+
+
+.brand-showcase{
+    margin-top:10px; 
+    background-color: $secondary-bg;
+        padding: 25px 0 25px 0;
+    span{
+        color: $color-brand;
+    font-size: 2.2rem;
+    line-height: 8rem;
+    padding-left: 1rem;
+
+        a{
+
+        }
+    }
+    img{
+        border: 1px solid $color-main-bg;
+    }
+}
+
+.brand-image {
+    width: 115px;
+    height: 78px;
+    position: relative;
+    z-index: 1;
+}
+
+.brand-carousel-pager {
+    // position: absolute;
+    // width: 100%;
+
+    .previous{
+      left: 12%;
+        position: absolute;
+
+        a:before{
+            font-family: fontAwesome; content:'\f053';
+        }
+    }
+
+    .next{
+             right: 1%;
+        position: absolute;
+           a:before{
+            font-family: fontAwesome; content:'\f054';
+        }
+    }
+}
+
+// custom pager style
+.pager{
+       
+}
+.pager li > a, .pager li > span
+{
+    font-size: 3.1rem;
+    font-weight: bold;
+    border:none;
+    padding:0;
+
+       max-width: 2.2rem;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pager li > a{
+    color: $color-dark-gray-bg;
+}
+.pager li > a:hover, .pager li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    color: $color-brand;
 }

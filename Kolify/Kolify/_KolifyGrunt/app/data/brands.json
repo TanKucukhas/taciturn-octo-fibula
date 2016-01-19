@@ -3,66 +3,77 @@
   "id": "brand-fisher-price",
   "name": "Fisher Price",
   "rating": 10,
-  "imageUrl": "data/brands/brand-fisher-price.jpg"
+  "imageUrl": "data/brands/brand-fisher-price.jpg",
+  "thumbImageUrl": "data/brands/brand-fisher-price-thumb.png"
  },
  {
   "id": "brand-mavi",
   "name": "Mavi",
   "rating": 10,
-  "imageUrl": "data/brands/brand-mavi.jpg"
+  "imageUrl": "data/brands/brand-mavi.jpg",
+    "thumbImageUrl": "data/brands/brand-mavi-thumb.png"
  },
  {
   "id": "brand-english-home",
   "name": "English Home",
   "rating": 10,
-  "imageUrl": "data/brands/brand-english-home.jpg"
+  "imageUrl": "data/brands/brand-english-home.jpg",
+   "thumbImageUrl": "data/brands/brand-english-home-thumb.png"
  },
  {
   "id": "brand-louis-vuitton",
   "name": "Louis Vuitton",
   "rating": 10,
-  "imageUrl": "data/brands/brand-louis-vuitton.jpg"
+  "imageUrl": "data/brands/brand-louis-vuitton.jpg",
+   "thumbImageUrl": "data/brands/brand-louis-vuitton-thumb.png"
  },
  {
   "id": "brand-lacoste",
   "name": "Lacoste",
   "rating": 10,
-  "imageUrl": "data/brands/brand-lacoste.jpg"
+  "imageUrl": "data/brands/brand-lacoste.jpg",
+  "thumbImageUrl": "data/brands/brand-lacoste-thumb.png"
  },
  {
   "id": "brand-adidas",
   "name": "Adidas",
   "rating": 10,
-  "imageUrl": "data/brands/brand-adidas.jpg"
+  "imageUrl": "data/brands/brand-adidas.jpg",
+  "thumbImageUrl": "data/brands/brand-adidas-thumb.png"
  },
  {
   "id": "brand-chanel",
   "name": "Chanel",
   "rating": 10,
-  "imageUrl": "data/brands/brand-chanel.jpg"
+  "imageUrl": "data/brands/brand-chanel.jpg",
+  "thumbImageUrl": "data/brands/brand-chanel-thumb.png"
  },
  {
   "id": "brand-madame-coco",
   "name": "Madame Coco",
   "rating": 10,
-  "imageUrl": "data/brands/brand-madame-coco.jpg"
+  "imageUrl": "data/brands/brand-madame-coco.jpg",
+  "thumbImageUrl": "data/brands/brand-madame-coco-thumb.png"
  },
  {
   "id": "brand-voit",
   "name": "Voit",
   "rating": 10,
-  "imageUrl": "data/brands/brand-voit.jpg"
+  "imageUrl": "data/brands/brand-voit.jpg",
+  "thumbImageUrl": "data/brands/brand-voit-thumb.png"
  },
  {
   "id": "brand-philips-avent",
   "name": "Philips Avent",
   "rating": 10,
-  "imageUrl": "data/brands/brand-philips-avent.jpg"
+  "imageUrl": "data/brands/brand-philips-avent.jpg",
+  "thumbImageUrl": "data/brands/brand-philips-avent-thumb.png"
  },
  {
   "id": "brand-chicco",
   "name": "Chicco",
   "rating": 10,
-  "imageUrl": "data/brands/brand-chicco.jpg"
+  "imageUrl": "data/brands/brand-chicco.jpg",
+  "thumbImageUrl": "data/brands/brand-chicco-thumb.png"
  }
 ]

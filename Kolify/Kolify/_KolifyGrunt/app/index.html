@@ -14,6 +14,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/sprites.css">
     <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <!-- endbuild -->
@@ -161,82 +162,149 @@
             </div>
         </div>
     </div>
-
-
     <div class="main-content container-full view-container">
-      <div class="row">
-          <div class="container-full view-frame" ng-view=""></div>
-
-
-      
-      </div>
-        
+        <div class="row">
+            <div class="container-full view-frame" ng-view=""></div>
+        </div>
     </div>
-
-
     <div class="footer">
         <div class="container container-full">
             <div class="row">
-                <div class="col-md-2">Hakkımızda
-                    <ul>
-                        <li><a ng-href="#/about">Hakkımızda</a></li>
-                        <li><a ng-href="#/about">Kullanım Koşulları</a></li>
-                        <li><a ng-href="#/about">Gizlilik Bildirimi</a></li>
-                        <li><a ng-href="#/about">Fiyatlar</a></li>
-                        <li><a ng-href="#/about">Blog</a></li>
-                        <li><a ng-href="#/about">İletişim</a></li>
-                    </ul>
+                <div class="col-md-7 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-3 right-line">
+                            <div class="footer-container">
+                                <p class="title">HAKKIMIZDA</p>
+                                <ul>
+                                    <li><a ng-href="#/about">Hakkımızda</a></li>
+                                    <li><a ng-href="#/about">Kullanım Koşulları</a></li>
+                                    <li><a ng-href="#/about">Gizlilik Bildirimi</a></li>
+                                    <li><a ng-href="#/about">Fiyatlar</a></li>
+                                    <li><a ng-href="#/about">Blog</a></li>
+                                    <li><a ng-href="#/about">İletişim</a></li>
+                                </ul>
+                                <!--  <a href="#/" class="brand">ÜRÜN GÖNDERMEK İSTİYORUM</a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-3 right-line">
+                            <div class="footer-container">
+                                <p class="title">MÜŞTERİ HİZMETLERİ</p>
+                                <ul>
+                                    <li><a ng-href="#/about">Sıkça Sorulan Sorular</a></li>
+                                    <li><a ng-href="#/about">Kabul Kriterleri</a></li>
+                                    <li><a ng-href="#/about">Yardım Merkezi</a></li>
+                                    <li><a ng-href="#/about">Destek Formu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 right-line">
+                            <div class="footer-container">
+                                <p class="title">KATEGORİLER</p>
+                                <ul>
+                                    <li><a ng-href="#/about">Çocuk</a></li>
+                                    <li><a ng-href="#/about">Kadın</a></li>
+                                    <li><a ng-href="#/about">Ofis</a></li>
+                                    <li><a ng-href="#/about">Aksesuar</a></li>
+                                    <li><a ng-href="#/about">Erkek</a></li>
+                                    <li><a ng-href="#/about">Ev Yaşam</a></li>
+                                    <li><a ng-href="#/about">Spor</a></li>
+                                    <li><a ng-href="#/about">Hobi</a></li>
+                                    <li><a ng-href="#/about">Yılbaşı</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 right-line">
+                            <div class="footer-container social">
+                                <p class="title">TAKİP ET</p>
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="#/">
+                                            <div class="icon-image icon-icon-facebook"></div><span>Facebook</span></li>
+                                    </a>
+                                    <li>
+                                        <a href="#/">
+                                            <div class="icon-image icon-icon-twitter"></div><span>Twitter</span></li>
+                                    </a>
+                                    <li>
+                                        <a href="#/">
+                                            <div class="icon-image icon-icon-pinterest"></div><span>Pinterest</span></li>
+                                    </a>
+                                    <li>
+                                        <a href="#/">
+                                            <div class="icon-image icon-icon-instagram"></div><span>Instagram</span></li>
+                                    </a>
+                                    <li>
+                                        <a href="#/">
+                                            <div class="icon-image icon-icon-google-plus"></div><span>Google Plus</span></li>
+                                    </a>
+                                    <li>
+                                        <a href="#/">
+                                            <div class="icon-image icon-icon-linkedin"></div><span>LinkedIn</span></li>
+                                    </a>
+                                    <li>
+                                        <a href="#/">
+                                            <div class="icon-image icon-icon-youtube"></div><span>YouTube</span></li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">Müşteri Hizmetleri
-                    <ul>
-                        <li><a ng-href="#/about">Sıkça Sorulan Sorular</a></li>
-                        <li><a ng-href="#/about">Kabul Kriterleri</a></li>
-                        <li><a ng-href="#/about">Yardım Merkezi</a></li>
-                        <li><a ng-href="#/about">Destek Formu</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">Kategoriler
-                    <ul>
-                        <li><a ng-href="#/about">Çocuk</a></li>
-                        <li><a ng-href="#/about">Kadın</a></li>
-                        <li><a ng-href="#/about">Ofis</a></li>
-                        <li><a ng-href="#/about">Aksesuar</a></li>
-                        <li><a ng-href="#/about">Erkek</a></li>
-                        <li><a ng-href="#/about">Ev Yaşam</a></li>
-                        <li><a ng-href="#/about">Spor</a></li>
-                        <li><a ng-href="#/about">Hobi</a></li>
-                        <li><a ng-href="#/about">Yılbaşı</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">Takip Et
-                    <ul class="social-links">
-                        <li>
-                            <div class="icon-image icon-icon-facebook"></div>Facebook</li>
-                        <li>
-                            <div class="icon-image icon-icon-twitter"></div>Twitter</li>
-                        <li>
-                            <div class="icon-image icon-icon-pinterest"></div>Pinterest</li>
-                        <li>
-                            <div class="icon-image icon-icon-instagram"></div>Instagram</li>
-                        <li>
-                            <div class="icon-image icon-icon-google-plus"></div>Google Plus</li>
-                        <li>
-                            <div class="icon-image icon-icon-linkedin"></div>LinkedIn</li>
-                        <li>
-                            <div class="icon-image icon-icon-youtube"></div>YouTube</li>
-                    </ul>
-                </div>
-                <div class="col-md-2">E-Bülten
-                    <p>Kolify yeniliklerini takip edin.</p>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="e-posta adresinizi giriniz.">
-                        <span class="input-group-btn">
+                <div class="col-md-5 col-sm-12 footer-double">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="footer-container">
+                                <p class="title">E-BÜLTEN</p>
+                                <p>Kolify yeniliklerini takip edin.</p>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="e-posta adresinizi giriniz.">
+                                    <span class="input-group-btn">
                 <button class="btn btn-default" type="button">OK</button>
               </span>
+                                </div>
+                                <!-- /input-group -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 app-col">
+                            <div class="footer-container applications">
+                                <p class="title">UYGULAMALAR</p>
+                                <p>Alışveriş keyfini her yerden yaşayın.</p>
+                                <a href="https://play.google.com" target="_blank" class="btn btn-default">
+                                    <div><i class="fa fa-android fa-2x"></i><span><strong>Google Play</strong>’den ücretsiz indir.</span> </div>
+                                </a>
+                                <a href="https://itunes.apple.com/us/genre/ios/" target="_blank" class="btn btn-default">
+                                    <div><i class="fa fa-apple fa-2x"></i><span> <strong>App Store</strong>’dan ücretsiz indir.</span></div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <!-- /input-group -->
                 </div>
-                <div class="col-md-2">Uygulamalar</div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row footer-container secure">
+                                <div class="col-md-4">
+                                    <span class="brand">
+                                İNTERNETTE <br/>GÜVENLİ ALIŞVERİŞ
+                              </span>
+                                </div>
+                                <div class="col-md-8">
+                                    <img class="img-responsive" src="images/global/footer-security.png" alt="secure shopping">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end-matter">
+        <div class="container container-full">
+            <div class="row">
+                <div class="col-md-7 col">
+                    <p><strong>Kolify ikinci elde yenilik!</strong> &copy; Copyright 2016 Floki Teknoloji A.Ş. Her Hakkı Saklıdır.</p>
+                </div>
+                <div class="col-md-5 col cardlist col-md-offset-2-left"><img class="img-responsive" src="images/global/card-list.png" alt="Kredi karti tipleri - world, maximum, bonus, axess, paraf, asyacard, advantage, card finans"></div>
             </div>
         </div>
     </div>

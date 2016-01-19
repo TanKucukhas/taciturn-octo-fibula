@@ -77,6 +77,10 @@ productControllers.controller('LastVisitedCtrl', ['$scope', 'Product', 'userFact
       $scope.userData = userFactory.getUserData();
 
 
+  //  $scope.setPage = function (pageNo) {
+  //   $scope.currentPage = pageNo;
+  // };
+
 }]);
 
 

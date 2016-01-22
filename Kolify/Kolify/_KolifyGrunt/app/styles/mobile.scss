@@ -1,84 +1,160 @@
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
+/* Custom, iPhone Retina */
 
-}
+@media only screen and (max-width: 320px) {}
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
 
-}
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
+
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+
+@media only screen and (max-width: 768px) {
+
+.header .main-nav .navbar-nav {
+
+    /* display: flex; */
+ 
+    display:block;
+    li{
+    	width: 100%;
+    	border: none;
+    }
+}
+.navbar-collapse{
+
+	border:none;
+}
 
 
 }
+
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
 
-.how-it-works .col-md-2 {
-    width: 100%;
-
-}
-
-.how-it-works .hiw-container {
-    width: 100%;
-	
-}
-
-
-
-.how-it-works .hiw-container.second {
-    width: 100%;
-    padding-top: 0;
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-
-.brand-carousel-pager .previous {
- 	left: 5%;
-      top: 8%;
-
-}
-
-.brand-carousel-pager .next {
-     right: 5%;
+@media only screen and (max-width: 992px) {
+    .how-it-works .col-md-2 {
+        width: 100%;
+    }
+    .how-it-works .hiw-container {
+        width: 100%;
+    }
+    .how-it-works .hiw-container.second {
+        width: 100%;
+        padding-top: 0;
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .brand-carousel-pager .previous {
+        left: 5%;
         top: 8%;
-}
-.brand-showcase  {
-	position: relative;
-	span{
-   line-height: 4rem;
-       padding-left: 0rem;
-	}
-
-    .title{
-    	    text-align: center;
-    	        margin-bottom: 20px;
-    	      
+    }
+    .brand-carousel-pager .next {
+        right: 5%;
+        top: 8%;
+    }
+    .brand-showcase {
+        position: relative;
+        span {
+            line-height: 4rem;
+            padding-left: 0rem;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    .end-matter .cardlist {
+        text-align: left;
+    }
+    .footer-double {
+        border: none;
+    }
+    .footer-container.secure {
+        margin-bottom: 4rem;
+    }
+    .donate {
+        margin-top: 2rem;
+        .earn-inner {
+            .arrow {
+                position: absolute;
+                top: 70%;
+                left: -24%;
+                -ms-transform: rotate(-29deg);
+                -webkit-transform: rotate(-29deg);
+                transform: rotate(-29deg);
+            }
+            .earn-img {
+                margin: 11% 0 1% 0%;
+                float: none;
+            }
+            .exp {
+                float: none;
+                padding: 15% 0% 0 0;
+            }
+        }
+        .donate-inner {
+            .arrow {
+                position: absolute;
+                top: 70%;
+                left: -24%;
+                -ms-transform: rotate(31deg);
+                -webkit-transform: rotate(31deg);
+                transform: rotate(31deg);
+            }
+            .donate-img {
+                margin: 11% 0 1% 0%;
+                float: none;
+            }
+            .exp {
+                float: none;
+                padding: 15% 0% 0 0;
+            }
+            &:after {
+                border-top: none;
+            }
+            .icon-ui-donate {
+                margin: 12% 0 0 0;
+            }
+        }
+    }
+    .criteria .inner {
+        margin: 5rem 0% 0 48%;
+        display: block;
     }
 
+.navbar-header{
+
+	padding: 1rem 0 1rem 0;
 }
 
 
-.end-matter .cardlist {
-    text-align: left;
-}
-
-
-.footer-double {
-    border:none;
-}
-.footer-container.secure{
-	margin-bottom:4rem;
+.member-box{
+	    text-align: center;
 }
 
 
 }
+
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Home-custom-fix */
+
+@media only screen and (min-width: 992px) and (max-width: 1530px) {
+    .criteria .inner {
+        margin: 5rem 0% 0 48%;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1432px) {
+    .col-md-12.criteria-row {
+        width: 100%;
+    }
 }

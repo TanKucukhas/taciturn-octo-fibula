@@ -153,6 +153,9 @@ a:focus {
 
 .top-search {
     // margin-top:10px;
+
+    margin-top: 2rem;
+
     .dropdown-toggle {
         background-color: #dcdcdc;
     }
@@ -256,18 +259,22 @@ a:focus {
 }
 
 .member-box {
+        text-align: right;
     button {
         font-weight: bold;
         border-radius: 5px;
-        float: right;
+        display: inline;
         margin-right: 20px;
         margin-top: 19px;
+    }
+    .icon-ui-kolify-cart-items{
+        position:relative;
     }
     span.cart-item-count {
         color: $color-brand;
         position: absolute;
-        right: 42px;
-        top: -6px;
+      right: 28px;
+    top: -14px;
     }
     a {
         // background: url("../images/global/ui-kolify-cart-itrems.png") no-repeat bottom;
@@ -295,7 +302,7 @@ button.register {
 button.facebook-connect {
     background-color: #637ab0;
     color: #ffffff;
-    display: table;
+    // display: table;
     padding: 6px 3px 6px 3px;
     i {
         @include font-size(14);
@@ -732,13 +739,13 @@ h1 {
     background-position: 5% 38%;
     background-color: #fdccb1;
     .inner {
-        margin: 65px 0% 0 44%;
+           margin: 10% 0% 0 48%;
     }
     p {
         padding: 0 0 0 0;
         // margin:0 0 0 0;
         @include font-size(16);
-        line-height: 10px;
+        line-height: 1.6rem;
     }
     a {
         background-color: $color-dark-gray-bg;

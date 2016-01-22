@@ -22,8 +22,8 @@
 
 <body ng-app="kolifyApp">
     <!--[if lte IE 8]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
     <!-- Add your site or application content here -->
     <div class="header">
         <div class="navbar navbar-default" role="navigation">
@@ -47,9 +47,9 @@
                     <ul class="nav pull-right">
                         <li class="dropdown">
                             <a href="properties.php?type=showall" class="dropdown-toggle" data-toggle="dropdown">
-                  Hakkımızda
-                  <b class="caret"></b>
-                </a>
+                                    Hakkımızda
+                                    <b class="caret"></b>
+                                </a>
                             <ul class="dropdown-menu">
                                 <li><a href="propertiesSearch.php">Logout</a></li>
                             </ul>
@@ -58,9 +58,9 @@
                     <ul class="nav pull-right">
                         <li class="dropdown">
                             <a href="properties.php?type=showall" class="dropdown-toggle" data-toggle="dropdown">
-                  Müşteri Hizmetleri
-                  <b class="caret"></b>
-                </a>
+                                    Müşteri Hizmetleri
+                                    <b class="caret"></b>
+                                </a>
                             <ul class="dropdown-menu">
                                 <li><a href="propertiesSearch.php">Logout</a></li>
                             </ul>
@@ -68,7 +68,7 @@
                     </ul>
                 </div>
                 <div class="row top-middle">
-                    <div class="col-md-2 vcenter">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
                                 <span class="sr-only">Toggle navigation</span>
@@ -77,11 +77,11 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="#/"><span class="icon-image icon-logo-kolify logo"></span>
-<!--               <img class="logo-theme" src="images/global/logo-theme.png" alt="Yilbasi Agaci"> -->
-              </a>
+                                <!--               <img class="logo-theme" src="images/global/logo-theme.png" alt="Yilbasi Agaci"> -->
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-4 vcenter">
+                    <div class="col-lg-4 col-md-3 col-sm-6">
                         <div class="input-group top-search">
                             <div class="input-group-btn">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hepsi <span class="caret"></span></button>
@@ -100,45 +100,32 @@
                             <!-- /btn-group -->
                             <input type="text" class="form-control" aria-label="...">
                             <span class="input-group-btn">
-                <button class="btn btn-default color-brand-bg" type="button"><i class="glyphicon glyphicon-search"></i></button>
-              </span>
+                                <button class="btn btn-default color-brand-bg" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                            </span>
                         </div>
                         <!-- /input-group -->
                     </div>
-                    <div class="col-md-5 vcenter">
-                        <div class="member-box">
-                            <a href="#/cart" class="pull-right cart-items icon-ui-kolify-cart-items icon-image">
-                                <span class="cart-item-count">0</span>
-                            </a>
-                            <button class="btn btn-default facebook-connect" type="button"><i class="fa fa-facebook"></i> <span>Bağlan</span></button>
-                            <button type="button" class="btn btn-default">Giriş</button>
-                            <button type="button" class="btn btn-default register">Üye Ol</button>
-                        </div>
-                        <!--             <div class="pull-right" ng-controller="userBoxCtrl">
-              
-              <div class="cart-items">
-                
-                <a href="" class="pull-right">Urun : {{user.cartItems}}</a>
-                <a href="" class="pull-right">Urunlerim: {{user.activeSales}}</a>
-                <a href="" class="pull-right">Kasam: {{user.kolifyMoney}}</a>
-              </div>
-              
-              
-              <div class="dropdown pull-right">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Merhaba <br> {{user.firstName}}  {{user.lastName}}
-                <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </div>
-            </div>
-            -->
+                    <div class="col-lg-4 col-md-5 col-sm-12">
+                                <div class="member-box">
+                                    <button type="button" class="btn btn-default register">Üye Ol</button>
+                      
+                       
+                                <button type="button" class="btn btn-default">Giriş</button>
+                      
+                           
+                                <button class="btn btn-default facebook-connect" type="button"><i class="fa fa-facebook"></i> <span>Bağlan</span></button>
+                     
+                                <a href="#/cart" class="cart-items icon-ui-kolify-cart-items icon-image">
+                                    <span class="cart-item-count">0</span>
+                                </a>
+                        
+                                    
+                                </div>
+                      
+                           
+                     
+                        
+                      
                     </div>
                 </div>
                 <div class="row main-nav">
@@ -259,8 +246,8 @@
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="e-posta adresinizi giriniz.">
                                     <span class="input-group-btn">
-                <button class="btn btn-default" type="button">OK</button>
-              </span>
+                                                                    <button class="btn btn-default" type="button">OK</button>
+                                                                </span>
                                 </div>
                                 <!-- /input-group -->
                             </div>
@@ -285,8 +272,8 @@
                             <div class="row footer-container secure">
                                 <div class="col-md-4">
                                     <span class="brand">
-                                İNTERNETTE <br/>GÜVENLİ ALIŞVERİŞ
-                              </span>
+                                                                    İNTERNETTE <br/>GÜVENLİ ALIŞVERİŞ
+                                                                </span>
                                 </div>
                                 <div class="col-md-8">
                                     <img class="img-responsive" src="images/global/footer-security.png" alt="secure shopping">

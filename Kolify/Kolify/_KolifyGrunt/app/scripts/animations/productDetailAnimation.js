@@ -9,7 +9,7 @@ productDetailAnimations.animation('.product', function() {
       return;
     }
     element.css({
-      position: 'absolute',
+      position: 'relative',
       top: 500,
       left: 0,
       display: 'block'

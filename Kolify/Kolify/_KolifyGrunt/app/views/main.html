@@ -5,13 +5,13 @@
         <div ng-controller="CarouselDemoCtrl">
             <div>
                 <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
-                <uib-slide ng-repeat="slide in slides" active="slide.active">
-                <img ng-src="{{slide.image}}" style="margin:auto;">
-                <div class="carousel-caption">
-                    <h4>Slide {{$index}}</h4>
-                    <p>{{slide.text}}</p>
-                </div>
-                </uib-slide>
+                    <uib-slide ng-repeat="slide in slides" active="slide.active">
+                        <img ng-src="{{slide.image}}" style="margin:auto;">
+                        <div class="carousel-caption">
+                            <!--     <h4>Slide {{$index}}</h4> -->
+                            <p>{{slide.text}}</p>
+                        </div>
+                    </uib-slide>
                 </uib-carousel>
             </div>
             <!--       <div class="row">
@@ -31,8 +31,28 @@
             </div> -->
         </div>
     </div>
-    <div class="col-md-12 col-lg-3 col-sm-12">
+    <div class="col-lg-3">
+        <div class="row carousel-right">
+            <div class="col-sm-6 col-xs-12 col-lg-12 col">
+            <a href="#/">
+                
+                    <img class="img-responsive" src="images/home/flow-chart-transparent.png" alt="flow-chart" />
+            </a>
+            
+            </div>
+            <div class="col-sm-6 col-xs-12 col-lg-12 col">
+             <a href="#/">
+                <img class="img-responsive" src="images/home/acceptance-criteria.png" alt="acceptance-criteri">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--     <div class="col-md-12 col-lg-3 col-sm-12">
+
         <div class="col-md-12 col-sm-12">
+
+
             <div class="row donate secondary-bg ">
                 <div class="col-md-5 col-sm-4 col-xs-4  pickup">
                     <div class="icon-image icon-ui-pickup"></div>
@@ -58,10 +78,9 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div class="col-md-12 col-lg-3 col-sm-12 criteria-row">
-    <div class="col-md-12 col-sm-12 criteria">
+        <div class="col-md-12 col-sm-12 criteria">
             <div class="row">
                 <div class="col-md-12">
                     <div class="inner">
@@ -72,8 +91,7 @@
                 </div>
             </div>
         </div>
-  </div>
-
+    </div> -->
 </div>
 <div class="row row-featured">
     <div class="col-md-12">
@@ -107,96 +125,116 @@
             <hr />
             -->
             <uib-tabset justified="false" class="product-showcase">
-            <uib-tab heading="Son Gezinlenler">
-            <uib-tab-heading><i class="fa fa-caret-down"></i> Son Gezinlenler</uib-tab-heading>
-            <div class="container-full" ng-controller="LastVisitedCtrl">
-                <div class="row row-container">
-                    <!--        <p>{{userData}}</p> -->
-                    <!--       <h1>{{products.length}} ITEM</h1> -->
-                    <div ng-repeat="product in filteredProducts" class="col-md-2">
-                        <div class="product-container">
-                            <a on-click="" href="#/dukkan/{{product.id}}" class="thumb"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
-                            <p class="price">{{product.price}} <span>&#x20BA;</span></p>
-                            <p class="brand">{{product.brand}}</p>
-                            <p class="product-title">{{product.name}}</p>
-                            <div class="btn-add-to-kolify">
-                                <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
-                                    <span class="icon-image icon-ui-kolify-add"></span><span>Koliye Ekle</span></a>
+                <uib-tab heading="Son Gezinlenler">
+                    <uib-tab-heading><i class="fa fa-caret-down"></i> Son Gezinlenler</uib-tab-heading>
+                    <div class="container-full" ng-controller="LastVisitedCtrl">
+                        <div class="row row-container">
+                            <!--        <p>{{userData}}</p> -->
+                            <!--       <h1>{{products.length}} ITEM</h1> -->
+                            <!--           <div ng-repeat="product in filteredProducts" class="col-xs-6 col-sm-4 col-md-2">
+                                <div class="product-container">
+                                    <a href="#/dukkan/{{product.id}}" class="thumb clearfix"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
+
+                                    <div class="bottom-content clearfix">
+                                               <p class="price">{{product.price}} <span>&#x20BA;</span></p>
+                                    <p class="brand">{{product.brand}}</p>
+                                    <p class="product-title">{{product.name}}</p>
+                                    <div class="btn-add-to-kolify">
+                                        <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
+                                            <span class="icon-image icon-ui-kolify-add"></span><span>Koliye Ekle</span></a>
+                                    </div>
+
+
+                                    </div>
+                             
+                                </div>
+                            </div> -->
+                            <div ng-repeat="product in filteredProducts" class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="product-container">
+                                    <a href="#/dukkan/{{product.id}}" class="thumb clearfix"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
+                                    <div class="bottom-content clearfix">
+                                        <p class="price">{{product.price}} <span>&#x20BA;</span></p>
+                                        <p class="brand">{{product.brand}}</p>
+                                        <p class="product-title">{{product.name}}</p>
+                                        <div class="btn-add-to-kolify">
+                                            <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
+                                                <span class="icon-image icon-ui-kolify-add"></span><span>Koliye Ekle</span></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-12 pagination-centered">
-                            <uib-pagination direction-links="false" total-items="products.length" ng-model='currentPage' items-per-page='pageSize' boundary-links="false" force-ellipses="true">
-                            </uib-pagination>
-                        </div>
-                        <!--          <div class="custom-pagination-group">
+                            <div class="col-md-12 pagination-centered">
+                                <uib-pagination direction-links="false" total-items="products.length" ng-model='currentPage' items-per-page='pageSize' boundary-links="false" force-ellipses="true">
+                                </uib-pagination>
+                            </div>
+                            <!--          <div class="custom-pagination-group">
                             
                             <button class="btn btn-1" ng-click="setPage(2)">Set current page to: 3</button>
                         </div> -->
+                        </div>
                     </div>
-                </div>
                 </uib-tab>
                 <uib-tab heading="Kargo Bedavalar">Short Labeled Justified content</uib-tab>
                 <uib-tab heading="Yeni Eklenenler">Long Labeled Justified content</uib-tab>
-                </uib-tabset>
+            </uib-tabset>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 how-it-works">
+        <div class="col-md-2 col-sm-12">
+            <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-request.png" alt="Koli İsteyin">
+                <p><strong>Koli İsteyin</strong></p>
+                <hr />
+                <p class="sub">
+                    Sitemizden Koli İsteyin
+                </p>
+            </div>
+            <div class="hiw-container second"><img class="img-responsive" src="images/home/how-it-works-horizontal.png" alt="arrow"></div>
+        </div>
+        <div class="col-md-2">
+            <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-pick-up.png" alt="Gelelim">
+                <p><strong>Gelelim</strong></p>
+                <hr />
+                <p class="sub">
+                    Eşyalarınızı Kapınızdan Alalım
+                </p>
+            </div>
+            <div class="hiw-container second"><img class="img-responsive" src="images/home/how-it-works-horizontal.png" alt="arrow"></div>
+        </div>
+        <div class="col-md-2">
+            <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-request.png" alt="Koli İsteyin">
+                <p><strong>Alalim</strong></p>
+                <hr />
+                <p class="sub">
+                    Kolilediğiniz Eşyaları Siteye Ekleyelim
+                </p>
+            </div>
+            <div class="hiw-container second"><img class="img-responsive" src="images/home/how-it-works-horizontal.png" alt="arrow"></div>
+        </div>
+        <div class="col-md-2">
+            <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-set-price.png" alt="Fiyatlandir">
+                <p><strong>Fiyatlandır</strong></p>
+                <hr />
+                <p class="sub">
+                    Eşyalarınızı Siz Fiyatlandırın
+                </p>
+            </div>
+            <div class="hiw-container second"><img class="img-responsive" src="images/home/how-it-works-horizontal.png" alt="arrow"></div>
+        </div>
+        <div class="col-md-2">
+            <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-earn-money.png" alt="Kazan">
+                <p><strong>Kazan</strong></p>
+                <hr />
+                <p class="sub">
+                    Eşyalarınızın Satışından Kazanmaya Başlayın
+                </p>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 how-it-works">
-            <div class="col-md-2 col-sm-12">
-                <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-request.png" alt="Koli İsteyin">
-                    <p><strong>Koli İsteyin</strong></p>
-                    <hr />
-                    <p class="sub">
-                        Sitemizden Koli İsteyin
-                    </p>
-                </div>
-                <div class="hiw-container second"><img class="img-responsive" src="images/home/how-it-works-horizontal.png" alt="arrow"></div>
-            </div>
-            <div class="col-md-2">
-                <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-pick-up.png" alt="Gelelim">
-                    <p><strong>Gelelim</strong></p>
-                    <hr />
-                    <p class="sub">
-                        Eşyalarınızı Kapınızdan Alalım
-                    </p>
-                </div>
-                <div class="hiw-container second"><img class="img-responsive" src="images/home/how-it-works-horizontal.png" alt="arrow"></div>
-            </div>
-            <div class="col-md-2">
-                <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-request.png" alt="Koli İsteyin">
-                    <p><strong>Alalim</strong></p>
-                    <hr />
-                    <p class="sub">
-                        Kolilediğiniz Eşyaları Siteye Ekleyelim
-                    </p>
-                </div>
-                <div class="hiw-container second"><img class="img-responsive" src="images/home/how-it-works-horizontal.png" alt="arrow"></div>
-            </div>
-            <div class="col-md-2">
-                <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-set-price.png" alt="Fiyatlandir">
-                    <p><strong>Fiyatlandır</strong></p>
-                    <hr />
-                    <p class="sub">
-                        Eşyalarınızı Siz Fiyatlandırın
-                    </p>
-                </div>
-                <div class="hiw-container second"><img class="img-responsive" src="images/home/how-it-works-horizontal.png" alt="arrow"></div>
-            </div>
-            <div class="col-md-2">
-                <div class="hiw-container"><img class="img-responsive" src="images/home/how-it-works-earn-money.png" alt="Kazan">
-                    <p><strong>Kazan</strong></p>
-                    <hr />
-                    <p class="sub">
-                        Eşyalarınızın Satışından Kazanmaya Başlayın
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row categories">
-        <!--     <div class="col-md-4 col-sm-12">
+</div>
+<div class="row categories">
+    <!--     <div class="col-md-4 col-sm-12">
             <div class="christmast img-box">
                 <span class="inner">
                     <p>YILBAŞI ÖZEL</p>
@@ -207,126 +245,130 @@
                     </a></span>
                 </div>
                 -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="christmast img-box">
-                        <span class="inner">
-                            <p>YILBAŞI ÖZEL</p>
+    <div class="col-md-4 col-sm-12">
+        <div class="christmast img-box">
+            <span class="inner">
+                <div class="overlay">
+                    
+                     <p>YILBAŞI ÖZEL</p>
                             <a href="#/">
                                 <div class="btn-start-shopping">
                                     <span class="icon-image icon-ui-kolify-cart-items-small"></span><span>Alışverişe Başla &gt;</span>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
+        </div>
+        </a>  
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="toys img-box">
-                        <span class="inner">
+                         
+        </span>
+    </div>
+</div>
+<div class="col-md-4 col-sm-12">
+    <div class="toys img-box">
+        <span class="inner">
                             <p>OYUNCAK</p>
                             <a href="#/">
                                 <div class="btn-start-shopping">
                                     <span class="icon-image icon-ui-kolify-cart-items-small"></span><span>Alışverişe Başla &gt;</span>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="kitchen img-box">
-                        <span class="inner">
+    </div>
+    </a>
+    </span>
+</div>
+</div>
+<div class="col-md-4 col-sm-12">
+    <div class="kitchen img-box">
+        <span class="inner">
                             <p>MUTFAK</p>
                             <a href="#/">
                                 <div class="btn-start-shopping">
                                     <span class="icon-image icon-ui-kolify-cart-items-small"></span><span>Alışverişe Başla &gt;</span>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="row categories">
-                <div class="col-md-3">
-                    <div class="lightning img-box">
-                        <span class="inner">
+    </div>
+    </a>
+    </span>
+</div>
+</div>
+</div>
+<div class="row categories">
+    <div class="col-md-3">
+        <div class="lightning img-box">
+            <span class="inner">
                             <p>AYDINLATMA</p>
                             <a href="#/">
                                 <div class="btn-start-shopping">
                                     <span class="icon-image icon-ui-kolify-cart-items-small"></span><span>Alışverişe Başla &gt;</span>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="books img-box">
-                        <span class="inner">
+        </div>
+        </a>
+        </span>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="books img-box">
+        <span class="inner">
                             <p>KİTAPLAR</p>
                             <a href="#/">
                                 <div class="btn-start-shopping">
                                     <span class="icon-image icon-ui-kolify-cart-items-small"></span><span>Alışverişe Başla &gt;</span>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="outdoor img-box">
-                        <span class="inner">
+    </div>
+    </a>
+    </span>
+</div>
+</div>
+<div class="col-md-3">
+    <div class="outdoor img-box">
+        <span class="inner">
                             <p>KAMP MALZEMELERİ</p>
                             <a href="#/">
                                 <div class="btn-start-shopping">
                                     <span class="icon-image icon-ui-kolify-cart-items-small"></span><span>Alışverişe Başla &gt;</span>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="dresses img-box">
-                        <span class="inner">
+    </div>
+    </a>
+    </span>
+</div>
+</div>
+<div class="col-md-3">
+    <div class="dresses img-box">
+        <span class="inner">
                             <p>ELBİSELER</p>
                             <a href="#/">
                                 <div class="btn-start-shopping">
                                     <span class="icon-image icon-ui-kolify-cart-items-small"></span><span>Alışverişe Başla &gt;</span>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="row categories">
-                <div class="col-md-6">
-                    <div class="scarfs img-box">
-                        <span class="inner">
+    </div>
+    </a>
+    </span>
+</div>
+</div>
+</div>
+<div class="row categories">
+    <div class="col-md-6">
+        <div class="scarfs img-box">
+            <span class="inner">
                             <p>EŞARPLAR</p>
                             <a href="#/">
                                 <div class="btn-start-shopping">
                                     <span class="icon-image icon-ui-kolify-cart-items-small"></span><span>Alışverişe Başla &gt;</span>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="bags img-box">
-                        <span class="inner">
+        </div>
+        </a>
+        </span>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="bags img-box">
+        <span class="inner">
                             <p>ÇANTALAR</p>
                             <a href="#/">
                                 <div class="btn-start-shopping">
                                     <span class="icon-image icon-ui-kolify-cart-items-small"></span><span>Alışverişe Başla &gt;</span>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="row brand-showcase" ng-controller="brandCarouselCtrl">
-                <div class="col-md-1 title"><span>MARKALAR</span></div>
-                <div class="col-md-1 hidden-sm"> &nbsp;</div>
-                <div ng-repeat="brand in filteredBrands" class="col-md-1 col-sm-2 col-xs-4">
-                    <a href="#/markalar/{{brand.id}}"><img class="brand-image img-responsive" ng-src="{{brand.thumbImageUrl}}"></a>
-                </div>
-                <uib-pager class="brand-carousel-pager icon-foo" next-text="" previous-text="" total-items="brands.length" ng-model="currentPage"></uib-pager>
-            </div>
-        </div>
     </div>
+    </a>
+    </span>
+</div>
+</div>
+</div>
+<div class="row brand-showcase" ng-controller="brandCarouselCtrl">
+    <div class="col-md-1 title"><span>MARKALAR</span></div>
+    <div class="col-md-1 hidden-sm"> &nbsp;</div>
+    <div ng-repeat="brand in filteredBrands" class="col-md-1 col-sm-2 col-xs-4">
+        <a href="#/markalar/{{brand.id}}"><img class="brand-image img-responsive" ng-src="{{brand.thumbImageUrl}}"></a>
+    </div>
+    <uib-pager class="brand-carousel-pager icon-foo" next-text="" previous-text="" total-items="brands.length" ng-model="currentPage"></uib-pager>
+</div>
+</div>
+</div>

@@ -1,34 +1,7 @@
-/* Custom, iPhone Retina */
-
-@media only screen and (max-width: 320px) {}
 
 
-/* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 480px) {}
 
 
-/* Small Devices, Tablets */
-
-@media only screen and (max-width: 768px) {
-
-.header .main-nav .navbar-nav {
-
-    /* display: flex; */
- 
-    display:block;
-    li{
-    	width: 100%;
-    	border: none;
-    }
-}
-.navbar-collapse{
-
-	border:none;
-}
-
-
-}
 
 
 /* Medium Devices, Desktops */
@@ -135,8 +108,104 @@
 	    text-align: center;
 }
 
+.top-nav{
+	font-size:1rem;
+
+	.darkgraybg{
+		  
+		    li a{
+		    	    display: block;
+		    	    text-align: center;
+		    	        width: 100%;
+		    	            padding: 0.3rem;
+		    }
+	}
+}
+
+
+.product-showcase{
+
+	.nav-tabs a{
+
+		font-size:2rem;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 }
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+
+.header .main-nav .navbar-nav {
+
+    /* display: flex; */
+ 
+    display:block;
+    li{
+    	width: 100%;
+    	border: none;
+    }
+}
+.navbar-collapse{
+
+	border:none;
+}
+
+
+.top-nav{
+
+ul{
+	display:none;
+}
+.darkgraybg{
+	display:block;
+	width:100%;
+	text-align:center;
+}
+
+}
+
+
+
+.product-showcase{
+
+	.nav-tabs a{
+
+		font-size:1rem;
+	}
+}
+
+
+
+
+
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
+
+
+
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+
+
 
 
 /* Large Devices, Wide Screens */
@@ -147,14 +216,34 @@
 /* Home-custom-fix */
 
 @media only screen and (min-width: 992px) and (max-width: 1530px) {
-    .criteria .inner {
-        margin: 5rem 0% 0 48%;
-        display: block;
-    }
+    // .criteria .inner {
+    //     margin: 5rem 0% 0 48%;
+    //     display: block;
+    // }
+
+
+
+
 }
+
+
+@media (max-width: 1200px) {
+
+
+    .carousel-right{
+
+    .col{
+      
+    margin: 2rem 0 1rem 0;
+}
+}
+
+}
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1432px) {
     .col-md-12.criteria-row {
         width: 100%;
     }
 }
+

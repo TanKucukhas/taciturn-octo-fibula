@@ -98,6 +98,8 @@ productControllers.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'P
     console.log($scope.mainImageUrl);
 
   };
+
+  
 }]);
 
 

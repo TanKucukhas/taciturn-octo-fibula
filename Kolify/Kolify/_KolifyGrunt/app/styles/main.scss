@@ -14,6 +14,8 @@ $secondary-bg: #ffffff;
 $alternative-gray: #ababab;
 // font colors
 $color-font-light: #b6b6b6;
+$base-font: 'Ubuntu',
+sans-serif;
 @mixin font-size($sizeValue: 1.6, $line: $sizeValue * 1.5) {
     font-size: ($sizeValue * 1) + px;
     line-height: ($line * 1) + px;
@@ -102,8 +104,8 @@ h2,
 h3,
 span,
 button {
-    font-family: 'Ubuntu', sans-serif;
-//    color: $color-main-font;
+    font-family: $base-font;
+    //    color: $color-main-font;
 }
 
 a:hover,
@@ -150,6 +152,10 @@ a:focus {
     background-color: $secondary-bg;
 }
 
+.col{
+float:left;
+width: 25%;
+}
 
 /* Header */
 
@@ -159,99 +165,86 @@ a:focus {
     }
 }
 
-.navbar-header{
-display: inline;
+.navbar-header {
+    display: inline;
+    float: left;
 }
 
-
 .top-search {
-  		width: 37.6%;
-   	padding: 0.6rem 0 1rem 5rem;
-//    margin-top: 2rem;
+    width: 37.6%;
+    float: left;
+    padding: 6px 0 10px 50px;
+    //    margin-top: 2rem;
     .dropdown-toggle {
         background-color: #dcdcdc;
     }
-    
-    .btn{
-	padding: 1rem 2.2rem;
-    
+    .btn {
+        padding: 10px 22px;
     }
-    
-    .btn.color-brand-bg{
-        font-size:2.1rem;
-        	padding: 0.5rem 1.1rem;
+    .btn.color-brand-bg {
+        font-size: 21px;
+        padding: 5px 11px;
     }
-    
-    .form-control{
-	padding: 2rem 1.6rem;
+    .form-control {
+        padding: 20px 16px;
     }
-    .dropdown-menu{
-       	min-width: 70px;
-        width: 100%;    
-        border:none;
-        margin:0;
-        border-radius:0;
-        @include font-size(12);
-        li a{
-        text-align: left;
-       		padding: 5px 27px 0px 11px;
+    .dropdown-menu {
+        min-width: 70px;
+        width: 100%;
+        border: none;
+        margin: 0;
+        border-radius: 0;
+        font-size: 12px;
+        li a {
+            text-align: left;
+            padding: 5px 27px 0px 11px;
         }
     }
-    
 }
 
 .top-nav {
     @include font-size(12);
     background-color: $color-main-bg;
     li a {
-                 height: 29px;
+        height: 29px;
         padding: 5px 29px;
-        
-        
         &:hover,
         &:focus {
             background-color: #AFAFAF;
-         
         }
-        
-        &:hover{
-           color:#ffffff;
+        &:hover {
+            color: #ffffff;
         }
     }
-    
-    
-    .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-     color:#000000;
+    .nav .open > a,
+    .nav .open > a:hover,
+    .nav .open > a:focus {
+        color: #000000;
     }
-
-    
-    .customer-service, .about{
+    .customer-service,
+    .about {
         text-align: left !important;
-        a{
-           	padding: 4px 36px 9px 11px;
+        a {
+            padding: 4px 36px 9px 11px;
             color: $color-main-font;
         }
     }
-    
-
-
-    .blog{
-    padding:0;
+    .blog {
+        padding: 0;
     }
-    .brands{
-    padding:0;
+    .brands {
+        padding: 0;
     }
-    
-    .dropdown-menu{
-       	min-width: 111px;
-        width: 100%;    
-        border:none;
-        margin:0;
-        border-radius:0;
+    .dropdown-menu {
+        min-width: 111px;
+        width: 100%;
+        border: none;
+        margin: 0;
+        border-radius: 0;
         @include font-size(12);
-        li a{
-        text-align: left;
-       		padding: 5px 27px 0px 11px;
+        li a {
+            text-align: left;
+            padding: 5px 27px 0px 11px;
         }
     }
 }
@@ -277,7 +270,7 @@ display: inline;
 .nav.darkgraybg {
     text-align: center;
     display: block;
-   	width: 228px;
+    width: 228px;
     li a {
         padding: 0;
         width: 228px;
@@ -308,6 +301,7 @@ display: inline;
                 text-transform: uppercase;
                 color: #ffffff;
                 @include font-size(16);
+                line-height: 1.4rem;
             }
         }
     }
@@ -325,14 +319,15 @@ display: inline;
     }
 }
 
-
-.login{
-	padding-right: 3.3rem;
-}
-.cart{
-	padding-right: 1.3rem;
+.login {
+    padding-right: 3.3rem;
+    float: right;
 }
 
+.cart {
+    padding-right: 1.3rem;
+    float: right;
+}
 
 .vcenter {
     display: inline-block;
@@ -343,52 +338,40 @@ display: inline;
 .member-box {
     text-align: right;
     button {
-    font-weight: bold;
-	border-radius: 5px;
-	display: inline;
-		margin-right: 14px;
-	margin-top: 11px;
-    padding: 3px 17px;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline;
+        margin-right: 14px;
+        margin-top: 11px;
+        padding: 3px 17px;
     }
-    .btn-login{
-        
-    }
-
+    .btn-login {}
 }
-
-
-
-
 
 .top-middle {
     background-color: $secondary-bg;
-    padding: 1.6rem 0 1.2rem 0;
-    
+    padding: 1.6rem 0 0.5rem 0;
     // margin-left: 0;
     // margin-right:0;
-
-    
-    .cart{
-
-    .icon-ui-kolify-cart-items {
-        position: relative;
+    .cart {
+        .icon-ui-kolify-cart-items {
+            position: relative;
+        }
+        span.cart-item-count {
+            color: $color-brand;
+            position: absolute;
+            right: 28px;
+            top: -14px;
+        }
+        a {
+            text-align: center;
+            @include font-size(23);
+            line-height: 2.3rem;
+            color: $color-brand;
+            font-weight: bold;
+            margin: 8px 0 0 0;
+        }
     }
-    span.cart-item-count {
-        color: $color-brand;
-        position: absolute;
-        right: 28px;
-        top: -14px;
-    }
-    a {
-        text-align: center;
-        @include font-size(23);
-        line-height: 2.3rem;
-        color: $color-brand;
-        font-weight: bold;
-        margin: 8px 0 0 0;
-    }
-}
-    
 }
 
 button.register {
@@ -399,11 +382,11 @@ button.facebook-connect {
     background-color: #637ab0;
     color: #ffffff;
     // display: table;
-  	padding: 0px 11px 0px 6px;
+    padding: 0px 11px 0px 6px;
     i {
-        @include font-size(20);
+        @include font-size(16);
         display: table-cell;
-        line-height: 2.7rem;
+        line-height: 2.5rem;
         vertical-align: middle;
         padding-right: 5px;
     }
@@ -411,7 +394,6 @@ button.facebook-connect {
         height: 10px;
         display: table-cell;
         vertical-align: middle;
-    
     }
 }
 
@@ -568,19 +550,89 @@ button.facebook-connect {
         display: block;
         float: left;
     }
+    .nav-tabs li:nth-last-child(1) {
+        margin-right: 0;
+    }
+    .nav-tabs li {
+   	width: 33.2%;
+	margin-right: 0.2%;
+    }
+    .nav-tabs {
+        background-color: $color-main-bg;
+    }
+    .nav-tabs li a {
+        color: #ffffff;
+        background-color: $color-gray-bg;
+        border: none;
+        font-family: $base-font;
+        margin-right:0;
+        border-radius: inherit;
+        @include font-size(24);
+       	line-height: 4.4rem;
+        &:focus,
+        :hover {
+            border: none;
+        }
+        i {
+            padding-right: 1.5rem;
+            padding-left: 0.6rem;
+            &:before {
+                font-family: fontAwesome;
+                content: "\f0da";
+            }
+        }
+    }
+    .nav-tabs li.active a {
+        color: $color-dark-gray-bg;
+        background-color: #ffffff;
+        border: none;
+        &:focus,
+        :hover {
+            border: none;
+        }
+        i {
+            padding-right: 0.8rem;
+            padding-left:0;
+            &:before {
+                font-family: fontAwesome;
+                content: "\f0d7";
+            }
+        }
+    }
 }
+
+//
+//.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+//	color: #555555;
+//	background-color: #fff;
+//	border: 1px solid #ddd;
+//	border-bottom-color: transparent;
+//	cursor: default;
+//}
+
 
 
 /* don't forget about the vendor-prefixes! */
 
 .row-slide {
     overflow: hidden;
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        margin-left: -45%;
+        font-size: 20px;
+    }
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        margin-right: -45%;
+        font-size: 20px;
+    }
 }
 
 .carousel-right {
     // margin: 1rem 0 1rem 0;
     .col {
         margin: 0 0 1rem 0;
+        width: 100%;
         text-align: center;
         img {
             display: inline;
@@ -831,7 +883,7 @@ $ui-kolify-cart-items-small-2x,
         color: $color-brand;
         @include font-size(26);
         font-weight: bold;
-        padding: 5px 0px 0px 25px;
+        padding: 20px 0px 0px 25px;
         display: inline-block;
         margin-bottom: 0;
         line-height: 1.6rem;
@@ -860,7 +912,7 @@ $ui-kolify-cart-items-small-2x,
 }
 
 .row-container {
-    padding-top: 2.1%;
+    padding-top: 1%;
 }
 
 .product-container {
@@ -870,7 +922,7 @@ $ui-kolify-cart-items-small-2x,
     width: 100%;
     height: 100%;
     overflow: hidden;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 0 0;
 }
 
 .home-featured {
@@ -878,18 +930,19 @@ $ui-kolify-cart-items-small-2x,
 }
 
 .row-slide {
-    margin-bottom: 5px;
+   	margin-bottom: 13px;
 }
 
 .row-featured {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 .btn-add-to-kolify {
-    padding: 10px 0 10px 21px;
+    padding: 17px 0 10px 21px;
     span {
         color: $color-brand;
-        @include font-size(16);
+        @include font-size(13);
+        line-height: 2.8rem;
     }
     span.icon-ui-kolify-add {
         margin: -8px 7px 0 0;
@@ -897,10 +950,13 @@ $ui-kolify-cart-items-small-2x,
 }
 
 .pagination-centered {
-    margin-top: 14px;
+//    margin-top: 0;
     text-align: center;
     a {
         color: #818181;
+    }
+    .pagination{
+    margin: 16px 0;
     }
     //override bootstrap pagination styles
     .pagination > .active > a,
@@ -942,11 +998,17 @@ $ui-kolify-cart-items-small-2x,
 }
 
 .how-it-works {
+    
+    .col{
+    width: 20%;
+    }
     overflow: hidden;
     text-align: center;
+    padding: 2.4rem 0 0 0;
     p {
         color: $color-dark-gray-bg;
         @include font-size(24);
+        margin-bottom:0;
     }
     p.sub {
         @include font-size(18);
@@ -955,9 +1017,16 @@ $ui-kolify-cart-items-small-2x,
         display: block;
         float: left;
         width: 80%;
+        padding-left: 28px;
         img {
             display: inline-block;
+            	margin-bottom: 10px;
         }
+    }
+    hr{
+    margin-top: 0px;
+	margin-bottom: 6px;
+    border-top: 1px solid $alternative-gray;
     }
     .hiw-container.second {
         width: 20%;
@@ -1141,10 +1210,12 @@ $ui-kolify-cart-items-small-2x,
 .carousel-indicators li {
     border-radius: 0;
     background-color: #000000;
+    border: none;
+    margin-right: 13px;
 }
 
 .carousel-indicators {
-    bottom: 0;
+    bottom: 7px;
     left: 75%;
     width: 100%;
     margin-left: -30%;
@@ -1152,6 +1223,7 @@ $ui-kolify-cart-items-small-2x,
 
 .carousel-indicators .active {
     background-color: $color-brand;
+    margin-right: 13px;
 }
 
 // .carousel-indicators {

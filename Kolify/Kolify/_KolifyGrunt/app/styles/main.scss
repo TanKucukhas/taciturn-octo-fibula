@@ -154,7 +154,7 @@ a:focus {
 
 .col{
 float:left;
-width: 25%;
+// width: 25%;
 }
 
 /* Header */
@@ -632,7 +632,7 @@ button.facebook-connect {
     // margin: 1rem 0 1rem 0;
     .col {
         margin: 0 0 1rem 0;
-        width: 100%;
+        // width: 100%;
         text-align: center;
         img {
             display: inline;
@@ -1002,6 +1002,7 @@ $ui-kolify-cart-items-small-2x,
     .col{
     width: 20%;
     }
+        margin-bottom: 2rem;
     overflow: hidden;
     text-align: center;
     padding: 2.4rem 0 0 0;
@@ -1043,7 +1044,7 @@ $ui-kolify-cart-items-small-2x,
     .col-md-4,
     .col-md-3,
     .col-md-6 {
-        margin-bottom: 10px;
+        margin-bottom: 3rem;
     }
     .col-md-3 {
         .img-box {
@@ -1082,6 +1083,15 @@ $ui-kolify-cart-items-small-2x,
             padding: 5% 0 0 2rem;
         }
     }
+
+    .lightning,.books,.outdoor,.dresses{
+   .inner {
+padding-bottom: 83%;
+
+}
+
+    }
+
     .christmast {
         background-image: url('../images/home/ui-homebox-yilbasi.png');
     }

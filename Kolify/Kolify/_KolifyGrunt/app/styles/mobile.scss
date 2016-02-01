@@ -125,6 +125,11 @@
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 768px) {
+
+    .navbar-header{
+        width: 100%;
+    }
+
     .header .main-nav .navbar-nav {
         /* display: flex; */
         display: block;
@@ -193,7 +198,17 @@
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+
+.product-showcase{
+
+    .product{
+        width: 100%;
+    }
+}
+
+
+}
 
 
 /* Custom, iPhone Retina */
@@ -203,10 +218,75 @@
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+
+
+    .categories .img-box p{
+    font-size: 1.5rem;
+    line-height: 1rem;
+    padding: 5% 0 0 1rem;
+    }
+
+    .btn-start-shopping {
+        padding: 0px 0 0px 7px;
+        line-height: 1rem;
+    }   
+
+    .btn-start-shopping span {
+        line-height: 1rem;
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .icon-ui-kolify-cart-items-small {
+        background-image: url(../images/global/spritesheet.png);
+        background-position: -93px -111px;
+        width: 17px;
+        height: 12px;
+    }
+
+}
 
 
 /* Home-custom-fix */
+
+
+
+@media only screen and (max-width: 340px) {
+.header .icon-logo-kolify {
+    width: 137px;
+    height: 35px;
+    background-size: 100%;
+
+}
+.header .logo {
+    float: left;
+}
+
+.navbar-toggle {
+
+    margin-top: 0;
+}
+
+.navbar-header{
+    padding-bottom:0;
+}
+
+
+}
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 1200px) {
+    .carousel-right {
+        .col {
+            width: 50%;
+        }
+    }
+
+}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1530px) {
     // .criteria .inner {
@@ -233,6 +313,12 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1010px) {
+
+    .cart{
+    float: none;
+    clear: none;
+    }
+
     .top-search {
         width: 50%;
     }

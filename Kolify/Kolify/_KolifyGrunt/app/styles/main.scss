@@ -632,10 +632,12 @@ button.facebook-connect {
     // margin: 1rem 0 1rem 0;
     .col {
         margin: 0 0 1rem 0;
-        // width: 100%;
+        width: 100%;
         text-align: center;
+        a{ width:100%}
         img {
             display: inline;
+            width: 100%;    
             background-color: #ffffff;
         }
     }
@@ -871,6 +873,16 @@ $ui-kolify-cart-items-small-2x,
     @include retina-sprite($ui-kolify-cart-items-small-group);
 }
 
+
+$icon-ui-kolify-cart-items-smaller: ('icon-ui-kolify-cart-items-smaller',
+$ui-kolify-cart-items-smaller,
+$ui-kolify-cart-items-smaller-2x,
+);
+.icon-ui-kolify-cart-items-small {
+    @include retina-sprite($ui-kolify-cart-items-smaller-group);
+}
+
+
 // HOMEPAGE
 .product-showcase {
     ul>li>a {
@@ -1002,13 +1014,14 @@ $ui-kolify-cart-items-small-2x,
     .col{
     width: 20%;
     }
-        margin-bottom: 2rem;
     overflow: hidden;
     text-align: center;
-    padding: 2.4rem 0 0 0;
+        padding: 2.3rem 0 2.2rem 0;
     p {
         color: $color-dark-gray-bg;
         @include font-size(24);
+
+	line-height: 3.2rem;
         margin-bottom:0;
     }
     p.sub {
@@ -1044,7 +1057,7 @@ $ui-kolify-cart-items-small-2x,
     .col-md-4,
     .col-md-3,
     .col-md-6 {
-        margin-bottom: 3rem;
+       margin-bottom: 3rem;
     }
     .col-md-3 {
         .img-box {
@@ -1084,13 +1097,10 @@ $ui-kolify-cart-items-small-2x,
         }
     }
 
-    .lightning,.books,.outdoor,.dresses{
-   .inner {
-padding-bottom: 83%;
+     .lightning,.outdoor,.dresses,.books{
+        padding-bottom: 25%;    
 
-}
-
-    }
+     }
 
     .christmast {
         background-image: url('../images/home/ui-homebox-yilbasi.png');

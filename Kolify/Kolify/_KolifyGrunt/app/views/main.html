@@ -418,10 +418,25 @@
 </div>
 </div>
 <div class="row brand-showcase" ng-controller="brandCarouselCtrl">
-    <div class="col-md-1 title"><span>MARKALAR</span></div>
+    
+
+              <div class="col-md-2 col-sm-12 title">
+        <span>MARKALAR</span>
+        </div>
+        <div class="col-md-10 col-sm-12 brand-group">
+              <div class="col" ng-repeat="brand in filteredBrands">
+            <a href="#/markalar/{{brand.id}}"><img class="brand-image img-responsive" ng-src="{{brand.thumbImageUrl}}"></a>
+        </div>
+        
+        </div>
+      
+
+<!--     <div class="col-md-1 title"><span>MARKALAR</span></div>
     <div class="col-md-1 hidden-sm"> &nbsp;</div>
     <div ng-repeat="brand in filteredBrands" class="col-md-1 col-sm-2 col-xs-4">
         <a href="#/markalar/{{brand.id}}"><img class="brand-image img-responsive" ng-src="{{brand.thumbImageUrl}}"></a>
     </div>
+ -->
+
     <uib-pager class="brand-carousel-pager icon-foo" next-text="" previous-text="" total-items="brands.length" ng-model="currentPage"></uib-pager>
 </div>

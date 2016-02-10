@@ -18,6 +18,11 @@
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
     }
+
+    .brand-group{
+            margin-left: 3%;
+    }
+    
     .brand-carousel-pager .previous {
         left: 5%;
         top: 8%;
@@ -28,13 +33,14 @@
     }
     .brand-showcase {
         position: relative;
+       padding: 2% 0 2% 0;
         span {
             line-height: 4rem;
             padding-left: 0rem;
         }
         .title {
             text-align: center;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
         }
     }
     .end-matter .cardlist {
@@ -192,7 +198,10 @@
 //    }
     
     
-    
+    .brand-showcase{
+
+
+    }
 }
 
 
@@ -240,7 +249,9 @@
 
     .icon-ui-kolify-cart-items-small {
         background-image: url(../images/global/spritesheet.png);
-        background-position: -93px -111px;
+           background-position: -113px -102px;
+
+    background-size: 326%;
         width: 17px;
         height: 12px;
     }

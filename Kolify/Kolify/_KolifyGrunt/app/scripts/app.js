@@ -20,7 +20,8 @@ angular
     'ngTouch',
     'productFilters',
     'productDetailAnimations',
-    'productServices'
+    'productServices',
+    'categoryServices'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -29,10 +30,10 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/category', {
+      .when('/kategori/:categoryId', {
         templateUrl: 'views/category.html',
         controller: 'categoryCtrl',
-        controllerAs: 'category'
+
       })
         .when('/dukkan/:productId', {
         templateUrl: 'views/product.html',

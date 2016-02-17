@@ -1,0 +1,131 @@
+[{
+    "id": "4052916598",
+    "name": "B TWEEN CUTE KNIT TOP",
+    "tag": "cute-knit-top-for-girls-sweater-b-tween-5-5T-pink-good-condition-fall-winter-cotton-polyester-4-8-y",
+    "gender": "For Girls",
+    "subcategory": "Tops",
+    "type": "Sweater",
+    "brand": "B Tween",
+    "size": "5/5T",
+    "condition": "Good Condition",
+    "Season": "Fall - Winter",
+    "Material": "Cotton, Polyester",
+    "Dimensions:": "5.1 x 2.0 x 5.7 inches",
+    "Weight": "7.2 oz",
+    "Availability": "Not currently available"
+}, {
+    "id": "3884714163",
+    "name": "SHANNON KIDS TRENDY DRESS COAT",
+    "tag": "trendy-dress-coat-for-girls-shannon-kids-8-black-new-with-tags-fall-winter-dry-clean-only-polyester",
+    "subcategory": "Tops",
+    "gender": "For Girls",
+    "type": "Coat",
+    "brand": "Shannon Kids",
+    "size": "8",
+    "condition": "New With Tags",
+    "Season": "Fall - Winter",
+    "Washing Instruction:": "Dry Clean only",
+    "Material": "Polyester, Wool",
+    "Dimensions:": "6.6 x 4.4 x 9.1 inches",
+    "Weight": "2 lbs 3 oz",
+    "Availability": "In stock, ships within 1 business day"
+}, {
+    "id": "3948254923",
+    "name": "NIKE ACG BOOTS",
+    "tag": "acg-boots-35-infant-good-condition-nike-black-pink-for-girls-1-2-yrs-2-4-yrs",
+    "subcategory": "Shoes",
+    "shoe-size": "2 Infant",
+    "shoe type": "Boots",
+    "condition": "Good Condition",
+    "brand": "Nike",
+    "gender": "For Girls",
+    "Dimensions:": "6.1 x 3.1 x 4.7 inches",
+    "Weight": "12.8 oz",
+    "Availability": "In stock, ships within 1 business day"
+}, {
+    "id": "4267704430",
+    "name": "AIR JORDAN DASHING SNEAKERS",
+    "tag": "dashing-sneakers-2-infant-good-condition-air-jordan-white-for-boys-0-1-yr",
+    "shoe-size": "2 Infant",
+    "subcategory": "Shoes",
+    "shoe-type": "Sneakers",
+    "condition": "Good Condition",
+    "brand": "Air Jordan",
+    "Colors:": "White",
+    "gender": " For Boys",
+    "Dimensions:": "3.9 x 2.5 x 4.1 inches",
+    "Weight": "2.4 oz",
+    "Availability": "In stock, ships within 1 business day"
+}, {
+    "id": "3880724812",
+    "name": "COZY SLIPPERS",
+    "tag": "dashing-sneakers-2-infant-good-condition-air-jordan-white-for-boys-0-1-yr",
+    "subcategory": "Shoes",
+    "shoe-size": "2 Infant",
+    "shoe-type": "Slippers",
+    "condition": "Good Condition",
+    "brand": "",
+    "Colors:": "White",
+    "gender": " For Boys",
+    "Dimensions:": "  3.1 x 1.6 x 5.5 inches",
+    "Weight": "3.2 oz",
+    "Availability": "In stock, ships within 1 business day",
+    "additional-details": [
+        "article brand unknown",
+        "no tag"
+    ]
+}, {
+    "id": "3535494524",
+    "name": "SPEEDO FLOATING SWIMSUIT",
+    "tag": "floating-swimsuit-for-boys-swimwear-speedo-6-green-bluenavy-black-new-with-tags-spring-summer-hand",
+    "subcategory": "Swimwear",
+    "gender": "For Boys",
+    "type": "Swimwear",
+    "brand": "Speedo",
+    "size": "6",
+    "colors": [
+        "Green",
+        "Blue/Navy",
+        "Black"
+    ],
+    "condition": "New With Tags",
+    "Season": " Spring - Summer",
+    "Washing Instruction:": " Hand Wash",
+    "Material": "Polyester",
+    "Dimensions:": "9.8 x 2.7 x 11 inches",
+    "Weight": "8 oz",
+    "Availability": "In stock, ships within 1 business day"
+}, {
+    "id": "3233804015",
+    "name": "CARTER'S THREE PIECE SET",
+    "tag": "three-piece-set-for-boys-shirt-bodysuit-shorts-carters-3-mo-orange-bluenavy-white-grey-new-with-tag",
+    "gender": "For Boys",
+    "type": "Tops",
+    "brand": "Carters",
+    "size": "3 mo",
+    "colors": [
+        "White"
+    ],
+    "condition": "New With Tags",
+    "Season": " Spring - Summer",
+    "Washing Instruction:": " Hand Wash",
+    "Material": "Cotton",
+    "Dimensions:": "8.0 x 1.5 x 15 inches",
+    "Weight": "6.4 oz",
+    "Availability": "In stock, ships within 1 business day",
+    "Articles": {
+        "1": {
+            "type": "Shirt",
+            "colors": "Orange"
+        },
+        "2": {
+            "type": "Bodysuit",
+            "colors": "White"
+        },
+        "3": {
+            "type": "Shorts",
+            "colors": "Grey"
+        }
+
+    }
+}]

@@ -21,7 +21,8 @@ angular
     'productFilters',
     'productDetailAnimations',
     'productServices',
-    'categoryServices'
+    'categoryServices',
+    'ngCart'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -30,8 +31,10 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/kategori/:categoryId', {
-        templateUrl: 'views/category.html',
+      .when('/kategori/:categoryId*', {
+        templateUrl: function(urlattr){
+                return '/views/' + urlattr.categoryId + '.html';
+            },
         controller: 'categoryCtrl',
 
       })
@@ -39,6 +42,13 @@ angular
         templateUrl: 'views/product.html',
         controller: 'ProductDetailCtrl'
       })
+
+            .when('/sepet', {
+        templateUrl: 'views/cart.html',
+
+      })
+
+
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',

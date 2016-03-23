@@ -121,32 +121,12 @@
             </uib-tabset>
             <hr />
             -->
-            <uib-tabset justified="false" class="product-showcase">
+            <uib-tabset justified="false" class="product-listing">
                 <uib-tab heading="Son Gezinlenler">
                     <uib-tab-heading><i class="fa"></i> Son Gezinlenler</uib-tab-heading>
                     <div class="container-full" ng-controller="LastVisitedCtrl">
                         <div class="row row-container">
-                            <!--        <p>{{userData}}</p> -->
-                            <!--       <h1>{{products.length}} ITEM</h1> -->
-                            <!--           <div ng-repeat="product in filteredProducts" class="col-xs-6 col-sm-4 col-md-2">
-                                <div class="product-container">
-                                    <a href="#/dukkan/{{product.id}}" class="thumb clearfix"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
-
-                                    <div class="bottom-content clearfix">
-                                               <p class="price">{{product.price}} <span>&#x20BA;</span></p>
-                                    <p class="brand">{{product.brand}}</p>
-                                    <p class="product-title">{{product.name}}</p>
-                                    <div class="btn-add-to-kolify">
-                                        <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
-                                            <span class="icon-image icon-ui-kolify-add"></span><span>Koliye Ekle</span></a>
-                                    </div>
-
-
-                                    </div>
-                             
-                                </div>
-                            </div> -->
-                            <div ng-repeat="product in filteredProducts" class="product col-lg-2 col-md-4 col-sm-6 col-xs-6">
+    <!--                         <div ng-repeat="product in filteredProducts" class="product col-lg-2 col-md-4 col-sm-6 col-xs-6">
                                 <div class="product-container">
                                     <a href="#/dukkan/{{product.id}}" class="thumb clearfix"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
                                     <div class="bottom-content clearfix">
@@ -154,11 +134,33 @@
                                         <p class="brand">{{product.brand}}</p>
                                         <p class="product-title">{{product.name}}</p>
                                         <div class="btn-add-to-kolify">
-                                            <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
+                                            <a href="" ng-click="addtoCart()">
                                                 <span class="icon-image icon-ui-kolify-add"></span><span>Koliye Ekle</span></a>
                                         </div>
                                     </div>
                                 </div>
+                            </div> -->
+                            <div ng-repeat="product in filteredProducts" class="product col-lg-2 col-md-4 col-sm-6 col-xs-6">
+
+     <div class="product-container">
+                                    <a href="#/dukkan/{{product.id}}" class="thumb clearfix"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
+                                    <div class="bottom-content clearfix">
+                                        <p class="price">{{product.price}} <span>&#x20BA;</span></p>
+                                        <p class="brand">{{product.brand}}</p>
+                                        <p class="product-title">{{product.name}}</p>
+                                        <div class="btn-add-to-kolify">
+                                         
+                                               <span class="btn-add-to-cart">
+
+
+                                                <ngcart-addtocart id="{{product.id}}" name="{{product.name}}" price="{{product.price}}" > <span class="icon-image icon-ui-kolify-add"></span>Koliye Ekle</ngcart-addtocart></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                               
                             </div>
                             <div class="col-md-12 pagination-centered">
                                 <uib-pagination direction-links="false" total-items="products.length" ng-model='currentPage' items-per-page='pageSize' boundary-links="false" force-ellipses="true">
@@ -418,25 +420,19 @@
 </div>
 </div>
 <div class="row brand-showcase" ng-controller="brandCarouselCtrl">
-    
-
-              <div class="col-md-2 col-sm-12 title">
+    <div class="col-md-2 col-sm-12 title">
         <span>MARKALAR</span>
-        </div>
-        <div class="col-md-10 col-sm-12 brand-group">
-              <div class="col" ng-repeat="brand in filteredBrands">
+    </div>
+    <div class="col-md-10 col-sm-12 brand-group">
+        <div class="col" ng-repeat="brand in filteredBrands">
             <a href="#/markalar/{{brand.id}}"><img class="brand-image img-responsive" ng-src="{{brand.thumbImageUrl}}"></a>
         </div>
-        
-        </div>
-      
-
-<!--     <div class="col-md-1 title"><span>MARKALAR</span></div>
+    </div>
+    <!--     <div class="col-md-1 title"><span>MARKALAR</span></div>
     <div class="col-md-1 hidden-sm"> &nbsp;</div>
     <div ng-repeat="brand in filteredBrands" class="col-md-1 col-sm-2 col-xs-4">
         <a href="#/markalar/{{brand.id}}"><img class="brand-image img-responsive" ng-src="{{brand.thumbImageUrl}}"></a>
     </div>
  -->
-
     <uib-pager class="brand-carousel-pager icon-foo" next-text="" previous-text="" total-items="brands.length" ng-model="currentPage"></uib-pager>
 </div>

@@ -1,0 +1,145 @@
+[{
+    "id": "4052916598",
+    "name": "b tween cute knit top",
+    "description": "cute knit top",
+       "price":"9",
+    "tag": "cute-knit-top-for-girls-sweater-b-tween-5-5t-pink-good-condition-fall-winter-cotton-polyester-4-8-y",
+    "gender": "for girls",
+    "subcategory": "tops",
+    "type": "sweater",
+    "brand": "b tween",
+    "size": "5/5t",
+    "condition": "good condition",
+    "season": "fall - winter",
+    "material": "cotton, polyester",
+    "dimensions:": "5.1 x 2.0 x 5.7 inches",
+    "weight": "7.2 oz",
+    "availability": "not currently available"
+}, {
+    "id": "3884714163",
+    "name": "shannon kids trendy dress coat",
+    "description": "trendy dress coat for girls",
+       "price":"29",
+    "tag": "trendy-dress-coat-for-girls-shannon-kids-8-black-new-with-tags-fall-winter-dry-clean-only-polyester",
+    "subcategory": "tops",
+    "gender": "for girls",
+    "type": "coat",
+    "brand": "shannon kids",
+    "size": "8",
+    "condition": "new with tags",
+    "season": "fall - winter",
+    "washing instruction:": "dry clean only",
+    "material": "polyester, wool",
+    "dimensions:": "6.6 x 4.4 x 9.1 inches",
+    "weight": "2 lbs 3 oz",
+    "availability": "in stock, ships within 1 business day"
+}, {
+    "id": "3948254923",
+    "name": "nike acg boots",
+    "description": "acg boots",
+       "price":"9",
+    "tag": "acg-boots-35-infant-good-condition-nike-black-pink-for-girls-1-2-yrs-2-4-yrs",
+    "subcategory": "shoes",
+    "shoe-size": "2 infant",
+    "shoe type": "boots",
+    "condition": "good condition",
+    "brand": "nike",
+    "gender": "for girls",
+    "dimensions:": "6.1 x 3.1 x 4.7 inches",
+    "weight": "12.8 oz",
+    "availability": "in stock, ships within 1 business day"
+}, {
+    "id": "4267704430",
+    "name": "air jordan dashing sneakers",
+    "description": "dashing sneakers",
+       "price":"19",
+    "tag": "dashing-sneakers-2-infant-good-condition-air-jordan-white-for-boys-0-1-yr",
+    "shoe-size": "2 infant",
+    "subcategory": "shoes",
+    "shoe-type": "sneakers",
+    "condition": "good condition",
+    "brand": "air jordan",
+    "colors:": "white",
+    "gender": " for boys",
+    "dimensions:": "3.9 x 2.5 x 4.1 inches",
+    "weight": "2.4 oz",
+    "availability": "in stock, ships within 1 business day"
+}, {
+    "id": "3880724812",
+    "name": "cozy slippers",
+    "description": "cozy slippers",
+       "price":"5.50",
+    "tag": "dashing-sneakers-2-infant-good-condition-air-jordan-white-for-boys-0-1-yr",
+    "subcategory": "shoes",
+    "shoe-size": "2 infant",
+    "shoe-type": "slippers",
+    "condition": "good condition",
+    "brand": "carters",
+    "colors:": "white",
+    "gender": " for boys",
+    "dimensions:": "  3.1 x 1.6 x 5.5 inches",
+    "weight": "3.2 oz",
+    "availability": "in stock, ships within 1 business day",
+    "additional-details": [
+        "article brand unknown",
+        "no tag"
+    ]
+}, {
+    "id": "3535494524",
+    "name": "speedo floating swimsuit",
+    "description": "floating swimsuit",
+       "price":"23.50",
+    "tag": "floating-swimsuit-for-boys-swimwear-speedo-6-green-bluenavy-black-new-with-tags-spring-summer-hand",
+    "subcategory": "swimwear",
+    "gender": "for boys",
+    "type": "swimwear",
+    "brand": "speedo",
+    "size": "6",
+    "colors": [
+        "green",
+        "blue/navy",
+        "black"
+    ],
+    "condition": "new with tags",
+    "season": " spring - summer",
+    "washing instruction:": " hand wash",
+    "material": "polyester",
+    "dimensions:": "9.8 x 2.7 x 11 inches",
+    "weight": "8 oz",
+    "availability": "in stock, ships within 1 business day"
+}, {
+    "id": "3233804015",
+    "name": "carter's three piece set",
+    "description": "three piece set",
+       "price":"14.50",
+    "tag": "three-piece-set-for-boys-shirt-bodysuit-shorts-carters-3-mo-orange-bluenavy-white-grey-new-with-tag",
+    "gender": "for boys",
+    "type": "tops",
+    "brand": "carters",
+    "size": "3 mo",
+    "colors": [
+        "white"
+    ],
+    "condition": "new with tags",
+    "season": " spring - summer",
+    "washing instruction:": " hand wash",
+    "material": "cotton",
+    "dimensions:": "8.0 x 1.5 x 15 inches",
+    "weight": "6.4 oz",
+    "availability": "in stock, ships within 1 business day",
+    "articles": {
+        "1": {
+            "type": "shirt",
+            "colors": "orange"
+        },
+        "2": {
+            "type": "bodysuit",
+            "colors": "white"
+        },
+        "3": {
+            "type": "shorts",
+            "colors": "grey"
+        }
+
+    }
+}]

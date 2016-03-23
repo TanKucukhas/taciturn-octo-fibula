@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * @ngdoc function
  * @name kolifyApp.controller:categoryCtrl
@@ -20,10 +19,11 @@ angular.module('kolifyApp')
   
 
   // $scope.category = listCategory.get({categoryId: 'category-' + $routeParams.categoryId}, function(listCategory) {});
-
+  $scope.filters = { };
   $scope.category = listCategory.query({categoryId: 'category-' + $routeParams.categoryId}); 
 
-  console.log($scope.category)
+  console.log($scope.category);
+
 
   }]);
 

@@ -156,8 +156,14 @@ angular.module('kolifyApp').controller('userBoxCtrl', function($scope, $http, us
 
 
 
-   
+  $scope.save = function() {
+      $scope.user = userFactory.setUserData();
+  };
+// 
 
+  // $scope.save = function() {
+  //       $scope.user.cartItems += 1;
+  // };
 
 });
 

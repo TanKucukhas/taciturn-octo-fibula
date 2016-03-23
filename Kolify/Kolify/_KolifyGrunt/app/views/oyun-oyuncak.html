@@ -1,0 +1,129 @@
+<!--   Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+      </select>
+
+    </div>
+    <div class="col-md-10"> -->
+<!--Body content-->
+<!-- 
+      <ul class="phones">
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
+          <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+          <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+          <p>{{phone.snippet}}</p>
+        </li>
+      </ul>
+
+
+ -->
+<div class="row">
+    <div class="col-xs-2">
+        <h2>Çocuk</h2>
+        <p class="product-count">26.354 ürün</p>
+        <p data-toggle="collapse" data-target="#toys"><strong>Oyun & Oyuncak</strong></p>
+        <ul id="toys" class="collapse in">
+            <li><a ng-click="filters.subcategory = 'Pretend Play Items'">Öğrenme Oyuncakları</a></li>
+            <li><a ng-click="filters.subcategory = 'Shoes'">Bebek Oyuncakları</a></li>
+            <li><a ng-click="filters.subcategory = 'Beach Toys'">Plaj Oyuncakları</a></li>
+            <li><a ng-click="filters.subcategory = 'Games'">Oyunlar</a></li>
+            <li><a ng-click="filters.subcategory = 'Plush Toys'">Peluş Oyuncaklar</a></li>
+            <li><a ng-click="filters.subcategory = 'Costumes'">Kostümler</a></li>
+            <li><a ng-click="filters.subcategory = 'Building Toys'">İnşaa Etme Oyuncakları</a></li>
+        </ul>
+        <p><a href="#/kategori/cocuk-giyim"><strong>Giyim</strong></a></p>
+        <!--        <ul id="clothes" class="collapse">
+            <li><a ng-click="filters.subcategory = 'Tops'">Üst</a></li>
+            <li><a ng-click="filters.subcategory = 'Shoes'">Ayakkabı</a></li>
+            <li><a ng-click="filters.subcategory = 'Swimwear'">Mayo</a></li>
+        </ul>
+   -->
+        <p><a data-toggle="collapse" data-target="#shoes"><strong>Ayakkabı</strong></a></p>
+        <!--         <ul id="shoes" class="collapse">
+            <li><a ng-click="filters.subcategory = 'Tops'">Üst</a></li>
+            <li><a ng-click="filters.subcategory = 'Shoes'">Ayakkabı</a></li>
+            <li><a ng-click="filters.subcategory = 'Swimwear'">Mayo</a></li>
+        </ul> -->
+        <!--         <a ng-click="filters.subcategory = ''">Filtreleri temizle</a> -->
+        <p><a data-toggle="collapse" data-target="#baby-security"><strong>Bebek Güvenlik</strong></a></p>
+        <!--         <ul id="baby-security" class="collapse">
+            <li><a ng-click="filters.brand = 'Carters'">Carters</a></li>
+            <li><a ng-click="filters.brand = 'Air Jordan'">Air Jordan</a></li>
+            <li><a ng-click="filters.brand = 'Nike'">Nike</a></li>
+        </ul> -->
+        <!--         <a ng-click="filters.brand = ''">Filtreleri temizle</a> -->
+        <p><a data-toggle="collapse" data-target="#baby-care"><strong>Bebek Bakım</strong></a></p>
+        <!--      <ul id="baby-care" class="collapse">
+            <li><a ng-click="filters.brand = 'Carters'">Carters</a></li>
+            <li><a ng-click="filters.brand = 'Air Jordan'">Air Jordan</a></li>
+            <li><a ng-click="filters.brand = 'Nike'">Nike</a></li>
+        </ul> -->
+        <p><strong>Markalar</strong></p>
+        <ul class="brands">
+            <li><a ng-click="filters.brand = 'Carters'">Carters</a></li>
+            <li><a ng-click="filters.brand = 'Air Jordan'">Air Jordan</a></li>
+            <li><a ng-click="filters.brand = 'Nike'">Nike</a></li>
+        </ul>
+        <p><strong>Fiyat Aralığı</strong></p>
+        <ul class="brands">
+            <li><a ng-click="filters.price = '0to25'">0 TL - 25 TL</a></li>
+            <li><a ng-click="filters.price = '25to50'">25 TL - 50 TL</a></li>
+            <li><a ng-click="filters.price = '50to100'">50 TL - 100 TL</a></li>
+        </ul>
+        <p><strong>Fırsatlar</strong></p>
+        <ul class="brands">
+            <li><a ng-click="filters.brand = 'Carters'">Carters</a></li>
+            <li><a ng-click="filters.brand = 'Air Jordan'">Air Jordan</a></li>
+            <li><a ng-click="filters.brand = 'Nike'">Nike</a></li>
+        </ul>
+        <!--         <a ng-click="filters.brand = ''">Filtreleri temizle</a> -->
+    </div>
+    <!-- 
+
+<div class="container" ng-repeat="item in items">
+<table class="table table-striped table-bordered table-condensed">
+    <tr>
+        <th class="span3">name</th>
+        <td>{{ item.name }}</td>
+    </tr>
+    <tr>
+        <th class="span3">accounts</th>
+        <td>
+            <ul ng-repeat="account in item.accounts">
+                <li>username: {{ account.username }}</li>
+                <li>password: {{ account.password }}</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+</div>
+ -->
+    <div class="col-xs-10">
+        <div class="row product-container">
+            <div class="col-md-12">Aktif Filtreler: {{filters.subcategory}} {{filters.brand}}</div>
+            <div class="col-md-2 col-sm-4 col-xs-12" class="animate-repeat" ng-repeat="catitems in category | filter:filters">
+                <!--   [{{$index + 1}}] -->{{catitems.name}}
+                <img class="thumb clearfix" ng-src="data/product-test/{{catitems.id}}-1-1000@90.jpg" alt="data/product-test/{{catitems.id}}-1-1000@90.jpg" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+
+<!--     <div class="product-container">
+        <a href="#/dukkan/{{product.id}}" class="thumb clearfix"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
+        <div class="bottom-content clearfix">
+            <p class="price">{{product.price}} <span>&#x20BA;</span></p>
+            <p class="brand">{{product.brand}}</p>
+            <p class="product-title">{{product.name}}</p>
+            <div class="btn-add-to-kolify">
+                <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
+                    <span class="icon-image icon-ui-kolify-add"></span><span>Koliye Ekle</span></a>
+            </div>
+        </div>
+    </div> -->
+
+
+</div>
+</div>

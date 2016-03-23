@@ -11,18 +11,62 @@ productServices.factory('Product', ['$resource',
 
 productServices.factory('userFactory', function($resource){
 
-      console.log('factory is called');
-    
     var userData = $resource('data/userData.json', {}, {
-      getUserData: {method:'GET'}
-    }); 
+      getUserData: {method:'GET'},
+     
+    });
 
 
- 
+
+    
+    // userData = $resource('data/userData.json', {}, {
+    //   setUserData: {method:'POST'}
+    // });
     return userData;
 
 
+// var controller_data = {"text":"hello","id":"5"};
+// $http({url: 'http://localhost:8383/HTML5Application1/' , method: "POST",withCredentials: true,data:controller_data});
+  
+
+
+
+
+
+
+
+
 });
+
+
+
+  // $scope.save = function() {
+  //     $scope.user = userFactory.setUserData();
+  // };
+
+
+// ngular.module('services', []).factory('factoryName', ["$filter",
+//   function($filter) {
+//     var method1Logic = function(args) {
+//       //code
+//     };
+//     var method2Logic = function(args) {
+//      //code
+//     };
+//     return {
+//       method1: method1Logic,
+//       method2: method1Logic
+//     };
+//   }
+// ]).controller('MainController', ["$scope", "$rootScope", "$filter", "factoryName", function ($scope, $rootScope, $filter,factoryName) {
+//      $scope.testMethod1 = function(arg){
+//        $scope.val1 = factoryName.method1(arg);
+//      };
+
+//      $scope.testMethod2 = function(arg){
+//        $scope.val2 = factoryName.method2(arg);
+//      };
+// }]);
 
 
 

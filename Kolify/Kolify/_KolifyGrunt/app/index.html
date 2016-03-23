@@ -76,14 +76,9 @@
                     </ul>
                 </div>
                 <div class="row top-middle">
-
-              
-
                     <div class="col-md-12">
-
-
                         <div class="navbar-header pull-left">
-                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -92,67 +87,63 @@
                             <a class="navbar-brand" href="#/"><img src="images/global/kolify-logo.png" alt="Kolify - ikinci elde yenilik" class="img-responsive">
                             </a>
                         </div>
-
                         <div class="top-search">
                             <div class="input-group">
                                 <div class="input-group-btn">
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hepsi <span class="caret"></span></button>
                                     <ul class="dropdown-menu">
-                                        <li><a ng-href="#/about">Çocuk</a></li>
-                                        <li><a ng-href="#/about">Kadın</a></li>
-                                        <li><a ng-href="#/about">Aksesuar</a></li>
-                                        <li><a ng-href="#/about">Erkek</a></li>
-                                        <li><a ng-href="#/about">Ev Yaşam</a></li>
-                                        <li><a ng-href="#/about">Spor</a></li>
-                                        <li><a ng-href="#/about">Hobi</a></li>
-                                        <li><a ng-href="#/about">Ofis</a></li>
-                                        <li><a ng-href="#/about">Yılbaşı</a></li>
+                                        <li><a ng-href="#/kategori/cocuk-giyim">Çocuk</a></li>
+                                        <li><a ng-href="#/kategori/kadin">Kadın</a></li>
+                                        <li><a ng-href="#/kategori/aksesuar">Aksesuar</a></li>
+                                        <li><a ng-href="#/kategori/erkek">Erkek</a></li>
+                                        <li><a ng-href="#/kategori/ev-yasam">Ev Yaşam</a></li>
+                                        <li><a ng-href="#/kategori/spor">Spor</a></li>
+                                        <li><a ng-href="#/kategori/hobi">Hobi</a></li>
+                                        <li><a ng-href="#/kategori/ofis">Ofis</a></li>
+                                        <li><a ng-href="#/kategori/yilbasi">Yılbaşı</a></li>
                                     </ul>
                                 </div>
-
                                 <input type="text" class="form-control" aria-label="...">
                                 <span class="input-group-btn">
                                 <button class="btn btn-default color-brand-bg" type="button"><i class="glyphicon glyphicon-search"></i></button>
                             </span>
                             </div>
                         </div>
+                        <div ng-controller="userBoxCtrl">
+                            <div class="cart">
+                                <a href="#/sepet" class="cart-items icon-ui-kolify-cart-items icon-image">
+                                    <span ng-model="user.cartItems" ng-model-options="{ getterSetter: true }" class="cart-item-count">
 
+                                    <!-- {{ user.cartItems }} -->
+ <ngcart-summary></ngcart-summary>
 
-                        <div class="cart">
+                                    </span>
+                                </a>
 
-                            <a href="#/cart" class="cart-items icon-ui-kolify-cart-items icon-image">
-                                <span class="cart-item-count">0</span>
-                            </a>
+<!-- 
 
-                        </div>
+                                <form>
+                                    <div>
+                                        <label>{{user.username}}</label>
+                                        <input type="range" min="0" max="4" ng-model="user.cartItems">
+                                    </div>
+                                    <button ng-click="addtoCart()">Save</button>
+                                    <p>{{user.cartItems}}</p>
 
+ 
 
-
-
-
-                        <div class="login">
-                            <div class="member-box">
-                                <button type="button" class="btn btn-default register">Üye Ol</button>
-
-
-                                <button type="button" class="btn btn-default btn-login">Giriş</button>
-
-
-                                <button class="btn btn-default facebook-connect" type="button"><i class="fa fa-facebook"></i> <span>Bağlan</span></button>
-
-
-
-
+                                </form> -->
                             </div>
-
+                            <div class="login">
+                                <div class="member-box">
+                                    <button type="button" class="btn btn-default register">Üye Ol</button>
+                                    <button type="button" class="btn btn-default btn-login">Giriş</button>
+                                    <button class="btn btn-default facebook-connect" type="button"><i class="fa fa-facebook"></i> <span>Bağlan</span></button>
+                                </div>
+                            </div>
                         </div>
-
-
-
-
                     </div>
                 </div>
-
                 <!--
                 <div class="row top-middle">
                     <div class="col-lg-4 col-md-4 col-sm-6">
@@ -207,31 +198,24 @@
                                 </a>
                         
                                     
-                                </div>
-                      
-                           
-                     
-                        
-                      
+                                </div> 
                     </div>
                 </div>
 -->
-
-
                 <div class="row main-nav">
                     <div class="col-md-12">
                         <div class="collapse navbar-collapse" id="js-navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <!--     <li class="active"><a href="#/">Anasayfa</a></li> -->
-                                <li><a ng-href="#/about">Çocuk</a></li>
-                                <li><a ng-href="#/about">Kadın</a></li>
-                                <li><a ng-href="#/about">Aksesuar</a></li>
-                                <li><a ng-href="#/about">Erkek</a></li>
-                                <li><a ng-href="#/about">Ev Yaşam</a></li>
-                                <li><a ng-href="#/about">Spor</a></li>
-                                <li><a ng-href="#/about">Hobi</a></li>
-                                <li><a ng-href="#/about">Ofis</a></li>
-                                <li><a ng-href="#/about">Yılbaşı</a></li>
+                                <li><a ng-href="#/kategori/cocuk-giyim">Çocuk</a></li>
+                                <li><a ng-href="#/kategori/kadin">Kadın</a></li>
+                                <li><a ng-href="#/kategori/aksesuar">Aksesuar</a></li>
+                                <li><a ng-href="#/kategori/erkek">Erkek</a></li>
+                                <li><a ng-href="#/kategori/ev-yasam">Ev Yaşam</a></li>
+                                <li><a ng-href="#/kategori/spor">Spor</a></li>
+                                <li><a ng-href="#/kategori/hobi">Hobi</a></li>
+                                <li><a ng-href="#/kategori/ofis">Ofis</a></li>
+                                <li><a ng-href="#/kategori/yilbasi">Yılbaşı</a></li>
                             </ul>
                         </div>
                     </div>
@@ -298,39 +282,31 @@
                                         <a href="#/">
                                             <div class="icon-image icon-icon-facebook"></div><span>Facebook</span>
                                         </a>
-
                                     </li>
-
                                     <li>
                                         <a href="#/">
                                             <div class="icon-image icon-icon-twitter"></div><span>Twitter</span> </a>
                                     </li>
-
                                     <li>
                                         <a href="#/">
                                             <div class="icon-image icon-icon-pinterest"></div><span>Pinterest</span> </a>
                                     </li>
-
                                     <li>
                                         <a href="#/">
                                             <div class="icon-image icon-icon-instagram"></div><span>Instagram</span> </a>
                                     </li>
-
                                     <li>
                                         <a href="#/">
                                             <div class="icon-image icon-icon-google-plus"></div><span>Google Plus</span></a>
                                     </li>
-
                                     <li>
                                         <a href="#/">
                                             <div class="icon-image icon-icon-linkedin"></div><span>LinkedIn</span> </a>
                                     </li>
-
                                     <li>
                                         <a href="#/">
                                             <div class="icon-image icon-icon-youtube"></div><span>YouTube</span> </a>
                                     </li>
-
                                 </ul>
                             </div>
                         </div>
@@ -396,14 +372,14 @@
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
-        ! function (A, n, g, u, l, a, r) {
-            A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
-                    (A[l].q = A[l].q || []).push(arguments)
-                }, A[l].l = +new Date, a = n.createElement(g),
-                r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
-        }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
     </script>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -418,6 +394,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/Flowtype.js/flowtype.js"></script>
+    <script src="bower_components/ngCart/dist/ngCart.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -430,6 +407,8 @@
     <script src="scripts/services/productService.js"></script>
     <script src="scripts/services/categoryService.js"></script>
     <script src="scripts/animations/productDetailAnimation.js"></script>
+    <script src="/bower_components/angular-i18n/angular-locale_tr.js"></script>
+    
     <!-- endbuild -->
 </body>
 

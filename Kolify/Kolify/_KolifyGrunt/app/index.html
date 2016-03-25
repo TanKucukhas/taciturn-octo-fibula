@@ -92,15 +92,15 @@
                                 <div class="input-group-btn">
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hepsi <span class="caret"></span></button>
                                     <ul class="dropdown-menu">
-                                        <li><a ng-href="#/kategori/cocuk-giyim">Çocuk</a></li>
-                                        <li><a ng-href="#/kategori/kadin">Kadın</a></li>
-                                        <li><a ng-href="#/kategori/aksesuar">Aksesuar</a></li>
-                                        <li><a ng-href="#/kategori/erkek">Erkek</a></li>
-                                        <li><a ng-href="#/kategori/ev-yasam">Ev Yaşam</a></li>
-                                        <li><a ng-href="#/kategori/spor">Spor</a></li>
-                                        <li><a ng-href="#/kategori/hobi">Hobi</a></li>
-                                        <li><a ng-href="#/kategori/ofis">Ofis</a></li>
-                                        <li><a ng-href="#/kategori/yilbasi">Yılbaşı</a></li>
+                                        <li><a ui-sref="#/kategori/cocuk-giyim">Çocuk</a></li>
+                                        <li><a ui-sref="#/kategori/kadin">Kadın</a></li>
+                                        <li><a ui-sref="#/kategori/aksesuar">Aksesuar</a></li>
+                                        <li><a ui-sref="#/kategori/erkek">Erkek</a></li>
+                                        <li><a ui-sref="#/kategori/ev-yasam">Ev Yaşam</a></li>
+                                        <li><a ui-sref="#/kategori/spor">Spor</a></li>
+                                        <li><a ui-sref="#/kategori/hobi">Hobi</a></li>
+                                        <li><a ui-sref="#/kategori/ofis">Ofis</a></li>
+                                        <li><a ui-sref="#/kategori/yilbasi">Yılbaşı</a></li>
                                     </ul>
                                 </div>
                                 <input type="text" class="form-control" aria-label="...">
@@ -119,8 +119,7 @@
 
                                     </span>
                                 </a>
-
-<!-- 
+                                <!-- 
 
                                 <form>
                                     <div>
@@ -207,15 +206,15 @@
                         <div class="collapse navbar-collapse" id="js-navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <!--     <li class="active"><a href="#/">Anasayfa</a></li> -->
-                                <li><a ng-href="#/kategori/cocuk-giyim">Çocuk</a></li>
-                                <li><a ng-href="#/kategori/kadin">Kadın</a></li>
-                                <li><a ng-href="#/kategori/aksesuar">Aksesuar</a></li>
-                                <li><a ng-href="#/kategori/erkek">Erkek</a></li>
-                                <li><a ng-href="#/kategori/ev-yasam">Ev Yaşam</a></li>
-                                <li><a ng-href="#/kategori/spor">Spor</a></li>
-                                <li><a ng-href="#/kategori/hobi">Hobi</a></li>
-                                <li><a ng-href="#/kategori/ofis">Ofis</a></li>
-                                <li><a ng-href="#/kategori/yilbasi">Yılbaşı</a></li>
+                                <li><a ui-sref="category({ categoryId: 'cocuk-giyim', partyLocation: location })">Çocuk</a></li>
+                                <li><a ui-sref="kategori/cocuk-giyim">Kadın</a></li>
+                                <li><a ui-sref="partyDetail({ partyID: id, partyLocation: location })">PARTY</a></li>
+                                <li><a ui-sref="#/kategori/erkek">Erkek</a></li>
+                                <li><a ui-sref="#/kategori/ev-yasam">Ev Yaşam</a></li>
+                                <li><a ui-sref="#/kategori/spor">Spor</a></li>
+                                <li><a ui-sref="#/kategori/hobi">Hobi</a></li>
+                                <li><a ui-sref="#/kategori/ofis">Ofis</a></li>
+                                <li><a ui-sref="#/kategori/yilbasi">Yılbaşı</a></li>
                             </ul>
                         </div>
                     </div>
@@ -225,7 +224,7 @@
     </div>
     <div class="main-content container-full view-container">
         <div class="row">
-            <div class="container-full view-frame" ng-view=""></div>
+            <div ui-view></div>
         </div>
     </div>
     <div class="footer">
@@ -395,6 +394,8 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/Flowtype.js/flowtype.js"></script>
     <script src="bower_components/ngCart/dist/ngCart.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-breadcrumb/release/angular-breadcrumb.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -408,7 +409,6 @@
     <script src="scripts/services/categoryService.js"></script>
     <script src="scripts/animations/productDetailAnimation.js"></script>
     <script src="/bower_components/angular-i18n/angular-locale_tr.js"></script>
-    
     <!-- endbuild -->
 </body>
 

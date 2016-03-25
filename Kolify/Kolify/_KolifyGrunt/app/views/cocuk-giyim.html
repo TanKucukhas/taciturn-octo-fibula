@@ -1,62 +1,89 @@
-<div class="row">
-    <div class="col-xs-2">
-        <h2>Çocuk</h2>
-        <p class="product-count">26.354 ürün</p>
-        <p data-toggle="collapse" data-target="#clothes"><strong>Giyim</strong></p>
-        <ul id="clothes" class="collapse in">
-            <li><a ng-click="filters.subcategory = 'Tops'">Üst</a></li>
-            <li><a ng-click="filters.subcategory = 'Shoes'">Ayakkabı</a></li>
-            <li><a ng-click="filters.subcategory = 'Swimwear'">Mayo</a></li>
-        </ul>
-        <p><a href="#/kategori/oyun-oyuncak"><strong>Oyun & Oyuncak</strong></a></p>
-        <p><a data-toggle="collapse" data-target="#shoes"><strong>Ayakkabı</strong></a></p>
-        <p><a data-toggle="collapse" data-target="#baby-security"><strong>Bebek Güvenlik</strong></a></p>
-        <p><a data-toggle="collapse" data-target="#baby-care"><strong>Bebek Bakım</strong></a></p>
-        <p><strong>Markalar</strong></p>
-        <ul class="brands">
-            <li><a ng-click="filters.brand = 'Carters'">Carters</a></li>
-            <li><a ng-click="filters.brand = 'Air Jordan'">Air Jordan</a></li>
-            <li><a ng-click="filters.brand = 'Nike'">Nike</a></li>
-        </ul>
-        <p><strong>Fiyat Aralığı</strong></p>
-        <ul class="brands">
-            <li><a ng-click="filters.price = '0to25'">0 TL - 25 TL</a></li>
-            <li><a ng-click="filters.price = '25to50'">25 TL - 50 TL</a></li>
-            <li><a ng-click="filters.price = '50to100'">50 TL - 100 TL</a></li>
-        </ul>
-        <p><strong>Fırsatlar</strong></p>
-        <ul class="brands">
-            <li><a ng-click="filters.brand = 'Carters'">Carters</a></li>
-            <li><a ng-click="filters.brand = 'Air Jordan'">Air Jordan</a></li>
-            <li><a ng-click="filters.brand = 'Nike'">Nike</a></li>
-        </ul>
+<div ncy-breadcrumb></div>
+<div class="col-md-2 col-sm-2 col-xs-6">
+    <div class="category-filter">
+        <div class="top">
+            <h2>ÇOCUK</h2>
+            <p class="product-count">Gösterilen ürün: {{filtered.length}}.
+            </p>
+        </div>
+        <div class="con subcategory">
+            <p>Alt Kategoriler</p>
+            <p data-toggle="collapse" data-target="#clothes"><strong>Giyim</strong></p>
+            <ul id="clothes" class="collapse in">
+                <li><a ng-click="filters.subcategory = 'Tops'">Üst</a></li>
+                <li><a ng-click="filters.subcategory = 'Shoes'">Ayakkabı</a></li>
+                <li><a ng-click="filters.subcategory = 'Swimwear'">Mayo</a></li>
+            </ul>
+            <p><a href="#/kategori/oyun-oyuncak"><strong>Oyun & Oyuncak</strong></a></p>
+            <p><a data-toggle="collapse" data-target="#shoes"><strong>Ayakkabı</strong></a></p>
+            <p><a data-toggle="collapse" data-target="#baby-security"><strong>Bebek Güvenlik</strong></a></p>
+            <p><a data-toggle="collapse" data-target="#baby-care"><strong>Bebek Bakım</strong></a></p>
+            <p><strong>Markalar</strong></p>
+            <ul class="brands">
+                <li><a ng-click="filters.brand = 'Carters'">Carters</a></li>
+                <li><a ng-click="filters.brand = 'Air Jordan'">Air Jordan</a></li>
+                <li><a ng-click="filters.brand = 'Nike'">Nike</a></li>
+            </ul>
+        </div>
+        <div class="con price">
+            {{priceFilter.minPrice}} - {{priceFilter.maxPrice}}
+            <p><strong>Fiyat Aralığı</strong></p>
+            <ul class="brands">
+                <li><a ng-click="priceFilter.minPrice = '0' ;priceFilter.maxPrice = '25'">0 TL - 25 TL</a></li>
+                <li><a ng-click="priceFilter.minPrice = '25' ;priceFilter.maxPrice = '50'">25 TL - 50 TL</a></li>
+                <li><a ng-click="priceFilter.minPrice = '50' ;priceFilter.maxPrice = '100'">50 TL - 100 TL</a></li>
+            </ul>
+        </div>
+        <div class="con">
+            <p><strong>Fırsatlar</strong></p>
+            <ul class="brands">
+                <li><a ng-click="filters.brand = 'Carters'">Carters</a></li>
+                <li><a ng-click="filters.brand = 'Air Jordan'">Air Jordan</a></li>
+                <li><a ng-click="filters.brand = 'Nike'">Nike</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="col-xs-10">
-        <div class="row product-listing">
-            <div class="col-md-12">{{filters.brand}}{{filters.price}}</div>
-            <div class="col-md-12">{{filters.subcategory}}</div>
-            <div class="col-md-2 col-sm-4 col-xs-12 clearfix" class="animate-repeat" ng-repeat="catitems in category | filter:filters">
-                <div class="product-container">
-                    <!--   [{{$index + 1}}] -->
-                    <a href="#" class="thumb clearfix"><img ng-src="data/product-test/{{catitems.id}}-1-1000@90.jpg" alt="data/product-test/{{catitems.id}}-1-1000@90.jpg" class="img-responsive"></a>
-                    <div class="bottom-content clearfix">
-                        <p class="price">{{catitems.price}} <span>&#x20BA;</span></p>
-                        <p class="brand">{{catitems.brand}}</p>
-                        <p class="product-title">{{catitems.name | cut:true:20:' ...'}}</p>
-                        <!--     <p>{{catitems.description}}</p> -->
-                 <!--        <div class="btn-add-to-kolify">
+</div>
+<div class="col-md-10  col-sm-10 col-xs-6">
+    <div class="row product-listing">
+        <div class="col-xs-12">
+            <div class="filterbox" ng-show="filters.brand">
+                <a href="" ng-click="filters.brand = '' "><i class="fa fa-times-circle"></i></a>
+                <div class="cont">
+                    <p class="title"><b>Marka</b></p>
+                    <p class="filter">{{filters.brand}}</p>
+                </div>
+            </div>
+            <div class="filterbox" ng-hide="priceFilter.maxPrice == '9999'">
+                <a href="" ng-click="priceFilter.minPrice = '0' ;priceFilter.maxPrice = '9999'"><i class="fa fa-times-circle"></i></a>
+                <div class="cont">
+                    <p class="title"><b>Fiyat Aralığı</b></p>
+                    <p class="filter">{{priceFilter.minPrice}} TL - {{priceFilter.maxPrice}} TL</p>
+                </div>
+            </div>
+            <div class="filterbox" ng-show="filters.subcategory">
+                <a href="" ng-click="filters.subcategory = '' "><i class="fa fa-times-circle"></i></a>
+                <div class="cont">
+                    <p class="title"><b>Kategori</b></p>
+                    <p class="filter">{{filters.subcategory}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-12 clearfix" class="animate-repeat" ng-repeat="catitems in category | filter:filters | filter: greaterThan('price', priceFilter.minPrice)  | filter: lessThan('price', priceFilter.maxPrice) | filter:query as filtered">
+            <div class="product-container">
+                <!--   [{{$index + 1}}] -->
+                <a href="#" class="thumb clearfix"><img ng-src="data/product-test/{{catitems.id}}-1-1000@90.jpg" alt="data/product-test/{{catitems.id}}-1-1000@90.jpg" class="img-responsive"></a>
+                <div class="bottom-content clearfix">
+                    <p class="price">{{catitems.price}} <span>&#x20BA;</span></p>
+                    <p class="brand">{{catitems.brand}}</p>
+                    <p class="product-title">{{catitems.name | cut:true:20:' ...'}}</p>
+                    <!--     <p>{{catitems.description}}</p> -->
+                    <!--        <div class="btn-add-to-kolify">
                             <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
                                 <span class="icon-image icon-ui-kolify-add"></span><span>Koliye Ekle</span></a>
                         </div> -->
-
-
-
-                                               <div class="btn-add-to-kolify">
-
-
-                                                <ngcart-addtocart id="{{catitems.id}}" name="{{catitems.name}}" price="{{catitems.price}}" > <span class="icon-image icon-ui-kolify-add"></span>Koliye Ekle</ngcart-addtocart></div>
-
-
+                    <div class="btn-add-to-kolify">
+                        <ngcart-addtocart id="{{catitems.id}}" name="{{catitems.name}}" price="{{catitems.price}}"> <span class="icon-image icon-ui-kolify-add"></span>Koliye Ekle</ngcart-addtocart>
                     </div>
                 </div>
             </div>

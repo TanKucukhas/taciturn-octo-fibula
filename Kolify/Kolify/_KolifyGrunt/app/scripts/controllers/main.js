@@ -86,8 +86,8 @@ productControllers.controller('LastVisitedCtrl', ['$scope', 'Product', 'userFact
 
 
 
-productControllers.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Product', function($scope, $routeParams, Product) {
-  $scope.product = Product.get({productId: $routeParams.productId}, function(product) {
+productControllers.controller('ProductDetailCtrl', ['$scope', '$stateParams', 'Product', function($scope, $stateParams, Product) {
+  $scope.product = Product.get({productId: $stateParams.productId}, function(product) {
   
     $scope.mainImageUrl = product.images[0];
   });

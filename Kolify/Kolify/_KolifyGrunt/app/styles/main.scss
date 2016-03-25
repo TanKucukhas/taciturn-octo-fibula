@@ -9,6 +9,7 @@ $color-main-bg: #f5f5f5;
 $color-brand: #ff5a00;
 $color-gray-bg: #bfbfbf;
 $color-dark-gray-bg: #555555;
+$color-filter-gray: #e4e4e4;
 $color-main-font: #050505;
 $secondary-bg: #ffffff;
 $alternative-gray: #ababab;
@@ -119,9 +120,7 @@ a:focus {
 
 .navbar-brand {
     padding: 0;
-        max-width: 220px;
-
-        
+    max-width: 220px;
 }
 
 
@@ -155,10 +154,11 @@ a:focus {
     background-color: $secondary-bg;
 }
 
-.col{
-float:left;
-// width: 25%;
+.col {
+    float: left;
+    // width: 25%;
 }
+
 
 /* Header */
 
@@ -544,18 +544,14 @@ button.facebook-connect {
     // overflow: hidden;
 }
 
-
-
 //
 //.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-//	color: #555555;
-//	background-color: #fff;
-//	border: 1px solid #ddd;
-//	border-bottom-color: transparent;
-//	cursor: default;
+//  color: #555555;
+//  background-color: #fff;
+//  border: 1px solid #ddd;
+//  border-bottom-color: transparent;
+//  cursor: default;
 //}
-
-
 
 /* don't forget about the vendor-prefixes! */
 
@@ -579,10 +575,12 @@ button.facebook-connect {
         margin: 0 0 1rem 0;
         width: 100%;
         text-align: center;
-        a{ width:100%}
+        a {
+            width: 100%
+        }
         img {
             display: inline;
-            width: 100%;    
+            width: 100%;
             background-color: #ffffff;
         }
     }
@@ -818,7 +816,6 @@ $ui-kolify-cart-items-small-2x,
     @include retina-sprite($ui-kolify-cart-items-small-group);
 }
 
-
 $icon-ui-kolify-cart-items-smaller: ('icon-ui-kolify-cart-items-smaller',
 $ui-kolify-cart-items-smaller,
 $ui-kolify-cart-items-smaller-2x,
@@ -827,9 +824,7 @@ $ui-kolify-cart-items-smaller-2x,
     @include retina-sprite($ui-kolify-cart-items-smaller-group);
 }
 
-
 // HOMEPAGE
-
 .product-listing {
     .product-image {
         width: 100%;
@@ -843,8 +838,8 @@ $ui-kolify-cart-items-smaller-2x,
         margin-right: 0;
     }
     .nav-tabs li {
-    width: 33.2%;
-    margin-right: 0.2%;
+        width: 33.2%;
+        margin-right: 0.2%;
     }
     .nav-tabs {
         background-color: $color-main-bg;
@@ -854,7 +849,7 @@ $ui-kolify-cart-items-smaller-2x,
         background-color: $color-gray-bg;
         border: none;
         font-family: $base-font;
-        margin-right:0;
+        margin-right: 0;
         border-radius: inherit;
         @include font-size(24);
         line-height: 4.4rem;
@@ -881,7 +876,7 @@ $ui-kolify-cart-items-smaller-2x,
         }
         i {
             padding-right: 0.8rem;
-            padding-left:0;
+            padding-left: 0;
             &:before {
                 font-family: fontAwesome;
                 content: "\f0d7";
@@ -889,8 +884,6 @@ $ui-kolify-cart-items-smaller-2x,
         }
     }
 }
-
-
 
 .product-listing {
     ul>li>a {
@@ -919,11 +912,11 @@ $ui-kolify-cart-items-smaller-2x,
         padding: 2px 0px 0px 25px;
         display: block;
         margin-bottom: 0;
-              text-transform: capitalize;
+        text-transform: capitalize;
     }
     .product-title {
         color: $color-dark-gray-bg;
-         text-transform: capitalize;
+        text-transform: capitalize;
         height: 30px;
         @include font-size(16);
         margin-bottom: 0;
@@ -931,11 +924,7 @@ $ui-kolify-cart-items-smaller-2x,
         display: block;
         line-height: 1.6rem;
     }
-
-         
 }
-
-
 
 .row-container {
     padding-top: 1%;
@@ -949,7 +938,7 @@ $ui-kolify-cart-items-smaller-2x,
     width: 100%;
     height: 100%;
     overflow: hidden;
-    margin: 1rem 0 0 0;
+    margin: 0 0 1rem 0;
 }
 
 .home-featured {
@@ -957,7 +946,7 @@ $ui-kolify-cart-items-smaller-2x,
 }
 
 .row-slide {
-   	margin-bottom: 13px;
+    margin-bottom: 13px;
 }
 
 .row-featured {
@@ -965,7 +954,7 @@ $ui-kolify-cart-items-smaller-2x,
 }
 
 .btn-add-to-kolify {
-    padding: 17px 0 10px 21px;
+    padding: 17px 0 20px 21px;
     span {
         color: $color-brand;
         @include font-size(13);
@@ -974,16 +963,22 @@ $ui-kolify-cart-items-smaller-2x,
     span.icon-ui-kolify-add {
         margin: -8px 7px 0 0;
     }
+    mark {
+        position: absolute;
+        /* margin: 0.2rem 0 0 1.6rem; */
+        top: 0;
+        left: 1.6rem;
+    }
 }
 
 .pagination-centered {
-//    margin-top: 0;
+    //    margin-top: 0;
     text-align: center;
     a {
         color: #818181;
     }
-    .pagination{
-    margin: 16px 0;
+    .pagination {
+        margin: 16px 0;
     }
     //override bootstrap pagination styles
     .pagination > .active > a,
@@ -1025,19 +1020,17 @@ $ui-kolify-cart-items-smaller-2x,
 }
 
 .how-it-works {
-    
-    .col{
-    width: 20%;
+    .col {
+        width: 20%;
     }
     overflow: hidden;
     text-align: center;
-        padding: 2.3rem 0 2.2rem 0;
+    padding: 2.3rem 0 2.2rem 0;
     p {
         color: $color-dark-gray-bg;
         @include font-size(24);
-
-	line-height: 3.2rem;
-        margin-bottom:0;
+        line-height: 3.2rem;
+        margin-bottom: 0;
     }
     p.sub {
         @include font-size(18);
@@ -1049,13 +1042,13 @@ $ui-kolify-cart-items-smaller-2x,
         padding-left: 28px;
         img {
             display: inline-block;
-            	margin-bottom: 10px;
+            margin-bottom: 10px;
         }
     }
-    hr{
-    margin-top: 0px;
-	margin-bottom: 6px;
-    border-top: 1px solid $alternative-gray;
+    hr {
+        margin-top: 0px;
+        margin-bottom: 6px;
+        border-top: 1px solid $alternative-gray;
     }
     .hiw-container.second {
         width: 20%;
@@ -1072,7 +1065,7 @@ $ui-kolify-cart-items-smaller-2x,
     .col-md-4,
     .col-md-3,
     .col-md-6 {
-       margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }
     .col-md-3 {
         .img-box {
@@ -1111,12 +1104,12 @@ $ui-kolify-cart-items-smaller-2x,
             padding: 5% 0 0 2rem;
         }
     }
-
-     .lightning,.outdoor,.dresses,.books{
-        padding-bottom: 25%;    
-
-     }
-
+    .lightning,
+    .outdoor,
+    .dresses,
+    .books {
+        padding-bottom: 25%;
+    }
     .christmast {
         background-image: url('../images/home/ui-homebox-yilbasi.png');
     }
@@ -1175,15 +1168,11 @@ $ui-kolify-cart-items-smaller-2x,
         padding-left: 1rem;
         a {}
     }
-
-    .col{
-
+    .col {
         width: 9.8%;
         margin-right: 1%;
-       
-    margin-top: 1%;
+        margin-top: 1%;
     }
-
     img {
         border: 1px solid $color-main-bg;
     }
@@ -1201,7 +1190,7 @@ $ui-kolify-cart-items-smaller-2x,
     // width: 100%;
     .previous {
         left: 14%;
-            bottom: 1.9%;
+        bottom: 1.9%;
         position: absolute;
         a:before {
             font-family: fontAwesome;
@@ -1210,7 +1199,7 @@ $ui-kolify-cart-items-smaller-2x,
     }
     .next {
         right: 1%;
-            bottom: 1.9%;
+        bottom: 1.9%;
         position: absolute;
         a:before {
             font-family: fontAwesome;
@@ -1221,8 +1210,7 @@ $ui-kolify-cart-items-smaller-2x,
 
 // custom pager style
 .pager {
-
-    margin:0;
+    margin: 0;
 }
 
 .pager li > a,
@@ -1377,6 +1365,59 @@ h1 {
     border-bottom: 1px solid gray;
 }
 
+.breadcrumb {
+    margin-bottom: 1.6rem;
+    font-size: 12px;
+}
+
+.category-filter {
+    // padding-left: 5px;
+    background-color: #ffffff;
+    // padding: 1.4rem 0.7rem 1.4rem 0.7rem; 
+
+    .top{
+    
+    border-bottom: 1px solid #cccccc;
+    padding: 1.6rem 0 0 0.7rem;
+    }
+
+
+    h2 {
+        margin: 0 0 0.5rem 1.2rem;
+        font-size: 2.4rem;
+    }
+    .product-count {
+        margin-left: 1.2rem;
+        line-height: 2.6rem;
+        font-size: 1.2rem;
+    }
+}
+
+.filterbox {
+    padding: 5px;
+    background-color: $color-filter-gray;
+    display: inline-block;
+    min-width: 11rem;
+    i {
+        padding: 0 1rem 0 0;
+        font-size: 1.6rem;
+        color: #9e9e9e;
+        float: left;
+        line-height: 3rem;
+    }
+    .cont {
+        padding: 0 1rem 0 0;
+        display: inline-block;
+    }
+    .title,
+    .filter {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin: 0;
+        color: $color-dark-gray-bg;
+    }
+}
+
 //animations
 .view-container {
     position: relative;
@@ -1461,6 +1502,8 @@ h1 {
     }
 }
 
-.btn-add-to-cart{
+.btn-add-to-cart {
     cursor: pointer;
 }
+
+///BOOTSTRAP CLEARFIX

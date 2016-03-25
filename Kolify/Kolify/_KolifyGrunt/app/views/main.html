@@ -1,3 +1,4 @@
+
 <div class="row row-slide">
     <div class="col-lg-9 col-md-12 col-sm-12 slide-row">
         <!--  <img class="img-responsive" src="images/slider-place-holder" alt="">
@@ -143,7 +144,9 @@
                             <div ng-repeat="product in filteredProducts" class="product col-lg-2 col-md-4 col-sm-6 col-xs-6">
 
      <div class="product-container">
-                                    <a href="#/dukkan/{{product.id}}" class="thumb clearfix"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
+                                    <a ui-sref="dukkan({ productId: product.id })"
+
+                                   href="" class="thumb clearfix"><img class="product-image" ng-src="{{product.imageUrl}}"></a>
                                     <div class="bottom-content clearfix">
                                         <p class="price">{{product.price}} <span>&#x20BA;</span></p>
                                         <p class="brand">{{product.brand}}</p>
@@ -151,10 +154,7 @@
                                         <div class="btn-add-to-kolify">
                                          
                                                <span class="btn-add-to-cart">
-
-
                                                 <ngcart-addtocart id="{{product.id}}" name="{{product.name}}" price="{{product.price}}" > <span class="icon-image icon-ui-kolify-add"></span>Koliye Ekle</ngcart-addtocart></span>
-
                                         </div>
                                     </div>
                                 </div>

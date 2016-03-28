@@ -13,7 +13,7 @@
             <th></th>
         <!--     <th>Miktar</th> -->
             <th>Tutar</th>
-            <th>Toplam</th>
+            <th>Fiyat</th>
         </tr>
         </thead>
         <tfoot>
@@ -28,14 +28,14 @@
             <td></td>
             <td></td>
    <!--          <td></td> -->
-            <td>Shipping:</td>
+            <td>Kargo Ücreti:</td>
             <td>{{ ngCart.getShipping() | currency }}</td>
         </tr>
         <tr>
             <td></td>
             <td></td>
          <!--    <td></td>
-    -->         <td>Total:</td>
+    -->         <td>Toplam:</td>
             <td>{{ ngCart.totalCost() | currency }}</td>
         </tr>
         </tfoot>

@@ -7,17 +7,27 @@
             </p>
         </div>
         <div class="con subcategory">
-            <p>Alt Kategoriler</p>
-            <p data-toggle="collapse" data-target="#clothes"><strong>Giyim</strong></p>
+            <p class="title">Kategoriler</p>
+            <!--             <p data-toggle="collapse" data-target="#clothes"><strong>Giyim</strong></p> -->
             <ul id="clothes" class="collapse in">
-                <li><a ng-click="filters.subcategory = 'Tops'">Üst</a></li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"><a ng-click="filters.subcategory = 'Tops'">Oyun & Oyuncak</a>
+                        </label>
+                    </div>
+                    <p>
+                        <input type="checkbox" id="test2" checked="checked" />
+                        <label for="test2">Yellow</label>
+                    </p>
+                </li>
                 <li><a ng-click="filters.subcategory = 'Shoes'">Ayakkabı</a></li>
                 <li><a ng-click="filters.subcategory = 'Swimwear'">Mayo</a></li>
             </ul>
-            <p><a href="#/kategori/oyun-oyuncak"><strong>Oyun & Oyuncak</strong></a></p>
+            <!--           <p><a href="#/kategori/oyun-oyuncak"><strong>Oyun & Oyuncak</strong></a></p>
             <p><a data-toggle="collapse" data-target="#shoes"><strong>Ayakkabı</strong></a></p>
             <p><a data-toggle="collapse" data-target="#baby-security"><strong>Bebek Güvenlik</strong></a></p>
-            <p><a data-toggle="collapse" data-target="#baby-care"><strong>Bebek Bakım</strong></a></p>
+            <p><a data-toggle="collapse" data-target="#baby-care"><strong>Bebek Bakım</strong></a></p> -->
             <p><strong>Markalar</strong></p>
             <ul class="brands">
                 <li><a ng-click="filters.brand = 'Carters'">Carters</a></li>

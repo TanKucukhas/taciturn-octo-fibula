@@ -954,6 +954,7 @@ $ui-kolify-cart-items-smaller-2x,
 }
 
 .btn-add-to-kolify {
+    cursor: pointer;
     padding: 17px 0 20px 21px;
     span {
         color: $color-brand;
@@ -1374,24 +1375,142 @@ h1 {
     // padding-left: 5px;
     background-color: #ffffff;
     // padding: 1.4rem 0.7rem 1.4rem 0.7rem; 
-
-    .top{
-    
-    border-bottom: 1px solid #cccccc;
-    padding: 1.6rem 0 0 0.7rem;
+    .top {
+        border-bottom: 1px solid #cccccc;
+        padding: 1.6rem 0 0 0.7rem;
     }
-
-
     h2 {
         margin: 0 0 0.5rem 1.2rem;
         font-size: 2.4rem;
     }
     .product-count {
         margin-left: 1.2rem;
-        line-height: 2.6rem;
+        line-height: 2rem;
         font-size: 1.2rem;
     }
+    p.title {
+        padding: 1.2rem 0px 0px 2.1rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    ul {
+        list-style: none;
+        padding: 0px 0px 0px 2.4rem;
+        margin: 0;
+    }
+    .checkbox {
+        /* position: relative; */
+        /* display: block; */
+        /* margin-top: 10px; */
+        /* margin-bottom: 10px; */
+        label {
+            min-height: 20px;
+            padding-left: 20px;
+            margin-bottom: 0;
+            font-weight: normal;
+            font-size: 22px;
+            cursor: pointer;
+            width: 100%;
+            /* vertical-align: middle; */
+            /* display: table-cell; */
+            /* vertical-align: middle; */
+        }
+        input[type="checkbox"],
+        .checkbox-inline input[type="checkbox"] {
+            /* position: absolute; */
+            /* margin-left: -20px; */
+            margin-top: 4px \9;
+            /* width: 100%; */
+            vertical-align: middle;
+            position: relative;
+        }
+        a {
+            vertical-align: middle;
+        }
+
+
+    }
 }
+//custom checkbox
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 17px; height: 17px;
+  border: 2px solid #bfbfbf;
+  background: #f8f8f8;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+     content: '';
+     width: 50px;
+     height: 50px;
+  background-image: url("../images/global/kolify-check.png");
+ background-repeat: no-repeat;
+  position: absolute;
+  top: 3px; left: 4px;
+  font-size: 18px;
+  line-height: 0.8;
+  // color: #09ad7e;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  // border: 1px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 1px solid #4778d9!important;
+}
+
+
+
+
+
+
 
 .filterbox {
     padding: 5px;
@@ -1421,6 +1540,7 @@ h1 {
 //animations
 .view-container {
     position: relative;
+    overflow: hidden;
 }
 
 .view-frame.ng-enter,

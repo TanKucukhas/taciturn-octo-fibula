@@ -7,9 +7,30 @@
             </p>
         </div>
         <div class="con subcategory">
-            <p class="title">Kategoriler</p>
+            <p class="title">Alt Kategoriler</p>
             <!--             <p data-toggle="collapse" data-target="#clothes"><strong>Giyim</strong></p> -->
+            <p data-toggle="collapse" data-target="#clothes"><strong>Giyim</strong></p>
             <ul id="clothes" class="collapse in">
+                <li><a ng-click="filters.subcategory = 'Shoes'">Ayakkabı</a></li>
+                <li><a ng-click="filters.subcategory = 'Swimwear'">Mayo</a></li>
+                <li>
+                    <p>
+                        <input type="checkbox" id="shoes" ng-checked=""/>
+                        <label for="shoes">Ayakkabı</label>
+                    </p>
+                </li>
+            </ul>
+            <p><strong>Oyun & Oyuncak</strong></p>
+            <p><strong>Bebek Güvenlik</strong></p>
+            <p><strong>Bebek Bakım</strong></p>
+
+            <div ng-repeat="chk in chkbxs">
+        <input type="checkbox" ng-model="chk.val" />
+        <label>{{chk.label}}</label>
+    </div>
+    <div ng-show="flag">I'm ON when band choosed</div>
+    dviv
+            <!--             <ul id="clothes" class="collapse in">
                 <li>
                     <div class="checkbox">
                         <label>
@@ -23,7 +44,7 @@
                 </li>
                 <li><a ng-click="filters.subcategory = 'Shoes'">Ayakkabı</a></li>
                 <li><a ng-click="filters.subcategory = 'Swimwear'">Mayo</a></li>
-            </ul>
+            </ul> -->
             <!--           <p><a href="#/kategori/oyun-oyuncak"><strong>Oyun & Oyuncak</strong></a></p>
             <p><a data-toggle="collapse" data-target="#shoes"><strong>Ayakkabı</strong></a></p>
             <p><a data-toggle="collapse" data-target="#baby-security"><strong>Bebek Güvenlik</strong></a></p>

@@ -9,27 +9,34 @@
         <div class="con subcategory">
             <p class="title">Alt Kategoriler</p>
             <!--             <p data-toggle="collapse" data-target="#clothes"><strong>Giyim</strong></p> -->
-            <p data-toggle="collapse" data-target="#clothes"><strong>Giyim</strong></p>
+            <p style="display: none;" data-toggle="collapse" data-target="#clothes"><strong>Giyim</strong></p>
             <ul id="clothes" class="collapse in">
-                <li><a ng-click="filters.subcategory = 'Shoes'">Ayakkabı</a></li>
-                <li><a ng-click="filters.subcategory = 'Swimwear'">Mayo</a></li>
                 <li>
                     <p>
-                        <input type="checkbox" id="shoes" ng-checked=""/>
+                        <input type="radio" ng-click="radioCheckUncheck($event)" ng-model="filters.subcategory" value="shoes" id="shoes">
                         <label for="shoes">Ayakkabı</label>
                     </p>
                 </li>
+                <li>
+                    <p>
+                        <input type="radio" ng-click="radioCheckUncheck($event)" ng-model="filters.subcategory" value="swimwear" id="swimwear">
+                        <label for="swimwear">Mayo</label>
+                    </p>
+                </li>
+                <!--
+                <input id="shoes" type="radio" ng-checked="" ng-model="filters.subcategory = 'Shoes'"/>
+                <label for="shoes">Ayakkabı</label>
+                <input id="swimwear" type="radio" ng-checked="" ng-model="filters.subcategory = 'Swimwear'"/>
+                <label for="swimwear">Ayakkabı</label>
+                -->
             </ul>
             <p><strong>Oyun & Oyuncak</strong></p>
             <p><strong>Bebek Güvenlik</strong></p>
             <p><strong>Bebek Bakım</strong></p>
-
             <div ng-repeat="chk in chkbxs">
-        <input type="checkbox" ng-model="chk.val" />
-        <label>{{chk.label}}</label>
-    </div>
-    <div ng-show="flag">I'm ON when band choosed</div>
-    dviv
+                <input type="checkbox" ng-checked="chk.val" />
+                <label>{{chk.label}}</label>
+            </div>
             <!--             <ul id="clothes" class="collapse in">
                 <li>
                     <div class="checkbox">
@@ -110,8 +117,8 @@
                     <p class="product-title">{{catitems.name | cut:true:20:' ...'}}</p>
                     <!--     <p>{{catitems.description}}</p> -->
                     <!--        <div class="btn-add-to-kolify">
-                            <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
-                                <span class="icon-image icon-ui-kolify-add"></span><span>Koliye Ekle</span></a>
+                        <a ng-click="user.cartItems = 1 + user.cartItems" ng-model="product.name">
+                            <span class="icon-image icon-ui-kolify-add"></span><span>Koliye Ekle</span></a>
                         </div> -->
                     <div class="btn-add-to-kolify">
                         <ngcart-addtocart id="{{catitems.id}}" name="{{catitems.name}}" price="{{catitems.price}}"> <span class="icon-image icon-ui-kolify-add"></span>Koliye Ekle</ngcart-addtocart>

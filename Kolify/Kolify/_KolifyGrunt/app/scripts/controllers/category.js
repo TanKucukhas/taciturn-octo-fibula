@@ -28,22 +28,24 @@ angular.module('kolifyApp')
         };
 
 
-        $scope.chkbxs = [{ label: "Led Zeppelin", val: false },
-            { label: "Electric Light Orchestra", val: false },
-            { label: "Mark Almond", val: false }
-        ];
 
-        $scope.$watch("chkbxs", function(n, o) {
-            var trues = $filter("filter")(n, { val: true });
-            $scope.flag = trues.length;
-        }, true);
 
 
         $scope.category = listCategory.query({ categoryId: 'category-' + $stateParams.categoryId });
 
 
+        let lastChecked = null
+        $scope.radioCheckUncheck = function(event) {
+            if (event.target.value === lastChecked) {
+                delete $scope.filters.subcategory
+                lastChecked = null
+            } else {
+                lastChecked = event.target.value
+            }
+        }
 
-        $scope.greaterThan = function(prop, val) {
+
+        $scope.greaterThan =  function(prop, val) {
             return function(catitems) {
                 return catitems[prop] > val;
             };
